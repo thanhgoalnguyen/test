@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				slidesPerView: 1.21,
 			},
 			1440: {
-				slidesPerView: 1.275,
+				slidesPerView: 2.03,
 			},
 		},
 
@@ -45,5 +45,66 @@ document.addEventListener("DOMContentLoaded", function () {
 			clickable: true,
 		},
 		centeredSlides: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
   	});
+
+	const swiperMovie = new Swiper('.swiper-movie', {
+		direction: 'horizontal',
+		slidesPerView: 1.4,
+		spaceBetween: 13,
+		loop: true,
+		speed: 10000,
+		allowTouchMove: true,
+		freeMode: false, 
+
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: false,
+		},
+		edgeSwipeThreshold: 0,
+
+		breakpoints: {
+			834: { slidesPerView: 1.21 },
+			1440: { slidesPerView: 2.03 },
+		},
+
+		on: {
+			touchEnd: function() {
+				this.autoplay.run();
+			},
+		},
+	});
+
+	const swiperKind = new Swiper('.swiper-kind', {
+		direction: 'horizontal',
+		slidesPerView: 2,
+		spaceBetween: 13,
+		loop: true,
+		speed: 6000, 
+		allowTouchMove: true,
+		freeMode: {
+			enabled: true,
+			momentum: false,
+		},
+		loopedSlides: 10, 
+		breakpoints: {
+			834: { slidesPerView: 4.2 },
+			1440: { slidesPerView: 5.3 },
+		},
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: false,
+			reverseDirection: true,
+		},
+		on: {
+			touchEnd: function() {
+				this.autoplay.run();
+			},
+		},
+	});
+	
 })
