@@ -7,6 +7,8 @@
 	<title>Trang Web Đầu Tiên</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
 		</nav>
 	</header>
 	<main>
-		<section class="watch product-banner">
+		<section class="watch product-banner js-show">
 			<div class="product-banner__wrapper">
 				<img src="./assets/image/watch/title.png" alt="title" />
 				<p>Turn resolutions into routines.</p>
@@ -106,7 +108,7 @@
 				<img src="./assets/image/watch/bg.jpg" alt="bg" />
 			</a>
 		</section>
-		<section class="iphone product-banner">
+		<section class="iphone product-banner js-show">
 			<div class="product-banner__wrapper">
 				<h2>iPhone</h2>
 				<p>Say hello to the latest generation of iPhone.</p>
@@ -120,7 +122,7 @@
 				<img class="product-banner__bg-pc" src="./assets/image/iphone/bg-pc.jpg" alt="bg" />
 			</a>
 		</section>
-		<section class="ipad product-banner">
+		<section class="ipad product-banner js-show">
 			<div class="product-banner__wrapper">
 				<img src="./assets/image/ipad/title.png" alt="title" />
 				<p>Now supercharged by the M3 chip.</p>
@@ -135,7 +137,7 @@
 			</a>
 		</section>
 		<section class="product-list">
-			<div class="fitness product-item">
+			<div class="fitness product-item js-show">
 				<div class="product-item__wrapper">
 					<img src="./assets/image/fitness/title.png" alt="bg" />
 					<p>Start the year strong with guided workouts and meditations.</p>
@@ -150,7 +152,7 @@
 					<img class="product-item__bg-pc" src="./assets/image/fitness/bg-pc.jpg" alt="bg" />
 				</a>
 			</div>
-			<div class="macbook product-item">
+			<div class="macbook product-item js-show">
 				<div class="product-item__wrapper">
 					<h3>MacBook Pro 14”</h3>
 					<p>Supercharged by M5.</p>
@@ -164,7 +166,7 @@
 					<img class="product-item__bg-pc" src="./assets/image/macbook/bg-pc.jpg" alt="bg" />
 				</a>
 			</div>
-			<div class="watch-ultra product-item">
+			<div class="watch-ultra product-item js-show">
 				<div class="product-item__wrapper">
 					<img src="./assets/image/watch-ultra/title.png" alt="bg" />
 					<p>Personal beast.</p>
@@ -178,7 +180,7 @@
 					<img class="product-item__bg-pc" src="./assets/image/watch-ultra/bg-pc.jpg" alt="bg" />
 				</a>
 			</div>
-			<div class="airpod product-item">
+			<div class="airpod product-item js-show">
 				<div class="product-item__wrapper">
 					<h3>AirPods Pro 3</h3>
 					<p>The world’s best in-ear Active Noise Cancellation.</p>
@@ -192,7 +194,7 @@
 					<img class="product-item__bg-pc" src="./assets/image/airpod/bg-pc.jpg" alt="bg" />
 				</a>
 			</div>
-			<div class="trade-in product-item">
+			<div class="trade-in product-item js-show">
 				<div class="product-item__wrapper">
 					<img src="./assets/image/trade-in/title.png" alt="bg" />
 					<p>Get up to $180–$670 in credit when you trade in iPhone 13 or higher.</p>
@@ -205,7 +207,7 @@
 					<img class="product-item__bg-pc" src="./assets/image/trade-in/bg-pc.jpg" alt="bg" />
 				</a>
 			</div>
-			<div class="card product-item">
+			<div class="card product-item js-show">
 				<div class="product-item__wrapper">
 					<img src="./assets/image/card/title.png" alt="bg" />
 					<p>Get up to 3% Daily Cash back with every purchase.</p>
@@ -223,63 +225,107 @@
 		<section class="more">
 			<h2>More from Apple.</h2>
 			<div class="more-wrapper">
-				<div class="more-wrapper__body">
-					<div class="more-wrapper__body-list">
-						<div class="item">
-							<div class="item-wrapper">
-								<div class="item-content">
-									<h3>No Frame Missed</h3>
-									<span></span>
-									<p>Accessibility</p>
+				<div class="swiper mySwiper more-wrapper__body">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="item-wrapper">
+									<div class="item-content">
+										<h3>No Frame Missed</h3>
+										<span></span>
+										<p>Accessibility</p>
+									</div>
+									<button class="button-secondary">Watch the film</button>
 								</div>
-								<button class="button-secondary">Watch the film</button>
+								<picture class="item-bg">
+									<source srcset="./assets/image/more/1-pc.jpg" media="(min-width: 834px)">
+									<img src="./assets/image/more/1-mb.jpg" alt="">
+								</picture>
 							</div>
-							<picture class="item-bg">
-								<source srcset="./assets/image/more/1-pc.jpg" media="(min-width: 884px)">
-								<img src="./assets/image/more/1-mb.jpg" alt="">
-							</picture>
 						</div>
-						<div class="item">
-							<div class="item-wrapper">
-								<div class="item-content">
-									<h3>Designed for Every Student</h3>
-									<span></span>
-									<p>Accessibility</p>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="item-wrapper">
+									<div class="item-content">
+										<h3>Designed for Every Student</h3>
+										<span></span>
+										<p>Accessibility</p>
+									</div>
+									<button class="button-secondary">Watch the film</button>
 								</div>
-								<button class="button-secondary">Watch the film</button>
+								<picture class="item-bg">
+									<source srcset="./assets/image/more/2-pc.jpg" media="(min-width: 834px)">
+									<img src="./assets/image/more/2-mb.jpg" alt="">
+								</picture>
 							</div>
-							<picture class="item-bg">
-								<source srcset="./assets/image/more/2-pc.jpg" media="(min-width: 884px)">
-								<img src="./assets/image/more/2-mb.jpg" alt="">
-							</picture>
 						</div>
-						<div class="item">
-							<div class="item-wrapper">
-								<div class="item-content">
-									<h3>The Underdogs: Blue Screen of Death</h3>
-									<span></span>
-									<p>Apple at Work</p>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="item-wrapper">
+									<div class="item-content">
+										<h3>The Underdogs: Blue Screen of Death</h3>
+										<span></span>
+										<p>Apple at Work</p>
+									</div>
+									<button class="button-secondary">Watch the film</button>
 								</div>
-								<button class="button-secondary">Watch the film</button>
+								<picture class="item-bg">
+									<source srcset="./assets/image/more/3-pc.jpg" media="(min-width: 834px)">
+									<img src="./assets/image/more/3-mb.jpg" alt="">
+								</picture>
 							</div>
-							<picture class="item-bg">
-								<source srcset="./assets/image/more/3-pc.jpg" media="(min-width: 884px)">
-								<img src="./assets/image/more/3-mb.jpg" alt="">
-							</picture>
+						</div>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="item-wrapper">
+									<div class="item-content">
+										<h3>No Frame Missed</h3>
+										<span></span>
+										<p>Accessibility</p>
+									</div>
+									<button class="button-secondary">Watch the film</button>
+								</div>
+								<picture class="item-bg">
+									<source srcset="./assets/image/more/1-pc.jpg" media="(min-width: 834px)">
+									<img src="./assets/image/more/1-mb.jpg" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="item-wrapper">
+									<div class="item-content">
+										<h3>Designed for Every Student</h3>
+										<span></span>
+										<p>Accessibility</p>
+									</div>
+									<button class="button-secondary">Watch the film</button>
+								</div>
+								<picture class="item-bg">
+									<source srcset="./assets/image/more/2-pc.jpg" media="(min-width: 834px)">
+									<img src="./assets/image/more/2-mb.jpg" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="item-wrapper">
+									<div class="item-content">
+										<h3>The Underdogs: Blue Screen of Death</h3>
+										<span></span>
+										<p>Apple at Work</p>
+									</div>
+									<button class="button-secondary">Watch the film</button>
+								</div>
+								<picture class="item-bg">
+									<source srcset="./assets/image/more/3-pc.jpg" media="(min-width: 834px)">
+									<img src="./assets/image/more/3-mb.jpg" alt="">
+								</picture>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="more-wrapper__footer">
-					<ul>
-						<li class="active">
-							<span></span>
-						</li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-					<button>
+					<div class="swiper-pagination"></div>
+					<button class="more-wrapper__button">
 						<img src="./assets/icon/more/play.svg" />
 					</button>
 				</div>
@@ -288,7 +334,7 @@
 	</main>
 	<footer class="footer">
 		<div class="footer-wrapper">
-			<section class="footer-content">
+			<section class="footer-content js-show">
 				<p>1. Offer available to new subscribers who purchase an eligible device. $9.99/month after trial. Only
 					one offer per Apple Account and only one offer per family if you’re part of a Family Sharing group,
 					regardless of the number of devices you or your family purchase. This offer is not available if you
@@ -324,7 +370,7 @@
 				<p>Features are subject to change. Some features, applications, and services may not be available in all
 					regions or all languages.</p>
 			</section>
-			<nav class="footer-nav">
+			<nav class="footer-nav js-show">
 				<div class="footer-nav__group">
 					<div class="footer-nav__item">
 						<button class="footer-nav__item-header js-footer-nav__item-header">
