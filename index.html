@@ -6,680 +6,411 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trang Web Đầu Tiên</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+	<!-- HEADER -->
 	<header class="header">
-		<nav class="header-wrapper">
-			<ul>
-				<li class="nav-logo">
-					<a>
-						<img src="/assets/icon/header/logo.svg" alt="logo" />
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Store
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Mac
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						iPad
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						iPhone
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Watch
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Vision
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						AirPods
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						TV & Home
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Entertainment
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Accessories
-					</a>
-				</li>
-				<li class="nav-link">
-					<a>
-						Support
-					</a>
-				</li>
-				<li class="nav-search">
-					<a>
-						<img src="/assets/icon/header/search.svg" alt="search" />
-					</a>
-				</li>
-				<li class="nav-bag">
-					<a>
-						<img src="/assets/icon/header/bag.svg" alt="bag" />
-					</a>
-				</li>
-				<li class="nav-menu">
-					<a>
-						<img src="/assets/icon/header/menu.svg" alt="menu" />
-					</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="header-wrapper">
+			<div class="header-info">
+				<a href="/">
+					<img src="./assets/icon/header/logo.svg" alt="logo" />
+				</a>
+				<p>株式会社グッド・ラック</p>
+			</div>
+			<div class="header-button">
+				<a href="https://air-mobileset.jp/form-inquiry" class="button-primary">
+					<img src="./assets/icon/button/phone.svg" alt="phone" class="icon" />
+					<p class="font-roboto">電話で相談してみる</p>
+					<div class="arrow-wrapper">
+						<div class="arrow-group">
+							<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+						</div>
+					</div>
+				</a>
+				<a href="https://air-mobileset.jp/form-entry" class="button-secondary">
+					<img src="./assets/icon/button/registration.svg" alt="registration" class="icon" />
+					<p class="font-roboto">今すぐWebで申込みする</p>
+					<div class="arrow-wrapper">
+						<div class="arrow-group">
+							<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
 	</header>
+
+	<!-- MAIN -->
 	<main>
-		<section class="watch product-banner js-show">
-			<div class="product-banner__wrapper">
-				<img src="./assets/image/watch/title.png" alt="title" />
-				<p>Turn resolutions into routines.</p>
-				<p>Quit quitting your fitness goals.</p>
-				<div class="button-group">
-					<a href="#" class="button-primary">Learn more</a>
-					<a href="#" class="button-outline">Buy</a>
-				</div>
-			</div>
-			<a href="#" class="product-banner__bg">
-				<img src="./assets/image/watch/bg.jpg" alt="bg" />
-			</a>
-		</section>
-		<section class="iphone product-banner js-show">
-			<div class="product-banner__wrapper">
-				<h2>iPhone</h2>
-				<p>Say hello to the latest generation of iPhone.</p>
-				<div class="button-group">
-					<a href="#" class="button-primary">Learn more</a>
-					<a href="#" class="button-outline">Shop iPhone</a>
-				</div>
-			</div>
-			<a href="#" class="product-banner__bg">
-				<img class="product-banner__bg-mb" src="./assets/image/iphone/bg-mb.jpg" alt="bg" />
-				<img class="product-banner__bg-pc" src="./assets/image/iphone/bg-pc.jpg" alt="bg" />
-			</a>
-		</section>
-		<section class="ipad product-banner js-show">
-			<div class="product-banner__wrapper">
-				<img src="./assets/image/ipad/title.png" alt="title" />
-				<p>Now supercharged by the M3 chip.</p>
-				<div class="button-group">
-					<a href="#" class="button-primary">Learn more</a>
-					<a href="#" class="button-outline">Buy</a>
-				</div>
-			</div>
-			<a href="#" class="product-banner__bg">
-				<img class="product-banner__bg-mb" src="./assets/image/ipad/bg-mb.jpg" alt="bg" />
-				<img class="product-banner__bg-pc" src="./assets/image/ipad/bg-pc.jpg" alt="bg" />
-			</a>
-		</section>
-		<section class="product-list">
-			<div class="fitness product-item js-show">
-				<div class="product-item__wrapper">
-					<img src="./assets/image/fitness/title.png" alt="bg" />
-					<p>Start the year strong with guided workouts and meditations.</p>
-					<span>Get up to 3 months on us.</span>
-					<div class="button-group">
-						<a href="#" class="button-primary">Learn more</a>
-						<a href="#" class="button-outline">Try it free</a>
+		<!-- BANNER -->
+		<section class="banner">
+			<img src="./assets/image/banner/bg.avif" alt="background" class="banner-bg" />
+			<div class="banner-wrapper">
+				<div class="banner-content">
+					<div class="banner-slogan">
+						<img src="./assets/image/banner/layer.avif" alt="layer"></img>
+						<p>ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
 					</div>
-				</div>
-				<a href="#" class="product-item__bg">
-					<img class="product-item__bg-mb" src="./assets/image/fitness/bg-mb.jpg" alt="bg" />
-					<img class="product-item__bg-pc" src="./assets/image/fitness/bg-pc.jpg" alt="bg" />
-				</a>
-			</div>
-			<div class="macbook product-item js-show">
-				<div class="product-item__wrapper">
-					<h3>MacBook Pro 14”</h3>
-					<p>Supercharged by M5.</p>
-					<div class="button-group">
-						<a href="#" class="button-primary">Learn more</a>
-						<a href="#" class="button-outline">Buy</a>
-					</div>
-				</div>
-				<a href="#" class="product-item__bg">
-					<img class="product-item__bg-mb" src="./assets/image/macbook/bg-mb.jpg" alt="bg" />
-					<img class="product-item__bg-pc" src="./assets/image/macbook/bg-pc.jpg" alt="bg" />
-				</a>
-			</div>
-			<div class="watch-ultra product-item js-show">
-				<div class="product-item__wrapper">
-					<img src="./assets/image/watch-ultra/title.png" alt="bg" />
-					<p>Personal beast.</p>
-					<div class="button-group">
-						<a href="#" class="button-primary">Learn more</a>
-						<a href="#" class="button-outline">Buy</a>
-					</div>
-				</div>
-				<a href="#" class="product-item__bg">
-					<img class="product-item__bg-mb" src="./assets/image/watch-ultra/bg-mb.jpg" alt="bg" />
-					<img class="product-item__bg-pc" src="./assets/image/watch-ultra/bg-pc.jpg" alt="bg" />
-				</a>
-			</div>
-			<div class="airpod product-item js-show">
-				<div class="product-item__wrapper">
-					<h3>AirPods Pro 3</h3>
-					<p>The world’s best in-ear Active Noise Cancellation.</p>
-					<div class="button-group">
-						<a href="#" class="button-primary">Learn more</a>
-						<a href="#" class="button-outline">Buy</a>
-					</div>
-				</div>
-				<a href="#" class="product-item__bg">
-					<img class="product-item__bg-mb" src="./assets/image/airpod/bg-mb.jpg" alt="bg" />
-					<img class="product-item__bg-pc" src="./assets/image/airpod/bg-pc.jpg" alt="bg" />
-				</a>
-			</div>
-			<div class="trade-in product-item js-show">
-				<div class="product-item__wrapper">
-					<img src="./assets/image/trade-in/title.png" alt="bg" />
-					<p>Get up to $180–$670 in credit when you trade in iPhone 13 or higher.</p>
-					<div class="button-group">
-						<a href="#" class="button-primary">Get your estimate</a>
-					</div>
-				</div>
-				<a href="#" class="product-item__bg">
-					<img class="product-item__bg-mb" src="./assets/image/trade-in/bg-mb.jpg" alt="bg" />
-					<img class="product-item__bg-pc" src="./assets/image/trade-in/bg-pc.jpg" alt="bg" />
-				</a>
-			</div>
-			<div class="card product-item js-show">
-				<div class="product-item__wrapper">
-					<img src="./assets/image/card/title.png" alt="bg" />
-					<p>Get up to 3% Daily Cash back with every purchase.</p>
-					<div class="button-group">
-						<a href="#" class="button-primary">Learn more</a>
-						<a href="#" class="button-outline">Apply now</a>
-					</div>
-				</div>
-				<a href="#" class="product-item__bg">
-					<img class="product-item__bg-mb" src="./assets/image/card/bg-mb.jpg" alt="bg" />
-					<img class="product-item__bg-pc" src="./assets/image/card/bg-pc.jpg" alt="bg" />
-				</a>
-			</div>
-		</section>
-		<section class="endless">
-			<h2>Endless entertainment.</h2>
-			<div class="endless-wrapper">
-				<div class="movie">
-					<div class="swiper swiper-movie">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/1-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/1-mb.jpg" alt="">
-								</picture>
+					<img src="./assets/image/banner/promotion.avif" alt="promotion" class="banner-promotion" />
+					<div class="banner-feature">
+						<div class="banner-feature__item">
+							<img src="./assets/icon/banner/active.svg" alt="active"></img>
+							<div class="banner-feature__details-one">
+								<p>最短</p>
+								<span class="font-roboto">1</span>
+								<p>週間でネットが使える</p>
 							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/2-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/2-mb.jpg" alt="">
-								</picture>
+						</div>
+						<div class="banner-feature__item">
+							<img src="./assets/icon/banner/active.svg" alt="active"></img>
+							<div class="banner-feature__details-two">
+								<p>工事費実質</p>
+								<span>無料</span>
+								<p class="number">※1</p>
 							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/3-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/3-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/4-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/4-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/1-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/1-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/2-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/2-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/3-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/3-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/4-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/4-mb.jpg" alt="">
-								</picture>
+						</div>
+						<div class="banner-feature__item">
+							<img src="./assets/icon/banner/active.svg" alt="active"></img>
+							<div class="banner-feature__details-three">
+								<p>スマホも</p>
+								<span>毎月割引</span>
+								<p class="number">※2</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="kind">
-					<div class="swiper swiper-kind">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/1-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/1-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/2-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/2-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/3-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/3-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/4-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/4-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/1-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/1-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/2-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/2-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/3-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/3-mb.jpg" alt="">
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source srcset="./assets/image/movie/4-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/movie/4-mb.jpg" alt="">
-								</picture>
-							</div>
-						</div>
+				<img src="./assets/image/banner/dog.avif" alt="dog" class="banner-icon"></img>
+			</div>
+		</section>
+
+		<!-- PROMOTION -->
+		<section class="promotion">
+			<div class="promotion-detail">
+				<div class="promotion-detail__wrapper"></div>
+			</div>
+			<div class="promotion-content">
+				<div class="promotion-content__wrapper">
+					<div>
+						<span>※1</span>
+						<p>SoftBank光 工事費サポート
+							はじめて割：回線工事費31,680円の場合は、1,320円×24ヵ月間、回線工事費4,620円の場合は、1,155円×4ヵ月間の割引となります。回線工事が発生しない場合、キャンペーン対象外となります。
+							）</p>
+					</div>
+					<div>
+						<span>※2</span>
+						<p>【加入例】SoftBank 光
+							ファミリーの場合、月額基本料金5,720円／月＋指定オプション550円／月～が別途必要です（2年自動更新プラン：2022年7月1日以降の契約者は、契約期間満了月の当月・翌月・翌々月以外での解約には解除料5,720円が必要。
+						</p>
 					</div>
 				</div>
-				<ul class="pagination">
-					<li></li>
-					<li></li>
-					<li class="active">
+			</div>
+		</section>
+
+		<!-- CONVERSION -->
+		<section class="conversion">
+			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
+			<div class="conversion-wrapper">
+				<div class="conversion-content">
+					<div class="conversion-content__title">
+						<p>安心してお申込みいただける実績があります</p>
 						<span></span>
-					</li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
-		</section>
-		<section class="more">
-			<h2>More from Apple.</h2>
-			<div class="more-wrapper">
-				<div class="swiper mySwiper more-wrapper__body">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="item">
-								<div class="item-wrapper">
-									<div class="item-content">
-										<h3>No Frame Missed</h3>
-										<span></span>
-										<p>Accessibility</p>
-									</div>
-									<button class="button-secondary">Watch the film</button>
-								</div>
-								<picture class="item-bg">
-									<source srcset="./assets/image/more/1-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/more/1-mb.jpg" alt="">
-								</picture>
+					</div>
+					<div class="conversion-content__content">
+						<div class="content-item">
+							<img src="./assets/icon/conversion/chart.svg" alt="chart" />
+							<p class="content-item__title">インターネット開通数</p>
+							<div>
+								<p class="text">5年連続</p>
+								<p class="number">NO.1</p>
+								<p class="order">※9</p>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="item">
-								<div class="item-wrapper">
-									<div class="item-content">
-										<h3>Designed for Every Student</h3>
-										<span></span>
-										<p>Accessibility</p>
-									</div>
-									<button class="button-secondary">Watch the film</button>
-								</div>
-								<picture class="item-bg">
-									<source srcset="./assets/image/more/2-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/more/2-mb.jpg" alt="">
-								</picture>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="item">
-								<div class="item-wrapper">
-									<div class="item-content">
-										<h3>The Underdogs: Blue Screen of Death</h3>
-										<span></span>
-										<p>Apple at Work</p>
-									</div>
-									<button class="button-secondary">Watch the film</button>
-								</div>
-								<picture class="item-bg">
-									<source srcset="./assets/image/more/3-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/more/3-mb.jpg" alt="">
-								</picture>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="item">
-								<div class="item-wrapper">
-									<div class="item-content">
-										<h3>No Frame Missed</h3>
-										<span></span>
-										<p>Accessibility</p>
-									</div>
-									<button class="button-secondary">Watch the film</button>
-								</div>
-								<picture class="item-bg">
-									<source srcset="./assets/image/more/1-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/more/1-mb.jpg" alt="">
-								</picture>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="item">
-								<div class="item-wrapper">
-									<div class="item-content">
-										<h3>Designed for Every Student</h3>
-										<span></span>
-										<p>Accessibility</p>
-									</div>
-									<button class="button-secondary">Watch the film</button>
-								</div>
-								<picture class="item-bg">
-									<source srcset="./assets/image/more/2-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/more/2-mb.jpg" alt="">
-								</picture>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="item">
-								<div class="item-wrapper">
-									<div class="item-content">
-										<h3>The Underdogs: Blue Screen of Death</h3>
-										<span></span>
-										<p>Apple at Work</p>
-									</div>
-									<button class="button-secondary">Watch the film</button>
-								</div>
-								<picture class="item-bg">
-									<source srcset="./assets/image/more/3-pc.jpg" media="(min-width: 834px)">
-									<img src="./assets/image/more/3-mb.jpg" alt="">
-								</picture>
+						<div class="content-item">
+							<img src="./assets/icon/conversion/cart.svg" alt="cart" />
+							<p class="content-item__title">モバイルWi-Fi 累計販売実績</p>
+							<div>
+								<p class="number">30</p>
+								<p class="text no-margin">万件以上</p>
+								<p class="order">※10</p>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-pagination"></div>
-					<button class="more-wrapper__button">
-						<img src="./assets/icon/more/play.svg" />
-					</button>
+					<div class="conversion-content__detail">
+						<div>
+							<span>※9</span>
+							<p>MM総研 ブロードバンド回線事業者の加入件数調査 ホームルーター・光回線合計開通数 ISP別 2025年3月末時点 2020-2024年度</p>
+						</div>
+						<div>
+							<span>※10</span>
+							<p>株式会社グッド・ラック取り扱いサービスの新規契約者の累計（2016年2月〜2025年12月）</p>
+						</div>
+					</div>
+				</div>
+				<div class="conversion-cta">
+					<div class="conversion-cta__title">
+						<div class="content">
+							<p class="small">\ 最短</p>
+							<p class="number font-roboto">1</p>
+							<p class="medium">週間</p>
+							<p class="small">で</p>
+							<p class="big">ネット</p>
+							<p class="small">が</p>
+							<p class="medium">使える</p>
+							<p class="symbol">!</p>
+							<p class="small">/</p>
+						</div>
+						<span class="layer"></span>
+					</div>
+					<a href="https://air-mobileset.jp/form-entry" class="button-secondary">
+						<img src="./assets/icon/button/registration.svg" alt="registration" class="icon" />
+						<p class="font-noto">今すぐWebで申込みする</p>
+						<div class="arrow-wrapper">
+							<div class="arrow-group">
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</a>
+					<a href="https://air-mobileset.jp/form-inquiry" class="button-primary">
+						<img src="./assets/icon/button/phone.svg" alt="phone" class="icon" />
+						<p class="font-noto">電話で相談してみる</p>
+						<div class="arrow-wrapper">
+							<div class="arrow-group">
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONVERSION -->
+		<section class="conversion">
+			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
+			<div class="conversion-wrapper">
+				<div class="conversion-content">
+					<div class="conversion-content__title">
+						<p>安心してお申込みいただける実績があります</p>
+						<span></span>
+					</div>
+					<div class="conversion-content__content">
+						<div class="content-item">
+							<img src="./assets/icon/conversion/chart.svg" alt="chart" />
+							<p class="content-item__title">インターネット開通数</p>
+							<div>
+								<p class="text">5年連続</p>
+								<p class="number">NO.1</p>
+								<p class="order">※9</p>
+							</div>
+						</div>
+						<div class="content-item">
+							<img src="./assets/icon/conversion/cart.svg" alt="cart" />
+							<p class="content-item__title">モバイルWi-Fi 累計販売実績</p>
+							<div>
+								<p class="number">30</p>
+								<p class="text no-margin">万件以上</p>
+								<p class="order">※10</p>
+							</div>
+						</div>
+					</div>
+					<div class="conversion-content__detail">
+						<div>
+							<span>※9</span>
+							<p>MM総研 ブロードバンド回線事業者の加入件数調査 ホームルーター・光回線合計開通数 ISP別 2025年3月末時点 2020-2024年度</p>
+						</div>
+						<div>
+							<span>※10</span>
+							<p>株式会社グッド・ラック取り扱いサービスの新規契約者の累計（2016年2月〜2025年12月）</p>
+						</div>
+					</div>
+				</div>
+				<div class="conversion-cta">
+					<div class="conversion-cta__title">
+						<div class="content">
+							<p class="small">\ 最短</p>
+							<p class="number font-roboto">1</p>
+							<p class="medium">週間</p>
+							<p class="small">で</p>
+							<p class="big">ネット</p>
+							<p class="small">が</p>
+							<p class="medium">使える</p>
+							<p class="symbol">!</p>
+							<p class="small">/</p>
+						</div>
+						<span class="layer"></span>
+					</div>
+					<a href="https://air-mobileset.jp/form-entry" class="button-secondary">
+						<img src="./assets/icon/button/registration.svg" alt="registration" class="icon" />
+						<p class="font-noto">今すぐWebで申込みする</p>
+						<div class="arrow-wrapper">
+							<div class="arrow-group">
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</a>
+					<a href="https://air-mobileset.jp/form-inquiry" class="button-primary">
+						<img src="./assets/icon/button/phone.svg" alt="phone" class="icon" />
+						<p class="font-noto">電話で相談してみる</p>
+						<div class="arrow-wrapper">
+							<div class="arrow-group">
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<section class="faq">
+			<div class="faq-title">
+				<p>よくある質問</p>
+				<span></span>
+			</div>
+			<p class="faq-des">お申込み時によくご質問いただく内容をまとめました</p>
+			<div class="faq-content js-faq-content" data-type="bank">
+				<div class="faq-content__header">
+					<button class="js-faq-tag active" data-type="bank">SoftBank光</button>
+					<button class="js-faq-tag" data-type="mobile">ONE MOBILE（モバイルWi-Fi）</button>
+					<button class="js-faq-tag" data-type="info">総合案内</button>
+				</div>
+				<div class="faq-content__body faq-content__body-bank">
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq-content__body faq-content__body-mobile">
+
+				</div>
+				<div class="faq-content__body faq-content__body-info">
+
+				</div>
+			</div>
+		</section>
+
+		<!-- CONVERSION -->
+		<section class="conversion">
+			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
+			<div class="conversion-wrapper">
+				<div class="conversion-content">
+					<div class="conversion-content__title">
+						<p>安心してお申込みいただける実績があります</p>
+						<span></span>
+					</div>
+					<div class="conversion-content__content">
+						<div class="content-item">
+							<img src="./assets/icon/conversion/chart.svg" alt="chart" />
+							<p class="content-item__title">インターネット開通数</p>
+							<div>
+								<p class="text">5年連続</p>
+								<p class="number">NO.1</p>
+								<p class="order">※9</p>
+							</div>
+						</div>
+						<div class="content-item">
+							<img src="./assets/icon/conversion/cart.svg" alt="cart" />
+							<p class="content-item__title">モバイルWi-Fi 累計販売実績</p>
+							<div>
+								<p class="number">30</p>
+								<p class="text no-margin">万件以上</p>
+								<p class="order">※10</p>
+							</div>
+						</div>
+					</div>
+					<div class="conversion-content__detail">
+						<div>
+							<span>※9</span>
+							<p>MM総研 ブロードバンド回線事業者の加入件数調査 ホームルーター・光回線合計開通数 ISP別 2025年3月末時点 2020-2024年度</p>
+						</div>
+						<div>
+							<span>※10</span>
+							<p>株式会社グッド・ラック取り扱いサービスの新規契約者の累計（2016年2月〜2025年12月）</p>
+						</div>
+					</div>
+				</div>
+				<div class="conversion-cta">
+					<div class="conversion-cta__title">
+						<div class="content">
+							<p class="small">\ 最短</p>
+							<p class="number font-roboto">1</p>
+							<p class="medium">週間</p>
+							<p class="small">で</p>
+							<p class="big">ネット</p>
+							<p class="small">が</p>
+							<p class="medium">使える</p>
+							<p class="symbol">!</p>
+							<p class="small">/</p>
+						</div>
+						<span class="layer"></span>
+					</div>
+					<a href="https://air-mobileset.jp/form-entry" class="button-secondary">
+						<img src="./assets/icon/button/registration.svg" alt="registration" class="icon" />
+						<p class="font-noto">今すぐWebで申込みする</p>
+						<div class="arrow-wrapper">
+							<div class="arrow-group">
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</a>
+					<a href="https://air-mobileset.jp/form-inquiry" class="button-primary">
+						<img src="./assets/icon/button/phone.svg" alt="phone" class="icon" />
+						<p class="font-noto">電話で相談してみる</p>
+						<div class="arrow-wrapper">
+							<div class="arrow-group">
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+								<img src="./assets/icon/button/arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
-		<div class="footer-wrapper">
-			<section class="footer-content js-show">
-				<p>1. Offer available to new subscribers who purchase an eligible device. $9.99/month after trial. Only
-					one offer per Apple Account and only one offer per family if you’re part of a Family Sharing group,
-					regardless of the number of devices you or your family purchase. This offer is not available if you
-					or your family have previously subscribed to Apple Fitness+. Offer good for three months after
-					eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms
-					apply.</p>
-				<p>Apple Fitness+ requires a subscription and compatible hardware and software. See <a>here</a> for
-					compatibility details.</p>
-				<p>To get the newest features, make sure your devices are running the latest software version.</p>
-				<p>2. Trade‑in values will vary based on the condition, year, and configuration of your eligible
-					trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority
-					to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied
-					toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based
-					on receipt of a qualifying device matching the description provided when estimate was made. Sales
-					tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation
-					of a valid photo ID (local law may require saving this information). Offer may not be available in
-					all stores and may vary between in‑store and online trade‑in. Some stores may have additional
-					requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity
-					of any trade‑in transaction for any reason. More details are available from Apple’s trade-in partner
-					for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.</p>
-				<p>To access and use all Apple Card features and products available only to Apple Card users, you must
-					add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or
-					iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the
-					United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
-				<p>Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank
-					USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a
-					bank.</p>
-				<p>If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about
-					Apple Card.</p>
-				<p>Learn more about how Apple Card applications are evaluated at <a>support.apple.com/kb/HT209218</a>.
-				</p>
-				<p>A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV.</p>
-				<p>Features are subject to change. Some features, applications, and services may not be available in all
-					regions or all languages.</p>
-			</section>
-			<nav class="footer-nav js-show">
-				<div class="footer-nav__group">
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>Shop and Learn</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Store</a></li>
-							<li><a href="#">Mac</a></li>
-							<li><a href="#">iPad</a></li>
-							<li><a href="#">iPhone</a></li>
-							<li><a href="#">Watch</a></li>
-							<li><a href="#">Vision</a></li>
-							<li><a href="#">AirPods</a></li>
-							<li><a href="#">TV & Home</a></li>
-							<li><a href="#">AirTag</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Gift Cards</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>Apple Wallet</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Wallet</a></li>
-							<li><a href="#">Apple Card</a></li>
-							<li><a href="#">Apple Pay</a></li>
-							<li><a href="#">Apple Cash</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav__group">
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>Account</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Manage Your Apple Account</a></li>
-							<li><a href="#">Apple Store Account</a></li>
-							<li><a href="#">iCloud.com</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>Entertainment</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Apple One</a></li>
-							<li><a href="#">Apple TV</a></li>
-							<li><a href="#">Apple Music</a></li>
-							<li><a href="#">Apple Arcade</a></li>
-							<li><a href="#">Apple Fitness++</a></li>
-							<li><a href="#">Apple News+</a></li>
-							<li><a href="#">Apple Podcasts</a></li>
-							<li><a href="#">Apple Books</a></li>
-							<li><a href="#">Apple Store</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav__group">
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>Apple Store</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Find a Store</a></li>
-							<li><a href="#">Genius Bar</a></li>
-							<li><a href="#">Today at Apple</a></li>
-							<li><a href="#">Group Reservations</a></li>
-							<li><a href="#">Apple Camp</a></li>
-							<li><a href="#">Apple Store App</a></li>
-							<li><a href="#">Certified Refurbished</a></li>
-							<li><a href="#">Apple Trade In</a></li>
-							<li><a href="#">Financing</a></li>
-							<li><a href="#">Carrier Deals at Apple</a></li>
-							<li><a href="#">Order Status</a></li>
-							<li><a href="#">Shopping Help</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav__group">
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>For Business</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Apple and Business</a></li>
-							<li><a href="#">Shop for Business</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>For Education</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Apple and Education</a></li>
-							<li><a href="#">Shop for K-12</a></li>
-							<li><a href="#">Shop for College</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>For Healthcare</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Apple and Healthcare</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>For Government</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Apple and Government</a></li>
-							<li><a href="#">Shop for Veterans and Military</a></li>
-							<li><a href="#">Shop for State and Local Employees</a></li>
-							<li><a href="#">Shop for Federal Employees</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav__group">
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>Apple Values</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Accessibility</a></li>
-							<li><a href="#">Education</a></li>
-							<li><a href="#">Environment</a></li>
-							<li><a href="#">Inclusion and Diversity</a></li>
-							<li><a href="#">Privacy</a></li>
-							<li><a href="#">Racial Equity and Justice</a></li>
-							<li><a href="#">Supply Chain Innovation</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__item">
-						<button class="footer-nav__item-header js-footer-nav__item-header">
-							<p>About Apple</p>
-							<img src="./assets/icon/footer/arrow.svg" alt="arrow" />
-						</button>
-						<ul class="footer-nav__item-body js-footer-nav__item-body">
-							<li><a href="#">Newsroom</a></li>
-							<li><a href="#">Apple Leadership</a></li>
-							<li><a href="#">Career Opportunities</a></li>
-							<li><a href="#">Investors</a></li>
-							<li><a href="#">Ethics & Compliance</a></li>
-							<li><a href="#">Events</a></li>
-							<li><a href="#">Contact Apple</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<section class="footer-info">
-				<div class="footer-info__contact">
-					<p>More ways to shop: <a href="#">Find an Apple Store</a>> or <a href="#">other retailer</a> near
-						you. Or call <a href="#">1-800-MY-APPLE</a> (1-800-692-7753).</p>
-				</div>
-				<div class="footer-info__general">
-					<a class="footer-info__country" href="#">United States</a>
-					<div class="footer-info__copyright">
-						<p>Copyright © 2026 Apple Inc. All rights reserved.</p>
-						<div class="footer-info__rule">
-							<a href="#">Privacy Policy</a>
-							<span></span>
-							<a href="#">Terms of Use</a>
-							<span></span>
-							<a href="#">Sales and Refunds</a>
-							<span></span>
-							<a href="#">Legal</a>
-							<span></span>
-							<a href="#">Site Map</a>
-						</div>
-					</div>
 
-				</div>
-			</section>
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer-general">
+			<a href="/" class="footer-general__redirect">
+				<p>トップページへ</p>
+				<img src="./assets/icon/footer/arrow.svg" alt="arrow"></img>
+			</a>
+			<p>SoftBank 光 正規取扱店</p>
 		</div>
+		<div class="footer-contact">
+			<p>株式会社 グッド・ラック</p>
+			<p>代理店届出番号：第E1913499号</p>
+		</div>
+		<div class="footer-rule">
+			<a href="/">会社概要</a>
+			<a href="/">特定商取引法に基づく表記</a>
+			<a href="/">プライバシーポリシー</a>
+		</div>
+		<p class="footer-copyright font-roboto">Copyright ©air-mobileset.jp All Rights Reserved.</p>
 	</footer>
 	<script src="script.js"></script>
 </body>

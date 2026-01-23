@@ -1,0 +1,39 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	.header-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1366px;
+		padding: 16px 16px 0;
+
+		.header-info {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			img {
+				width: 160px;
+				height: 31px;
+			}
+
+			p {
+				font-size: 10px;
+				line-height: 12px;
+				color: black;
+			}
+		}
+
+		.header-button {
+			display: flex;
+			gap: 8px;
+		}
+	}
+}

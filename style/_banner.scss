@@ -1,0 +1,143 @@
+.banner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 488px;
+
+	.banner-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.banner-wrapper {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		grid-template-columns: 688fr 243fr;
+		gap: 42px;
+		width: 100%;
+		max-width: 1014px;
+		height: 100%;
+		padding-right: 41px;
+
+		.banner-content {
+			margin-top: 101px;
+
+			.banner-slogan {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 502px;
+				height: 48px;
+				margin-bottom: 22px;
+				margin-left: 16px;
+
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				p {
+					position: relative;
+					z-index: 1;
+					font-size: 20px;
+					line-height: 15px;
+					font-weight: 700;
+					color: var(--blue-100);
+					letter-spacing: 2px;
+				}
+			}
+
+			.banner-promotion {
+				width: 100%;
+				max-width: 636px;
+				margin-bottom: 45px;
+				margin-left: 6px;
+				aspect-ratio: 636/146;
+			}
+
+			.banner-feature {
+				display: grid;
+				grid-template-columns: 264fr 185fr 207fr;
+				gap: 16px;
+				width: 100%;
+
+				.banner-feature__item {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+					width: 100%;
+					height: 48px;
+					padding: 0 16px;
+					background-color: white;
+					border-radius: 4px;
+
+					img {
+						width: 16px;
+						height: 16px;
+					}
+
+					.banner-feature__details-one,
+					.banner-feature__details-two,
+					.banner-feature__details-three {
+						display: flex;
+						align-items: center;
+
+						p {
+							font-size: 16px;
+							line-height: 19px;
+							font-weight: 700;
+							color: black;
+						}
+					}
+
+					.banner-feature__details-one {
+						span {
+							font-size: 28px;
+							line-height: 28px;
+							font-weight: 800;
+							font-style: italic;
+							color: var(--red-100);
+						}
+					}
+
+					.banner-feature__details-two,
+					.banner-feature__details-three {
+						p {
+							letter-spacing: -1px;
+						}
+
+						span {
+							font-size: 18px;
+							line-height: 18px;
+							font-weight: 700;
+							color: var(--red-100);
+						}
+
+						.number {
+							margin-bottom: 5px;
+							font-size: 10px;
+							line-height: 12px;
+						}
+					}
+				}
+			}
+		}
+
+		.banner-icon {
+			width: 100%;
+			margin-top: 132px;
+			aspect-ratio: 243/267;
+		}
+	}
+}
