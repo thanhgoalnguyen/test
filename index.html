@@ -23,7 +23,7 @@
 				<a href="/">
 					<img src="./assets/icon/header/logo.svg" alt="logo" />
 				</a>
-				<p>株式会社グッド・ラック</p>
+				<p class="text-black">株式会社グッド・ラック</p>
 			</div>
 			<div class="header-button">
 				<a href="https://air-mobileset.jp/form-inquiry" class="button-primary">
@@ -59,32 +59,46 @@
 				<div class="banner-content">
 					<div class="banner-slogan">
 						<img src="./assets/image/banner/layer.avif" alt="layer"></img>
-						<p>ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
+						<p class="font-bold text-blue-100">ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
 					</div>
-					<img src="./assets/image/banner/promotion.avif" alt="promotion" class="banner-promotion" />
+					<div class="banner-promotion">
+						<div class="banner-promotion__title">
+							<p class="font-bold text-blue-100">家では高速の</p>
+							<p class="font-bold text-blue-100">外では自由な</p>
+						</div>
+						<p class="banner-promotion__description-one">
+							<span class="medium font-bold">
+								光回線
+							</span>
+							<span class="small font-black">×</span>
+							<span class="large font-bold">モバイル</span>
+							<span class="larger font-medium font-roboto">Wi-Fi</span>
+						</p>
+						<p class="banner-promotion__description-two font-bold">これがネットの最適解。</p>
+					</div>
 					<div class="banner-feature">
 						<div class="banner-feature__item">
 							<img src="./assets/icon/banner/active.svg" alt="active"></img>
 							<div class="banner-feature__details-one">
-								<p>最短</p>
-								<span class="font-roboto">1</span>
-								<p>週間でネットが使える</p>
+								<p class="font-bold text-black">最短</p>
+								<span class="font-extra-bold text-red-100 font-roboto font-italic">1</span>
+								<p class="font-bold text-black">週間でネットが使える</p>
 							</div>
 						</div>
 						<div class="banner-feature__item">
 							<img src="./assets/icon/banner/active.svg" alt="active"></img>
 							<div class="banner-feature__details-two">
-								<p>工事費実質</p>
-								<span>無料</span>
-								<p class="number">※1</p>
+								<p class="font-bold text-black">工事費実質</p>
+								<span class="font-black text-red-100">無料</span>
+								<p class="number font-bold text-black">※1</p>
 							</div>
 						</div>
 						<div class="banner-feature__item">
 							<img src="./assets/icon/banner/active.svg" alt="active"></img>
 							<div class="banner-feature__details-three">
-								<p>スマホも</p>
-								<span>毎月割引</span>
-								<p class="number">※2</p>
+								<p class="font-bold text-black">スマホも</p>
+								<span class="font-black text-red-100">毎月割引</span>
+								<p class="number font-bold text-black">※2</p>
 							</div>
 						</div>
 					</div>
@@ -96,7 +110,28 @@
 		<!-- PROMOTION -->
 		<section class="promotion">
 			<div class="promotion-detail">
-				<div class="promotion-detail__wrapper"></div>
+				<div class="promotion-detail__wrapper">
+					<img src="./assets/image/promotion/label.avif" alt="label" class="promotion-detail__label" />
+					<div class="promotion-detail__time">
+						<p>工事待ちも開通後も!</p>
+					</div>
+					<p class="promotion-detail__content">
+						<span class="larger font-roboto font-italic">100</span>
+						<span class="big font-roboto">GB</span>
+						<span class="small">の</span>
+						<span class="medium">モバイルWi-Fi</span>
+						<span class="small">が</span>
+						<span class="medium text-shadow">月額</span>
+						<span class="larger font-roboto text-shadow">1,100</span>
+						<span class="medium text-shadow">円</span>
+						<span class="small text-shadow">で</span>
+						<span class="medium text-shadow">使い放題</span>
+						<span class="large text-shadow">!</span>
+					</p>
+					<div class="promotion-detail__img">
+						<img src="./assets/image/promotion/icon.avif" alt="icon" />
+					</div>
+				</div>
 			</div>
 			<div class="promotion-content">
 				<div class="promotion-content__wrapper">
@@ -116,32 +151,524 @@
 			</div>
 		</section>
 
+		<!-- FORM -->
+		<section class="form">
+			<div class="form-title">
+				<p>WEBでカンタン</p>
+				<span>30</span>
+				<p>秒</p>
+				<img src="./assets/icon/form/title.svg" alt="title" />
+			</div>
+			<p class="form-des">専門スタッフがお電話させていただきます!</p>
+			<div class="form-render">
+				<div></div>
+			</div>
+			<img src="./assets/icon/form/triangle.svg" alt="triangle" class="form-icon" />
+		</section>
+
+		<!-- PROMOTION DETAIL -->
+		<section class="service">
+			<img src="./assets/icon/service/icon1.svg" alt="icon" class="service-icon" />
+			<div class="service-header">
+				<p class="service-header__title">おトクで便利なサービスが充実!</p>
+				<div class="service-header__des">
+					<span class="layer"></span>
+					<div class="title">
+						<p class="small">最大</p>
+						<p class="medium">特典総額</p>
+					</div>
+					<p class="content">
+						<span class="medium font-roboto">26</span>
+						<span class="small font-noto">万</span>
+						<span class="medium font-roboto">1700</span>
+						<span class="small font-noto">円</span>
+					</p>
+					<p class="symbol">!</p>
+				</div>
+			</div>
+			<div class="service-body">
+				<div class="body-top">
+					<img src="./assets/image/service/bg1.avif" alt="background" class="bg" />
+					<div class="content">
+						<img src="./assets/image/service/label.avif" alt="label" class="content-label" />
+						<p class="content-title">100GB/月使えるモバイルWi-Fiが超割引</p>
+						<div class="content-detail">
+							<div class="content-detail__title">
+								<p class="medium">2年間で</p>
+								<p class="large">最大</p>
+							</div>
+							<div class="content-detail__des">
+								<p class="big font-roboto">62,040</p>
+								<div class="content-detail__order">
+									<p class="small">※4</p>
+									<p class="larger">円割引</p>
+								</div>
+								<span></span>
+							</div>
+						</div>
+						<div class="content-des">
+							<p class="small">モバイルWi-Fiの月額が</p>
+							<div>
+								<p class="medium">通常3,850円</p>
+								<p class="medium">→</p>
+								<p class="large">1,100<span class="medium">円 / 月〜</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="body-bottom">
+					<img src="./assets/icon/service/icon3.svg" alt="icon" class="icon" />
+					<div class="bg">
+						<img src="./assets/image/service/bg2.avif" alt="background" class="bg-image" />
+						<img src="./assets/icon/service/icon2.svg" alt="icon" class="bg-icon" />
+					</div>
+					<div class="content">
+						<img src="./assets/image/service/label.avif" alt="label" class="content-label" />
+						<p class="content-title">SoftBank 光の工事期間中も安心！</p>
+						<div class="content-detail">
+							<div class="content-detail__wrapper">
+								<p class="large">最短</p>
+								<div class="detail-wrap">
+									<p class="big font-roboto">1</p>
+									<p class="larger">週間</p>
+									<div class="detail-wrap__order">
+										<p class="small">※4</p>
+										<p class="large">で</p>
+									</div>
+									<span></span>
+								</div>
+							</div>
+							<p class="medium">ネットが使えます</p>
+						</div>
+						<div class="content-des">
+							<p class="medium">ご契約後にモバイルWi-Fiを先にお届け</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service-list">
+				<div class="service-list__wrapper">
+					<div class="service-item">
+						<img src="./assets/image/service/label2.avif" alt="label" class="service-item__label" />
+						<img src="./assets/icon/service/item1.svg" alt="icon" class="service-item__icon" />
+						<p class="service-item__title">工事費サポート はじめて割</p>
+						<div class="service-item__name">
+							<p>SoftBank 光の工事費</p>
+						</div>
+						<div class="service-item__detail">
+							<div class="service-item__max">
+								<p class="medium">最大</p>
+							</div>
+							<p class="large font-roboto">31,680</p>
+							<p class="medium">円</p>
+							<span></span>
+						</div>
+						<div class="service-item__order">
+							<p class="medium">割引で</p>
+							<p class="medium medium-red">実質無料</p>
+							<p class="small">※1</p>
+						</div>
+					</div>
+					<div class="service-item">
+						<img src="./assets/image/service/label2.avif" alt="label" class="service-item__label" />
+						<img src="./assets/icon/service/item2.svg" alt="icon" class="service-item__icon" />
+						<p class="service-item__title">SoftBank 光・10ギガ もっとめちゃトク割</p>
+						<div class="service-item__name">
+							<p>SoftBank 光の月額</p>
+						</div>
+						<div class="service-item__detail">
+							<div class="service-item__max">
+								<p class="small">6ヶ月間</p>
+								<p class="medium">最大</p>
+							</div>
+							<p class="large font-roboto">41,580</p>
+							<p class="medium">円</p>
+							<span></span>
+						</div>
+						<div class="service-item__order">
+							<p class="medium">割引</p>
+							<p class="small">※5</p>
+						</div>
+					</div>
+					<div class="service-item">
+						<img src="./assets/image/service/label2.avif" alt="label" class="service-item__label" />
+						<img src="./assets/icon/service/item3.svg" alt="icon" class="service-item__icon" />
+						<p class="service-item__title">おうち割 光セット</p>
+						<div class="service-item__name">
+							<p>スマホの月額</p>
+						</div>
+						<div class="service-item__detail">
+							<div class="service-item__max">
+								<p class="small">24ヶ月間</p>
+								<p class="medium">最大</p>
+							</div>
+							<p class="large font-roboto">26,400</p>
+							<p class="medium">円</p>
+							<span></span>
+						</div>
+						<div class="service-item__order">
+							<p class="medium">割引</p>
+							<p class="small">※2</p>
+						</div>
+					</div>
+					<div class="service-item">
+						<img src="./assets/image/service/label2.avif" alt="label" class="service-item__label" />
+						<img src="./assets/icon/service/item4.svg" alt="icon" class="service-item__icon" />
+						<p class="service-item__title">工事費サポート はじめて割</p>
+						<div class="service-item__name">
+							<p>乗換時の他社違約金</p>
+						</div>
+						<div class="service-item__detail">
+							<div class="service-item__max">
+								<p class="medium">最大</p>
+							</div>
+							<p class="large font-roboto">10</p>
+							<p class="medium">万円</p>
+							<span></span>
+						</div>
+						<div class="service-item__order">
+							<p class="medium">還元</p>
+							<p class="small">※6</p>
+						</div>
+					</div>
+				</div>
+				<img src="./assets/icon/service/icon4.svg" alt="icon" class="service-list__icon" />
+			</div>
+			<ul class="service-content">
+				<li>
+					<div>
+						<p class="order">※1</p>
+						<p>SoftBank 光 工事費サポート
+							はじめて割：回線工事費31,680円の場合は、1,320円×24ヵ月間、回線工事費4,620円の場合は、1,155円×4ヵ月間の割引となります。回線工事が発生しない場合、キャンペーン対象外となります。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※2</p>
+						<p>【加入例】SoftBank 光
+							ファミリーの場合、月額基本料金5,720円／月＋指定オプション550円／月～が別途必要です（2年自動更新プラン：2022年7月1日以降の契約者は、契約期間満了月の当月・翌月・翌々月以外での解約には解除料5,720円が必要。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※3</p>
+						<p>当サイト経由で「SoftBank光」と「ONE MOBILE」をお申込みいただくことで超おトク割が自動適用となります。割引はONE MOBILEにのみ適用となります。</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※4</p>
+						<p>SoftBank光の工事日が確定後</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※5</p>
+						<p>「SoftBank 光・10ギガ もっとめちゃトク割」適用の場合。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※6</p>
+						<p>
+							キャッシュバックの対象は他社サービス解約時に発生する契約解除料金・撤去費用・ホームルーターおよびモバイルWi-Fiルーターにてインターネットに接続するために必要な接続機器（以下「端末」といいます）を購入した場合の残債です。
+							<br />
+							キャッシュバック金額は合計で最大10万円となります。ただし、モバイルWi-Fiルーター端末代金の残債に対するキャッシュバック金額は42,000円が上限です。
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<!-- INTRO POINT -->
+		<section class="intro-point">
+			<img src="./assets/image/intro-point/bg.avif" alt="background" class="intro-point__bg" />
+			<div class="intro-point__header">
+				<p class="title">家のネット<span>は､</span></p>
+				<img src="./assets/image/intro-point/title.avif" alt="title" />
+				<p class="content">選ばれ続ける理由があります</p>
+				<p class="content">圧倒的な速度、セット割引、そして手厚い乗り換えサポート。</p>
+			</div>
+			<div class="intro-point__body">
+				<div class="item">
+					<img src="./assets/image/intro-point/image1.avif" alt="background" class="item-bg" />
+					<div class="item-content">
+						<div class="item-content__main-title">
+							<p>安心・安定 最大10Gbpsの</p>
+							<span>※7</span>
+						</div>
+						<div class="item-content__sub-title font-roboto">
+							<p>超高速通信</p>
+							<span class="line"></span>
+						</div>
+						<div class="item-content__des">
+							<p class="medium">回線が混雑する夜間や休日でも、</p>
+							<p class="medium">速度低下を防ぐ<span class="medium-highlight">次世代接続方式「IPv6」に標準対応。</span></p>
+							<p class="medium">オンラインゲームのラグや、高画質動画の読み込み待ちとは</p>
+							<p class="medium">無縁の快適さを提供します。</p>
+						</div>
+						<img src="./assets/icon/intro-point/point1.svg" alt="point 1" class="item-content__point" />
+					</div>
+				</div>
+				<div class="item item-reverse">
+					<img src="./assets/image/intro-point/image2.avif" alt="background" class="item-bg" />
+					<div class="item-content">
+						<div class="item-content__main-title">
+							<p>おうち割で</p>
+						</div>
+						<div class="item-content__sub-title">
+							<p>スマホ代毎月割引</p>
+							<span class="line"></span>
+						</div>
+						<div class="item-content__des">
+							<p class="medium">SoftBank、Y!mobileユーザーなら必須。</p>
+							<div class="order">
+								<p class="medium-highlight">スマホ代が毎月最大1,100円割引。</p>
+								<p class="medium">離れて暮らす家族も、同居中の</p>
+							</div>
+							<div class="order">
+								<p class="medium">パートナーやシェアハウスの友人も最大10回線まで対象です。</p>
+								<p class="small">※2</p>
+							</div>
+						</div>
+						<img src="./assets/icon/intro-point/point2.svg" alt="point 2" class="item-content__point" />
+					</div>
+				</div>
+				<div class="item item-point-three">
+					<img src="./assets/image/intro-point/image3.avif" alt="background" class="item-bg" />
+					<div class="item-content">
+						<div class="item-content__main-title">
+							<p>乗り換え時</p>
+						</div>
+						<div class="item-content__sub-title">
+							<p>最大10万円還元</p>
+							<span>!</span>
+							<span class="line"></span>
+						</div>
+						<div class="item-content__des">
+							<p class="medium">他社からの乗り換えで発生する違約金・撤去工事費を、</p>
+							<div class="order">
+								<p class="medium-highlight">最大10万円まで満額還元。</p>
+								<p class="small">※6</p>
+							</div>
+							<p class="medium">さらにSoftBank光の開通工事費も実質無料になるため1、</p>
+							<div class="order">
+								<p class="medium">初期費用の心配は不要です。</p>
+								<p class="small">※1</p>
+							</div>
+						</div>
+						<img src="./assets/icon/intro-point/point3.svg" alt="point 3" class="item-content__point" />
+					</div>
+				</div>
+			</div>
+			<ul class="intro-point__content">
+				<li>
+					<div>
+						<p class="order">※1</p>
+						<p>SoftBank 光 工事費サポート
+							はじめて割：回線工事費31,680円の場合は、1,320円×24ヵ月間、回線工事費4,620円の場合は、1,155円×4ヵ月間の割引となります。回線工事が発生しない場合、キャンペーン対象外となります。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※2</p>
+						<p>【加入例】SoftBank 光
+							ファミリーの場合、月額基本料金5,720円／月＋指定オプション550円／月～が別途必要です（2年自動更新プラン：2022年7月1日以降の契約者は、契約期間満了月の当月・翌月・翌々月以外での解約には解除料5,720円が必要。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※6</p>
+						<p>
+							キャッシュバックの対象は他社サービス解約時に発生する契約解除料金・撤去費用・ホームルーターおよびモバイルWi-Fiルーターにてインターネットに接続するために必要な接続機器（以下「端末」といいます）を購入した場合の残債です。
+							<br />
+							キャッシュバック金額は合計で最大10万円となります。ただし、モバイルWi-Fiルーター端末代金の残債に対するキャッシュバック金額は42,000円が上限です。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="order">※7</p>
+						<p>
+							SoftBank光・10ギガの場合。記載の通信速度は技術規格上の最大値です。パソコンなどご利用の機器やネットワーク機器の性能、その他利用環境、回線の混雑状況により大きく異なります。
+							<br />
+							一部エリアからサービスを開始しています。10ギガ対象エリアを確認する
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<!-- INTRO SCENE -->
+		<section class="intro-scene">
+			<img src="./assets/image/intro-scene/bg.avif" alt="background" class="intro-scene__bg" />
+			<div class="intro-scene__header">
+				<p class="small font-black text-black">さらに、モバイルWi-Fiがあれば叶う！</p>
+				<p class="medium font-black">ストレスフリーな毎日</p>
+			</div>
+			<div class="intro-scene__body">
+				<div class="item">
+					<img src="./assets/image/intro-scene/scene1.avif" alt="scene 1" class="item-bg" />
+					<div class="item-content">
+						<img src="./assets/icon/intro-scene/label1.svg" alt="label 1" class="item-label" />
+						<div class="item-header">
+							<p class="title font-extra-bold text-black">出張先や通勤中も</p>
+							<div class="sub-title">
+								<p class="font-extra-bold text-red-100">どこでもオフィス化</p>
+								<span></span>
+							</div>
+						</div>
+						<div class="item-body font-roboto">
+							<p class="font-medium text-black">自分専用のセキュアなWi-Fiで</p>
+							<p class="font-medium text-black">カフェでも出張先でも、
+								<span class="font-bold text-red-100">仕事のパフォーマンス</span>
+							</p>
+							<p class="font-bold text-red-100">を落としません。</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./assets/image/intro-scene/scene2.avif" alt="scene 2" class="item-bg" />
+					<div class="item-content">
+						<img src="./assets/icon/intro-scene/label2.svg" alt="label 2" class="item-label" />
+						<div class="item-header">
+							<p class="title font-extra-bold text-black">USB型は車載に最適</p>
+							<div class="sub-title">
+								<p class="font-extra-bold text-red-100">車移動中も退屈しない</p>
+								<span></span>
+							</div>
+						</div>
+						<div class="item-body font-roboto">
+							<p class="font-medium text-black">USBに挿すだけで車内が</p>
+							<p class="font-medium text-black">モバイルWi-Fiスポットに。</p>
+							<p class="font-medium text-black">お子様の動画視聴も</p>
+							<p class="font-bold text-red-100">パケット代を気にせず見放題。</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./assets/image/intro-scene/scene3.avif" alt="scene 3" class="item-bg" />
+					<div class="item-content">
+						<img src="./assets/icon/intro-scene/label3.svg" alt="label 3" class="item-label" />
+						<div class="item-header">
+							<p class="title font-extra-bold text-black">急な引越しでも</p>
+							<div class="sub-title">
+								<p class="font-extra-bold text-red-100">即日から利用可能</p>
+								<span></span>
+							</div>
+						</div>
+						<div class="item-body font-roboto">
+							<p class="font-medium text-black">急な引っ越しが決まっても大丈夫。</p>
+							<p class="font-medium text-black">光回線の工事は1ヶ月待ちでも、</p>
+							<p class="font-bold text-black">モバイルWi-Fiがあれば、</p>
+							<p class="font-bold text-red-100">新生活初日からネットが利用で<span class="text-black">きます。</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- FEATURE -->
+		<section class="feature">
+			<div class="feature-header">
+				<div class="feature-header__title">
+					<img src="./assets/icon/feature/bg.svg" alt="background" />
+					<p class="font-black text-black">さらに<span class="text-blue-100">モバイルWi-Fi</span>があれば・・・</p>
+				</div>
+				<div class="feature-header__detail">
+					<img src="./assets/icon/feature/dog.svg" alt="dog icon" />
+					<div class="feature-header__content">
+						<div class="content">
+							<p class="font-black text-black">スマホのギガ数を</p>
+							<div>
+								<p class="font-black text-black">小容量に｡</p>
+								<span></span>
+							</div>
+						</div>
+						<div class="content">
+							<p class="font-black text-black">トータルの通信コストを</p>
+							<div>
+								<p class="font-black text-black">最適化｡</p>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feature-body">
+				<img src="./assets/image/feature/image.avif" alt="image" />
+				<div class="feature-body__content">
+					<div class="content-header">
+						<p class="title font-extra-bold text-black">イメージ上では</p>
+						<p class="sub-title font-extra-bold text-black">年間最大</p>
+						<div class="detail-wrap">
+							<div class="detail">
+								<p class="small font-black text-black">約</p>
+								<p class="medium font-extra-bold text-red-100 font-roboto">46,000</p>
+								<p class="small font-black text-black">円節約</p>
+								<span></span>
+							</div>
+							<div class="order">
+								<p class="small font-black text-black">※8</p>
+								<p class="medium font-black text-black">に!</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-body">
+						<div>
+							<p class="font-bold text-black">「おうち割 光セット」でスマホ代が安くなるのはもちろん、</p>
+							<p class="font-bold text-black">モバイルWi-Fiがあれば、</p>
+							<p class="font-bold text-black">外出先でもスマホのギガを消費しません。</p>
+						</div>
+						<div>
+							<p class="font-bold text-black">そのため、スマホの契約プランを</p>
+							<p class="font-bold text-black">「小容量プラン」に変更することが可能に。</p>
+						</div>
+						<p class="font-bold text-black">結果として、通信費トータルでの<span class="text-red-100">大幅な節約が期待できます。</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="feature-footer">
+				<p class="text-black">※6</p>
+				<p class="text-black">
+					SoftBankペイトク無制限プランからミニフィットプラン＋にプラン変更した場合の1年間の月額の差額計算例。（3,850円×12ヶ月=46,200円）
+				</p>
+			</div>
+		</section>
+
 		<!-- CONVERSION -->
 		<section class="conversion">
 			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
 			<div class="conversion-wrapper">
 				<div class="conversion-content">
 					<div class="conversion-content__title">
-						<p>安心してお申込みいただける実績があります</p>
+						<p class="font-bold">安心してお申込みいただける実績があります</p>
 						<span></span>
 					</div>
 					<div class="conversion-content__content">
 						<div class="content-item">
 							<img src="./assets/icon/conversion/chart.svg" alt="chart" />
-							<p class="content-item__title">インターネット開通数</p>
+							<p class="content-item__title font-bold">インターネット開通数</p>
 							<div>
-								<p class="text">5年連続</p>
-								<p class="number">NO.1</p>
-								<p class="order">※9</p>
+								<p class="text font-black">5年連続</p>
+								<p class="number font-black">NO.1</p>
+								<p class="order font-bold">※9</p>
 							</div>
 						</div>
 						<div class="content-item">
 							<img src="./assets/icon/conversion/cart.svg" alt="cart" />
-							<p class="content-item__title">モバイルWi-Fi 累計販売実績</p>
+							<p class="content-item__title font-bold">モバイルWi-Fi 累計販売実績</p>
 							<div>
-								<p class="number">30</p>
-								<p class="text no-margin">万件以上</p>
-								<p class="order">※10</p>
+								<p class="number font-black">30</p>
+								<p class="text no-margin font-black">万件以上</p>
+								<p class="order font-bold">※10</p>
 							</div>
 						</div>
 					</div>
@@ -159,15 +686,15 @@
 				<div class="conversion-cta">
 					<div class="conversion-cta__title">
 						<div class="content">
-							<p class="small">\ 最短</p>
-							<p class="number font-roboto">1</p>
-							<p class="medium">週間</p>
-							<p class="small">で</p>
-							<p class="big">ネット</p>
-							<p class="small">が</p>
-							<p class="medium">使える</p>
-							<p class="symbol">!</p>
-							<p class="small">/</p>
+							<p class="small font-black text-black">\ 最短</p>
+							<p class="number font-bold text-red-100 font-roboto font-italic">1</p>
+							<p class="medium font-black text-black">週間</p>
+							<p class="small font-black text-black">で</p>
+							<p class="big font-black text-black">ネット</p>
+							<p class="small font-black text-black">が</p>
+							<p class="medium font-black text-black">使える</p>
+							<p class="symbol font-bold text-black">!</p>
+							<p class="small font-black text-black">/</p>
 						</div>
 						<span class="layer"></span>
 					</div>
@@ -201,26 +728,26 @@
 			<div class="conversion-wrapper">
 				<div class="conversion-content">
 					<div class="conversion-content__title">
-						<p>安心してお申込みいただける実績があります</p>
+						<p class="font-bold">安心してお申込みいただける実績があります</p>
 						<span></span>
 					</div>
 					<div class="conversion-content__content">
 						<div class="content-item">
 							<img src="./assets/icon/conversion/chart.svg" alt="chart" />
-							<p class="content-item__title">インターネット開通数</p>
+							<p class="content-item__title font-bold">インターネット開通数</p>
 							<div>
-								<p class="text">5年連続</p>
-								<p class="number">NO.1</p>
-								<p class="order">※9</p>
+								<p class="text font-black">5年連続</p>
+								<p class="number font-black">NO.1</p>
+								<p class="order font-bold">※9</p>
 							</div>
 						</div>
 						<div class="content-item">
 							<img src="./assets/icon/conversion/cart.svg" alt="cart" />
-							<p class="content-item__title">モバイルWi-Fi 累計販売実績</p>
+							<p class="content-item__title font-bold">モバイルWi-Fi 累計販売実績</p>
 							<div>
-								<p class="number">30</p>
-								<p class="text no-margin">万件以上</p>
-								<p class="order">※10</p>
+								<p class="number font-black">30</p>
+								<p class="text no-margin font-black">万件以上</p>
+								<p class="order font-bold">※10</p>
 							</div>
 						</div>
 					</div>
@@ -238,15 +765,15 @@
 				<div class="conversion-cta">
 					<div class="conversion-cta__title">
 						<div class="content">
-							<p class="small">\ 最短</p>
-							<p class="number font-roboto">1</p>
-							<p class="medium">週間</p>
-							<p class="small">で</p>
-							<p class="big">ネット</p>
-							<p class="small">が</p>
-							<p class="medium">使える</p>
-							<p class="symbol">!</p>
-							<p class="small">/</p>
+							<p class="small font-black text-black">\ 最短</p>
+							<p class="number font-bold text-red-100 font-roboto font-italic">1</p>
+							<p class="medium font-black text-black">週間</p>
+							<p class="small font-black text-black">で</p>
+							<p class="big font-black text-black">ネット</p>
+							<p class="small font-black text-black">が</p>
+							<p class="medium font-black text-black">使える</p>
+							<p class="symbol font-bold text-black">!</p>
+							<p class="small font-black text-black">/</p>
 						</div>
 						<span class="layer"></span>
 					</div>
@@ -277,37 +804,284 @@
 		<!-- FAQ -->
 		<section class="faq">
 			<div class="faq-title">
-				<p>よくある質問</p>
+				<p class="font-black text-black">よくある質問</p>
 				<span></span>
 			</div>
-			<p class="faq-des">お申込み時によくご質問いただく内容をまとめました</p>
+			<p class="faq-des font-bold text-black">お申込み時によくご質問いただく内容をまとめました</p>
 			<div class="faq-content js-faq-content" data-type="bank">
 				<div class="faq-content__header">
-					<button class="js-faq-tag active" data-type="bank">SoftBank光</button>
-					<button class="js-faq-tag" data-type="mobile">ONE MOBILE（モバイルWi-Fi）</button>
-					<button class="js-faq-tag" data-type="info">総合案内</button>
+					<button class="js-faq-tag active font-bold text-blue-100" data-type="bank">SoftBank光</button>
+					<button class="js-faq-tag font-bold text-blue-100" data-type="mobile">ONE MOBILE（モバイルWi-Fi）</button>
+					<button class="js-faq-tag font-bold text-blue-100" data-type="info">総合案内</button>
 				</div>
 				<div class="faq-content__body faq-content__body-bank">
 					<div class="faq-item">
 						<button class="faq-item__header js-faq-item-header">
 							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
-							<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<p class="font-bold text-black">工事は必要ですか？</p>
 							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
 						</button>
 						<div class="faq-item__body js-faq-item-body">
 							<div class="faq-item__body-wrapper">
 								<img src="./assets/icon/faq/answer.svg" alt="answer" />
-								<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+								<p class="text-black">
+									原則として必要です。ただし、フレッツ光をご利用中の場合（転用）や、他社光コラボをご利用中の場合（事業者変更）は工事不要で切り替えが可能です。無派遣工事となる場合もあります。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">工事費はいくらかかりますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">最大31,680円（税込）ですが、キャンペーン適用により実質無料（月額割引）となる場合が大半です。土日祝日は追加料金がかかります。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">通信速度はどのくらいですか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									最大1Gbps（ベストエフォート）です。エリアにより10Gbpsプランも選択可能です。IPv6高速ハイブリッド接続には光BBユニットが必要です。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">固定電話（光電話）は使えますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									はい、利用可能です。「ホワイト光電話」や「光電話（N）」などのオプションサービスにお申し込みいただくことで、現在お使いの電話番号をそのまま使える場合もあります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">テレビサービスはありますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">はい、「ソフトバンク光テレビ」や「ひかりTV」などのオプションを提供しています。アンテナ不要で地上波・BS放送などが視聴可能です。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">引っ越し先でも継続して使えますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									可能です。「お引っ越し工事費無料キャンペーン」などが適用されれば、移転先の工事費が無料で継続利用できます。手続きには時間がかかるため早めの連絡が必要です。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">解約時に機器の返却は必要ですか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									NTTロゴ入りの機器（ONU等）と、SoftBankロゴ入りの機器（光BBユニット等）の両方の返却が必要です。返却先がそれぞれ異なる場合があるためご注意ください。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">解約時に違約金はかかりますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									更新月以外の解約には解除料が発生します。金額は契約成立日により異なり、2022年7月1日以降の契約であれば月額料金1ヶ月分程度となります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">インターネットに繋がらない時はどうすればいいですか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									まずは全ての機器（ONU、光BBユニット、パソコン等）の電源を抜き、5分ほど待ってから再起動してください。それでも改善しない場合はサポートセンターへお問い合わせください。
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="faq-content__body faq-content__body-mobile">
-
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">単品で契約できますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">申し訳ありません。現在は単品での提供はうけつけておりません。おうちのWi-Fiとセット割を適用することで破格の料金を実現しています。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">データ容量の制限はありますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">月間100GBなどの制限があります。超過時は月末まで低速化（128kbps等）します。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">海外でも使えますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">いいえ、国内専用です。海外では利用できません。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">地下や山間部でも使えますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">
+									クラウドSIM技術によりドコモ・au・ソフトバンク・楽天モバイル（MVNO含む）の回線から最適なものを掴みますが、電波の届きにくい場所では繋がらない場合があります。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">同時に何台まで接続できますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">端末の種類によりますが、8台〜10台程度の同時接続が可能です。ただし接続数が多いと速度が遅くなる場合があります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">バッテリーはどのくらい持ちますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">使用状況によりますが、連続通信時間は約12時間程度が目安です。動画視聴などデータ量の多い通信を行うと短くなる傾向があります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">通信速度が遅い場合はどうすればいいですか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">端末の再起動をお試しください。また、障害物が多い場所や電波干渉が起きやすい電子レンジの近くを避けて設置してください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">解約時に端末の返却は必要ですか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">レンタル契約の場合、解約時は端末一式（本体・ケーブル等）の返却が必要です。未返却の場合、損害金が発生します。</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="faq-content__body faq-content__body-info">
-
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">電話での問い合わせ窓口はどこですか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">SoftBank光・Airに関してはソフトバンクのサポートへ、ONE
+									MOBILEやモバレコAir独自のキャンペーンに関しては株式会社グッド・ラックのサポートセンターへお問い合わせください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-item__header js-faq-item-header">
+							<img src="./assets/icon/faq/question.svg" alt="question" class="icon" />
+							<p class="font-bold text-black">未成年でも契約できますか？</p>
+							<img src="./assets/icon/faq/arrow.svg" alt="arrow" class="arrow" />
+						</button>
+						<div class="faq-item__body js-faq-item-body">
+							<div class="faq-item__body-wrapper">
+								<img src="./assets/icon/faq/answer.svg" alt="answer" />
+								<p class="text-black">未成年者名義での契約には親権者の同意書が必要です。または、親権者名義でのご契約をお願いする場合があります。</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -318,26 +1092,26 @@
 			<div class="conversion-wrapper">
 				<div class="conversion-content">
 					<div class="conversion-content__title">
-						<p>安心してお申込みいただける実績があります</p>
+						<p class="font-bold">安心してお申込みいただける実績があります</p>
 						<span></span>
 					</div>
 					<div class="conversion-content__content">
 						<div class="content-item">
 							<img src="./assets/icon/conversion/chart.svg" alt="chart" />
-							<p class="content-item__title">インターネット開通数</p>
+							<p class="content-item__title font-bold">インターネット開通数</p>
 							<div>
-								<p class="text">5年連続</p>
-								<p class="number">NO.1</p>
-								<p class="order">※9</p>
+								<p class="text font-black">5年連続</p>
+								<p class="number font-black">NO.1</p>
+								<p class="order font-bold">※9</p>
 							</div>
 						</div>
 						<div class="content-item">
 							<img src="./assets/icon/conversion/cart.svg" alt="cart" />
-							<p class="content-item__title">モバイルWi-Fi 累計販売実績</p>
+							<p class="content-item__title font-bold">モバイルWi-Fi 累計販売実績</p>
 							<div>
-								<p class="number">30</p>
-								<p class="text no-margin">万件以上</p>
-								<p class="order">※10</p>
+								<p class="number font-black">30</p>
+								<p class="text no-margin font-black">万件以上</p>
+								<p class="order font-bold">※10</p>
 							</div>
 						</div>
 					</div>
@@ -355,15 +1129,15 @@
 				<div class="conversion-cta">
 					<div class="conversion-cta__title">
 						<div class="content">
-							<p class="small">\ 最短</p>
-							<p class="number font-roboto">1</p>
-							<p class="medium">週間</p>
-							<p class="small">で</p>
-							<p class="big">ネット</p>
-							<p class="small">が</p>
-							<p class="medium">使える</p>
-							<p class="symbol">!</p>
-							<p class="small">/</p>
+							<p class="small font-black text-black">\ 最短</p>
+							<p class="number font-bold text-red-100 font-roboto font-italic">1</p>
+							<p class="medium font-black text-black">週間</p>
+							<p class="small font-black text-black">で</p>
+							<p class="big font-black text-black">ネット</p>
+							<p class="small font-black text-black">が</p>
+							<p class="medium font-black text-black">使える</p>
+							<p class="symbol font-bold text-black">!</p>
+							<p class="small font-black text-black">/</p>
 						</div>
 						<span class="layer"></span>
 					</div>
@@ -396,10 +1170,10 @@
 	<footer class="footer">
 		<div class="footer-general">
 			<a href="/" class="footer-general__redirect">
-				<p>トップページへ</p>
+				<p class="font-bold">トップページへ</p>
 				<img src="./assets/icon/footer/arrow.svg" alt="arrow"></img>
 			</a>
-			<p>SoftBank 光 正規取扱店</p>
+			<p class="font-bold">SoftBank 光 正規取扱店</p>
 		</div>
 		<div class="footer-contact">
 			<p>株式会社 グッド・ラック</p>
@@ -410,7 +1184,7 @@
 			<a href="/">特定商取引法に基づく表記</a>
 			<a href="/">プライバシーポリシー</a>
 		</div>
-		<p class="footer-copyright font-roboto">Copyright ©air-mobileset.jp All Rights Reserved.</p>
+		<p class="footer-copyright text-neutral-200 font-roboto">Copyright ©air-mobileset.jp All Rights Reserved.</p>
 	</footer>
 	<script src="script.js"></script>
 </body>

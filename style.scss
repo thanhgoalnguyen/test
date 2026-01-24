@@ -4,7 +4,12 @@
 @import "./style/footer.scss";
 @import "./style/banner.scss";
 @import "./style/promotion.scss";
+@import "./style/form.scss";
+@import "./style/service.scss";
 @import "./style/conversion.scss";
+@import "./style/intro-point.scss";
+@import "./style/intro-scene.scss";
+@import "./style/feature.scss";
 @import "./style/faq.scss";
 @import "./style/button.scss";
 
@@ -12,12 +17,15 @@
 	margin: 0;
 	padding: 0;
 	color: white;
-	background-color: transparent;
 	outline: none;
 	list-style: none;
 	border: none;
 	text-decoration: none;
 	box-sizing: border-box;
+}
+
+button {
+	background-color: transparent;
 }
 
 body {
@@ -27,6 +35,9 @@ body {
 main {
 	position: relative;
 	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .font-roboto {
@@ -35,4 +46,40 @@ main {
 
 .font-noto {
 	font-family: "Noto Sans JP", sans-serif;
+}
+
+.font-italic {
+	font-style: italic;
+}
+
+.text-red-100 {
+	color: var(--red-100);
+}
+
+.text-black {
+	color: black;
+}
+
+.text-neutral-200 {
+	color: var(--neutral-200);
+}
+
+.text-blue-100 {
+	color: var(--blue-100);
+}
+
+.font-medium {
+	font-weight: 500;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.font-extra-bold {
+	font-weight: 800;
+}
+
+.font-black {
+	font-weight: 900;
 }

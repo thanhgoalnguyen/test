@@ -17,8 +17,6 @@
 		p {
 			font-size: 24px;
 			line-height: 24px;
-			font-weight: 700;
-			color: white;
 		}
 
 		.footer-general__redirect {
@@ -29,8 +27,6 @@
 			p {
 				font-size: 14px;
 				line-height: 18px;
-				font-weight: 700;
-				color: white;
 			}
 
 			img {
@@ -46,7 +42,6 @@
 		align-items: center;
 		font-size: 14px;
 		line-height: 18px;
-		color: white;
 	}
 
 	.footer-rule {
@@ -62,13 +57,11 @@
 		a {
 			font-size: 12px;
 			line-height: 15px;
-			color: white;
 		}
 	}
 
 	.footer-copyright {
 		font-size: 12px;
 		line-height: 14px;
-		color: var(--neutral-200);
 	}
 }

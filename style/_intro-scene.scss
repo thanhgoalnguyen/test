@@ -1,0 +1,136 @@
+.intro-scene {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	width: 100%;
+	max-width: 1366px;
+	height: 1000px;
+	padding: 80px 80px 108px 80px;
+	background-color: white;
+
+	.intro-scene__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.intro-scene__header {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2px;
+
+		.small {
+			font-size: 32px;
+			line-height: 23px;
+		}
+
+		.medium {
+			display: inline-block;
+			font-size: 64px;
+			line-height: 70px;
+			color: transparent;
+			background: linear-gradient(
+				to right,
+				#2c6fff 0%,
+				#372cff 50%,
+				#2ca7ff 100%
+			);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	.intro-scene__body {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 24px;
+		width: 100%;
+
+		.item {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			background-color: white;
+			border-radius: 16px;
+			overflow: hidden;
+
+			.item-bg {
+				position: relative;
+				z-index: 0;
+				width: 100%;
+				aspect-ratio: 386/248;
+			}
+
+			.item-content {
+				position: relative;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 32px;
+				padding: 55px 24px 52px 24px;
+
+				.item-label {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+					width: 147px;
+					height: 54px;
+				}
+
+				div {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.item-header {
+					p {
+						font-size: 24px;
+						line-height: 24px;
+					}
+
+					.title {
+						line-height: 23px;
+					}
+
+					.sub-title {
+						position: relative;
+
+						span {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							transform: translateY(6px);
+							width: 100%;
+							height: 12px;
+							background-color: var(--red-100);
+							opacity: 0.2;
+						}
+					}
+				}
+
+				.item-body {
+					p {
+						font-size: 16px;
+						line-height: 21px;
+						letter-spacing: -0.5px;
+					}
+				}
+			}
+		}
+	}
+}

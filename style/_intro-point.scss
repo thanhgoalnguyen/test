@@ -1,0 +1,257 @@
+.intro-point {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 64px;
+	width: 100%;
+	max-width: 1366px;
+	padding: 80px 0 192px 0;
+	background: var(--blue-500);
+
+	.intro-point__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.intro-point__header {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		img {
+			width: 648px;
+			height: 101px;
+			margin-bottom: 30px;
+		}
+
+		.title {
+			display: flex;
+			align-items: flex-end;
+			margin-bottom: 16px;
+			font-size: 64px;
+			line-height: 80px;
+			font-weight: 700;
+			color: black;
+
+			span {
+				transform: translateY(-8px);
+				font-size: 48px;
+				line-height: 48px;
+				color: black;
+			}
+		}
+
+		.content {
+			font-size: 24px;
+			line-height: 27px;
+			font-weight: 700;
+			color: black;
+		}
+	}
+
+	.intro-point__body {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		width: 100%;
+
+		.item {
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 480px;
+			padding: 0 80px;
+
+			.item-bg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 0;
+				width: 88.1%;
+				height: 100%;
+			}
+
+			.item-content {
+				position: relative;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 642px;
+				padding: 48px;
+				margin-left: 80px;
+				background-color: white;
+				box-shadow: 16px 16px 0px 0px rgba(185, 184, 210, 0.4);
+
+				.item-content__main-title {
+					display: flex;
+					align-items: flex-start;
+					gap: 8px;
+					margin-bottom: 32px;
+
+					p {
+						font-size: 36px;
+						line-height: 26px;
+						font-weight: 800;
+						color: black;
+					}
+
+					span {
+						font-size: 14px;
+						line-height: 10px;
+						font-weight: 700;
+						color: black;
+					}
+				}
+
+				.item-content__sub-title {
+					position: relative;
+					display: flex;
+					width: max-content;
+					margin-bottom: 44px;
+
+					p {
+						font-size: 60px;
+						line-height: 43px;
+						font-weight: 800;
+						color: var(--red-100);
+					}
+
+					span {
+						font-size: 74px;
+						line-height: 43px;
+						font-weight: 800;
+						color: var(--red-100);
+					}
+
+					.line {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						transform: translateY(15px);
+						width: 100%;
+						height: 18px;
+						background-color: var(--red-100);
+						opacity: 0.2;
+					}
+				}
+
+				.item-content__des {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					max-width: 546px;
+
+					.small {
+						transform: translateY(4px);
+						font-size: 12px;
+						line-height: 9px;
+						color: black;
+					}
+
+					.medium {
+						font-size: 18px;
+						line-height: 23.5px;
+						color: black;
+					}
+
+					.medium-highlight {
+						font-size: 18px;
+						line-height: 24px;
+						font-weight: 700;
+						color: var(--red-100);
+					}
+
+					.order {
+						display: flex;
+						align-items: flex-start;
+					}
+				}
+
+				.item-content__point {
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: translateY(-42px) translateX(-80px);
+					width: 164px;
+					height: 57px;
+				}
+			}
+
+			&.item-reverse {
+				justify-content: flex-end;
+
+				.item-bg {
+					left: 0;
+				}
+
+				.item-content {
+					margin-right: 80px;
+
+					.item-content__main-title {
+						margin-bottom: 19px;
+					}
+
+					.item-content__point {
+						right: 0;
+						left: auto;
+						transform: translateY(-42px) translateX(72px);
+					}
+				}
+			}
+
+			&.item-point-three {
+				.item-content {
+					.item-content__main-title {
+						margin-bottom: 27px;
+					}
+
+					.item-content__point {
+						transform: translateY(-42px) translateX(-74px);
+					}
+				}
+			}
+		}
+	}
+
+	.intro-point__content {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		width: 100%;
+		max-width: 1226px;
+		height: 159px;
+		padding: 0 10px;
+
+		li {
+			div {
+				display: flex;
+
+				p {
+					font-size: 12px;
+					line-height: 13px;
+					color: black;
+				}
+
+				.order {
+					width: 32px;
+				}
+			}
+		}
+	}
+}
