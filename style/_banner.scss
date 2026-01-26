@@ -32,7 +32,6 @@
 			margin-top: 101px;
 			opacity: 0;
 			overflow: hidden;
-			transition: 2s;
 
 			.banner-general {
 				position: absolute;
@@ -220,7 +219,6 @@
 				width: 688px;
 				opacity: 1;
 				animation: slideAndDrop 2s forwards;
-				animation-delay: 2s;
 			}
 		}
 	}

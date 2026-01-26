@@ -663,7 +663,6 @@ header .header-wrapper .header-button {
   margin-top: 101px;
   opacity: 0;
   overflow: hidden;
-  transition: 2s;
 }
 .banner .banner-wrapper .banner-content .banner-general {
   position: absolute;
@@ -809,7 +808,6 @@ header .header-wrapper .header-button {
   width: 688px;
   opacity: 1;
   animation: slideAndDrop 2s forwards;
-  animation-delay: 2s;
 }
 
 .promotion {
