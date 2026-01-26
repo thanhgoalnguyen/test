@@ -87,10 +87,12 @@
   0% {
     width: 0px;
     padding-top: 61px;
+    opacity: 0;
   }
   50% {
     width: 100%;
     padding-top: 61px;
+    opacity: 1;
   }
   100% {
     padding-bottom: 101px;
@@ -3206,6 +3208,7 @@ header .header-wrapper .header-button {
   align-items: center;
   gap: 16px;
   width: 100%;
+  opacity: 0;
 }
 .step .step-content .step-content__header {
   display: grid;
@@ -3215,7 +3218,6 @@ header .header-wrapper .header-button {
   height: 44px;
   background-color: white;
   border-radius: 999px;
-  opacity: 0;
 }
 .step .step-content .step-content__header button {
   display: flex;
@@ -3242,7 +3244,6 @@ header .header-wrapper .header-button {
   padding: 32px;
   background-color: var(--blue-600);
   border-radius: 16px;
-  opacity: 0;
 }
 .step .step-content .step-content__body .arrow {
   aspect-ratio: 8/16;
@@ -3327,11 +3328,7 @@ header .header-wrapper .header-button {
   opacity: 1;
   animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-.step .step-content.show .step-content__header {
-  opacity: 1;
-  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
-.step .step-content.show .step-content__body {
+.step .step-content.show {
   opacity: 1;
   animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
@@ -3376,6 +3373,7 @@ header .header-wrapper .header-button {
   width: 100%;
   max-width: 1066px;
   padding: 0 10px;
+  opacity: 0;
 }
 .faq .faq-content .faq-content__header {
   display: grid;
@@ -3385,7 +3383,6 @@ header .header-wrapper .header-button {
   height: 44px;
   background-color: white;
   border-radius: 999px;
-  opacity: 0;
 }
 .faq .faq-content .faq-content__header button {
   display: flex;
@@ -3407,7 +3404,6 @@ header .header-wrapper .header-button {
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  opacity: 0;
 }
 .faq .faq-content .faq-content__body .faq-item {
   padding: 31px;
@@ -3483,11 +3479,7 @@ header .header-wrapper .header-button {
   opacity: 1;
   animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-.faq .faq-content.show .faq-content__header {
-  opacity: 1;
-  animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
-.faq .faq-content.show .faq-content__body {
+.faq .faq-content.show {
   opacity: 1;
   animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }

@@ -73,11 +73,13 @@
 	0% {
 		width: 0px;
 		padding-top: 61px;
+		opacity: 0;
 	}
 
 	50% {
 		width: 100%;
 		padding-top: 61px;
+		opacity: 1;
 	}
 
 	100% {

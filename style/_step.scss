@@ -50,6 +50,7 @@
 		align-items: center;
 		gap: 16px;
 		width: 100%;
+		opacity: 0;
 
 		.step-content__header {
 			display: grid;
@@ -59,7 +60,6 @@
 			height: 44px;
 			background-color: white;
 			border-radius: 999px;
-			opacity: 0;
 
 			button {
 				display: flex;
@@ -94,7 +94,6 @@
 			padding: 32px;
 			background-color: var(--blue-600);
 			border-radius: 16px;
-			opacity: 0;
 
 			.arrow {
 				aspect-ratio: 8/16;
@@ -209,15 +208,8 @@
 
 	.step-content {
 		&.show {
-			.step-content__header {
-				opacity: 1;
-				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-			}
-
-			.step-content__body {
-				opacity: 1;
-				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-			}
+			opacity: 1;
+			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 	}
 }
