@@ -218,6 +218,7 @@
 			.banner-content {
 				width: 688px;
 				opacity: 1;
+				overflow: visible;
 				animation: slideAndDrop 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}

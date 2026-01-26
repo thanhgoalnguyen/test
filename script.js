@@ -1097,6 +1097,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				entry.target.classList.add('show');
 				observer.unobserve(entry.target);
 
+				console.log(entry.target);
+
 				if (entry.target.classList?.contains('js-response-swiper')) {
 						responseSwiperInit?.autoplay?.start();
 				}

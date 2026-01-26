@@ -85,18 +85,19 @@
 }
 @keyframes slideAndDrop {
   0% {
+    transform: translateY(-50px);
     width: 0;
     opacity: 0;
-    transform: translateY(-50px);
+    overflow: hidden;
   }
   50% {
     width: 688px;
-    opacity: 1;
     transform: translateY(-50px);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
+    overflow: visible;
   }
 }
 @keyframes fadeInLeft {
@@ -810,6 +811,7 @@ header .header-wrapper .header-button {
 .banner.show .banner-wrapper .banner-content {
   width: 688px;
   opacity: 1;
+  overflow: visible;
   animation: slideAndDrop 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
