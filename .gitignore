@@ -1,0 +1,7 @@
+# .gitignore
+node_modules
+dist
+dist-ssr
+*.local
+style.css
+style.css.map
