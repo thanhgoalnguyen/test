@@ -1,3 +1,15 @@
+import male20 from "./assets/icon/response/male-20.svg";
+import male30 from "./assets/icon/response/male-30.svg";
+import male40 from "./assets/icon/response/male-40.svg";
+import male50 from "./assets/icon/response/male-50.svg";
+import female20 from "./assets/icon/response/female-20.svg";
+import female30 from "./assets/icon/response/female-30.svg";
+import female40 from "./assets/icon/response/female-40.svg";
+import female50 from "./assets/icon/response/female-50.svg";
+
+import star4 from "./assets/icon/response/star-4.svg";
+import star5 from "./assets/icon/response/star-5.svg";
+
 document.addEventListener("DOMContentLoaded", function () {
 	// FAQ
 	const faqTags = document.querySelectorAll('.js-faq-tag');
@@ -39,34 +51,34 @@ document.addEventListener("DOMContentLoaded", function () {
 	const scrollTopButton = document.querySelector('.js-scroll-top-button');
 
 	const customerResponses = [
-		{ gender: "男性", genderEn: "male", age: "20", stars: 5, review: "簡単に接続できる" },
-		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "価格" },
-		{ gender: "男性", genderEn: "male", age: "30", stars: 5, review: "料金が安い" },
-		{ gender: "男性", genderEn: "male", age: "30", stars: 5, review: "回線が安定している" },
-		{ gender: "女性", genderEn: "female", age: "50", stars: 4, review: "通信が安定している" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 5, review: "電池時間が短い" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 5, review: "とても満足しています。" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 5, review: "5Gが使える" },
-		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "家と外どちらでも" },
-		{ gender: "女性", genderEn: "female", age: "20", stars: 5, review: "どこにいても" },
-		{ gender: "女性", genderEn: "female", age: "50", stars: 4, review: "100GBあると" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 5, review: "通信速度" },
-		{ gender: "女性", genderEn: "female", age: "30", stars: 4, review: "外でも、使える" },
-		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "ワイファイの" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "主に外で使用" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "ポケットwifi" },
-		{ gender: "女性", genderEn: "female", age: "40", stars: 5, review: "ホームルーター" },
-		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "長時間の外出" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "データ通信量" },
-		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "価格" },
-		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "家でも外でも" },
-		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "とても満足しています。" },
-		{ gender: "女性", genderEn: "female", age: "50", stars: 5, review: "工事不要" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 5, review: "速度がはやい" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "とても満足しています。" },
-		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "設置が簡単" },
-		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "外出時のネット環境" },
-		{ gender: "男性", genderEn: "male", age: "30", stars: 5, review: "とても満足しています。" }
+		{ img: male20, gender: "男性", genderEn: "male", age: "20", stars: 5, review: "簡単に接続できる" },
+		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 5, review: "価格" },
+		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, review: "料金が安い" },
+		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, review: "回線が安定している" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, review: "通信が安定している" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "電池時間が短い" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "とても満足しています。" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "5Gが使える" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "家と外どちらでも" },
+		{ img: female20, gender: "女性", genderEn: "female", age: "20", stars: 5, review: "どこにいても" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, review: "100GBあると" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "通信速度" },
+		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 4, review: "外でも、使える" },
+		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 5, review: "ワイファイの" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "主に外で使用" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "ポケットwifi" },
+		{ img: female40, gender: "女性", genderEn: "female", age: "40", stars: 5, review: "ホームルーター" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "長時間の外出" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "データ通信量" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "価格" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "家でも外でも" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "とても満足しています。" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, review: "工事不要" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "速度がはやい" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "とても満足しています。" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "設置が簡単" },
+		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 5, review: "外出時のネット環境" },
+		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, review: "とても満足しています。" }
 	];
 
 	const simulationStepMethodList = {
@@ -957,12 +969,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	customerResponses.forEach((item) => {
 		const newItem = `<div class="swiper-slide item">
 							<div class="item-header">
-								<img src="./assets/icon/response/${item?.genderEn}-${item?.age}.svg" alt="avatar" class="item-header__avatar" />
+								<img src="${item?.img}" alt="avatar" class="item-header__avatar" />
 								<div class="item-header__info">
 									<p class="title">満足度</p>
 									<div class="star">
 										<p>${item?.stars}</p>
-										<img src="./assets/icon/response/star-${item?.stars}.svg" alt="star" />
+										<img src="${item?.stars === 5 ? star5 : star4 }" alt="star" />
 									</div>
 									<div class="general">
 										<p>${item?.age}代</p>
