@@ -13,19 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const campaignSwiperWrapper = document.querySelector('.js-campaign-swiper-wrapper');
 
 	// STEP
+	const stepContent = document.querySelector('.js-step-content');
 	const stepTags = document.querySelectorAll('.js-step-tag');
-	const step1Title = document.querySelector('.js-step-1-title');
-	const step1Des = document.querySelector('.js-step-1-des');
-	const step2Title = document.querySelector('.js-step-2-title');
-	const step2Des = document.querySelector('.js-step-2-des');
-	const step3Title = document.querySelector('.js-step-3-title');
-	const step3Des = document.querySelector('.js-step-3-des');
-	const step4Title = document.querySelector('.js-step-4-title');
-	const step4Des = document.querySelector('.js-step-4-des');
-	const step5Title = document.querySelector('.js-step-5-title');
-	const step5Des = document.querySelector('.js-step-5-des');
-	const stepDetail = document.querySelector('.js-step-detail');
-
 
 	// SIMULATION
 	const simulationForm = document.querySelector('.js-simulation-form');
@@ -47,8 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	const priceModalPriceMobile = document.querySelector('.js-price-modal-price-mobile');
 	const priceModalTotal = document.querySelector('.js-price-modal-total');
 
+	// SCROLL TOP
+	const scrollTopButton = document.querySelector('.js-scroll-top-button');
+
 	const customerResponses = [
-		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "簡単に接続できる" },
+		{ gender: "男性", genderEn: "male", age: "20", stars: 5, review: "簡単に接続できる" },
 		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "価格" },
 		{ gender: "男性", genderEn: "male", age: "30", stars: 5, review: "料金が安い" },
 		{ gender: "男性", genderEn: "male", age: "30", stars: 5, review: "回線が安定している" },
@@ -64,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "ワイファイの" },
 		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "主に外で使用" },
 		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "ポケットwifi" },
-		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "ホームルーター" },
+		{ gender: "女性", genderEn: "female", age: "40", stars: 5, review: "ホームルーター" },
 		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "長時間の外出" },
 		{ gender: "男性", genderEn: "male", age: "50", stars: 4, review: "データ通信量" },
 		{ gender: "男性", genderEn: "male", age: "40", stars: 5, review: "価格" },
@@ -77,51 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ gender: "女性", genderEn: "female", age: "30", stars: 5, review: "外出時のネット環境" },
 		{ gender: "男性", genderEn: "male", age: "30", stars: 5, review: "とても満足しています。" }
 	];
-
-	const stepList = [
-		{
-			type: "feature",
-			detail: "新規契約の場合、開通工事が必要です。モバイルWi-Fiの到着時期は審査状況により前後する場合があります。",
-			titleStep1: "Web申込",
-			desStep1: "フォームから簡単入力",
-			titleStep2: "電話確認",
-			desStep2: "SMSまた郵送にて、本人確認書類、支払方法のご登録等",
-			titleStep3: "モバイルWi-Fi到着",
-			desStep3: "最短1週間でお届け！<br/>ネット利用開始",
-			titleStep4: "光工事",
-			desStep4: "立ち会い工事実施",
-			titleStep5: "光開通",
-			desStep5: "家は超高速、<br/>外はモバイルWi-Fi",
-		},
-		{
-			type: "move1",
-			detail: "フレッツ光からの転用の場合、原則工事不要です（品目変更がある場合を除く）。承諾番号の有効期限にご注意ください。",
-			titleStep1: "承諾番号取",
-			desStep1: "NTTから転用承諾番号を取得",
-			titleStep2: "Web申込",
-			desStep2: "フォームから簡単に入力",
-			titleStep3: "モバイルWi-Fi到着",
-			desStep3: "最短1週間でお届け！<br/>ネット利用開始",
-			titleStep4: "書類提出・工事日調整",
-			desStep4: "SMSまたは郵送にて、本人確認書類、支払方法のご登録等",
-			titleStep5: "自動切替",
-			desStep5: "工事不要で切り替え完了",
-		},
-		{
-			type: "move2",
-			detail: "他社光コラボからの事業者変更の場合、原則工事不要です。承諾番号の有効期限にご注意ください。",
-			titleStep1: "承諾番号取",
-			desStep1: "契約中の事業者から取得",
-			titleStep2: "Web申込",
-			desStep2: "フォームから簡単に入力",
-			titleStep3: "モバイルWi-Fi到着",
-			desStep3: "最短1週間でお届け！<br/>ネット利用開始",
-			titleStep4: "書類提出・工事日調整",
-			desStep4: "SMSまたは郵送にて、本人確認書類、支払方法のご登録等",
-			titleStep5: "自動切替",
-			desStep5: "工事不要で切り替え完了",
-		},
-	]
 
 	const simulationStepMethodList = {
 		step1: [
@@ -1090,22 +1037,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	stepTags.forEach((item) => {
 		item.addEventListener('click', function () {
 			const type = item?.dataset?.type;
+			stepContent.setAttribute('data-type', type)
 
 			stepTags.forEach((tag) => tag.classList.remove('active'));
 			this.classList.add('active');
-			const data = stepList.find((item) => item?.type === type);
-
-			step1Title.innerHTML = data?.titleStep1;
-			step1Des.innerHTML = data?.desStep1;
-			step2Title.innerHTML = data?.titleStep2;
-			step2Des.innerHTML = data?.desStep2;
-			step3Title.innerHTML = data?.titleStep3;
-			step3Des.innerHTML = data?.desStep3;
-			step4Title.innerHTML = data?.titleStep4;
-			step4Des.innerHTML = data?.desStep4;
-			step5Title.innerHTML = data?.titleStep5;
-			step5Des.innerHTML = data?.desStep5;
-			stepDetail.innerHTML = data?.detail;
 		});
 	});
 
@@ -1181,4 +1116,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.querySelectorAll('.js-el-scroll').forEach((el) => {
 		observer.observe(el);
 	});
+
+	scrollTopButton.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
+
+	const handleCheckScrollTop = () => {
+		if (window.scrollY > window.innerHeight / 2) {
+			scrollTopButton.style.display = "block";
+		} else {
+			scrollTopButton.style.display = "none";
+		}
+	}
+
+	window.addEventListener('scroll', () => {
+		handleCheckScrollTop();
+	});
+
+	handleCheckScrollTop();
 })

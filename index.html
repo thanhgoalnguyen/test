@@ -57,48 +57,50 @@
 			<img src="./assets/image/banner/bg.avif" alt="background" class="banner-bg" />
 			<div class="banner-wrapper">
 				<div class="banner-content">
-					<div class="banner-slogan">
-						<img src="./assets/image/banner/layer.avif" alt="layer"></img>
-						<p class="font-bold text-blue-100">ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
-					</div>
-					<div class="banner-promotion">
-						<div class="banner-promotion__title">
-							<p class="font-bold text-blue-100">家では高速の</p>
-							<p class="font-bold text-blue-100">外では自由な</p>
+					<div class="banner-general">
+						<div class="banner-slogan">
+							<img src="./assets/image/banner/layer.avif" alt="layer"></img>
+							<p class="font-bold text-blue-100">ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
 						</div>
-						<p class="banner-promotion__description-one">
-							<span class="medium font-bold">
-								光回線
-							</span>
-							<span class="small font-black">×</span>
-							<span class="large font-bold">モバイル</span>
-							<span class="larger font-medium font-roboto">Wi-Fi</span>
-						</p>
-						<p class="banner-promotion__description-two font-bold">これがネットの最適解。</p>
-					</div>
-					<div class="banner-feature">
-						<div class="banner-feature__item">
-							<img src="./assets/icon/banner/active.svg" alt="active"></img>
-							<div class="banner-feature__details-one">
-								<p class="font-bold text-black">最短</p>
-								<span class="font-extra-bold text-red-100 font-roboto font-italic">1</span>
-								<p class="font-bold text-black">週間でネットが使える</p>
+						<div class="banner-promotion">
+							<div class="banner-promotion__title">
+								<p class="font-bold text-blue-100">家では高速の</p>
+								<p class="font-bold text-blue-100">外では自由な</p>
 							</div>
+							<p class="banner-promotion__description-one">
+								<span class="medium font-bold">
+									光回線
+								</span>
+								<span class="small font-black">×</span>
+								<span class="large font-bold">モバイル</span>
+								<span class="larger font-medium font-roboto">Wi-Fi</span>
+							</p>
+							<p class="banner-promotion__description-two font-bold">これがネットの最適解。</p>
 						</div>
-						<div class="banner-feature__item">
-							<img src="./assets/icon/banner/active.svg" alt="active"></img>
-							<div class="banner-feature__details-two">
-								<p class="font-bold text-black">工事費実質</p>
-								<span class="font-black text-red-100">無料</span>
-								<p class="number font-bold text-black">※1</p>
+						<div class="banner-feature">
+							<div class="banner-feature__item">
+								<img src="./assets/icon/banner/active.svg" alt="active"></img>
+								<div class="banner-feature__details-one">
+									<p class="font-bold text-black">最短</p>
+									<span class="font-extra-bold text-red-100 font-roboto font-italic">1</span>
+									<p class="font-bold text-black">週間でネットが使える</p>
+								</div>
 							</div>
-						</div>
-						<div class="banner-feature__item">
-							<img src="./assets/icon/banner/active.svg" alt="active"></img>
-							<div class="banner-feature__details-three">
-								<p class="font-bold text-black">スマホも</p>
-								<span class="font-black text-red-100">毎月割引</span>
-								<p class="number font-bold text-black">※2</p>
+							<div class="banner-feature__item">
+								<img src="./assets/icon/banner/active.svg" alt="active"></img>
+								<div class="banner-feature__details-two">
+									<p class="font-bold text-black">工事費実質</p>
+									<span class="font-black text-red-100">無料</span>
+									<p class="number font-bold text-black">※1</p>
+								</div>
+							</div>
+							<div class="banner-feature__item">
+								<img src="./assets/icon/banner/active.svg" alt="active"></img>
+								<div class="banner-feature__details-three">
+									<p class="font-bold text-black">スマホも</p>
+									<span class="font-black text-red-100">毎月割引</span>
+									<p class="number font-bold text-black">※2</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -129,7 +131,8 @@
 						<span class="large text-shadow">!</span>
 					</p>
 					<div class="promotion-detail__img">
-						<img src="./assets/image/promotion/icon.avif" alt="icon" />
+						<img src="./assets/icon/promotion/icon1.svg" alt="icon" class="promotion-detail__img-one" />
+						<img src="./assets/icon/promotion/icon2.svg" alt="icon" class="promotion-detail__img-two" />
 					</div>
 				</div>
 			</div>
@@ -152,7 +155,7 @@
 		</section>
 
 		<!-- FORM -->
-		<section class="form">
+		<section class="form js-el-scroll">
 			<div class="form-title">
 				<p>WEBでカンタン</p>
 				<span>30</span>
@@ -1004,9 +1007,7 @@
 							<p class="font-bold text-blue-100">料金の内訳を見る</p>
 							<span></span>
 						</div>
-						<img src="./assets/icon/simulation/right-arrow.svg" alt="arrow"
-							class="open-price__hidden-arrow" />
-						<img src="./assets/icon/simulation/right-arrow.svg" alt="arrow" class="open-price__arrow" />
+						<img src="./assets/icon/simulation/right-arrow.svg" alt="arrow" />
 					</button>
 				</div>
 				<div class="simulation-result__campaign">
@@ -1503,13 +1504,13 @@
 				<span class="line"></span>
 			</div>
 			<p class="step-des font-bold text-black">お申し込みタイプに合わせて、最適なフローをご案内します。</p>
-			<div class="step-content">
+			<div class="step-content js-step-content" data-type="feature">
 				<div class="step-content__header">
 					<button class="js-step-tag active font-bold text-blue-100" data-type="feature">新規お申込み</button>
 					<button class="js-step-tag font-bold text-blue-100" data-type="move1">フレッツ光から転用</button>
 					<button class="js-step-tag font-bold text-blue-100" data-type="move2">他社コラボ光から乗り換え</button>
 				</div>
-				<div class="step-content__body">
+				<div class="step-content__body step-content__body-feature">
 					<div class="item">
 						<img src="./assets/icon/step/step1.svg" alt="step" class="item-step" />
 						<img src="./assets/icon/step/icon1.svg" alt="icon" class="item-icon" />
@@ -1524,7 +1525,7 @@
 						<p class="item-des js-step-2-des">SMSまた郵送にて、本人確認書類、支払方法のご登録等</p>
 					</div>
 					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
-					<div class="item item-center">
+					<div class="item highlight">
 						<img src="./assets/icon/step/step3.svg" alt="step" class="item-step" />
 						<img src="./assets/icon/step/icon3.svg" alt="icon" class="item-icon" />
 						<p class="item-title js-step-3-title">モバイルWi-Fi到着</p>
@@ -1543,6 +1544,80 @@
 						<img src="./assets/icon/step/icon5.svg" alt="icon" class="item-icon" />
 						<p class="item-title js-step-5-title">光開通</p>
 						<p class="item-des js-step-5-des">家は超高速、<br />外はモバイルWi-Fi</p>
+					</div>
+				</div>
+				<div class="step-content__body step-content__body-move-1">
+					<div class="item">
+						<img src="./assets/icon/step/step1.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon6.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-1-title">承諾番号取</p>
+						<p class="item-des js-step-1-des">NTTから転用承諾番号を取得</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item">
+						<img src="./assets/icon/step/step2.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon1.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-2-title">Web申込</p>
+						<p class="item-des js-step-2-des">フォームから簡単に入力</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item highlight">
+						<img src="./assets/icon/step/step3.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon3.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-3-title">モバイルWi-Fi到着</p>
+						<p class="item-des js-step-3-des">最短1週間でお届け！<br />ネット利用開始</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item">
+						<img src="./assets/icon/step/step4.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon7.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-4-title">書類提出・工事日調整</p>
+						<p class="item-des js-step-4-des">SMSまたは郵送にて、本人確認書類、
+							支払方法のご登録等</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item">
+						<img src="./assets/icon/step/step5.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon8.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-5-title">自動切替</p>
+						<p class="item-des js-step-5-des">工事不要で切り替え完了</p>
+					</div>
+				</div>
+				<div class="step-content__body step-content__body-move-2">
+					<div class="item highlight">
+						<img src="./assets/icon/step/step1-move2.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon6-move2.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-1-title">承諾番号取</p>
+						<p class="item-des js-step-1-des">契約中の事業者から取得</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item">
+						<img src="./assets/icon/step/step2.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon1.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-2-title">Web申込</p>
+						<p class="item-des js-step-2-des">フォームから簡単に入力</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item item-center">
+						<img src="./assets/icon/step/step3-move2.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon3-move2.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-3-title">モバイルWi-Fi到着</p>
+						<p class="item-des js-step-3-des">最短1週間でお届け！<br />ネット利用開始</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item">
+						<img src="./assets/icon/step/step4.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon7.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-4-title">書類提出・工事日調整</p>
+						<p class="item-des js-step-4-des">SMSまたは郵送にて、本人確認書類、
+							支払方法のご登録等</p>
+					</div>
+					<img src="./assets/icon/step/arrow.svg" alt="arrow" class="arrow" />
+					<div class="item">
+						<img src="./assets/icon/step/step5.svg" alt="step" class="item-step" />
+						<img src="./assets/icon/step/icon8.svg" alt="icon" class="item-icon" />
+						<p class="item-title js-step-5-title">自動切替</p>
+						<p class="item-des js-step-5-des">工事不要で切り替え完了</p>
 					</div>
 				</div>
 			</div>
@@ -1929,6 +2004,10 @@
 			</div>
 		</section>
 	</main>
+
+	<button class="scroll-top-button js-scroll-top-button">
+		<img src="./assets/icon/header/to-top.svg" alt="to top button" />
+	</button>
 
 	<!-- FOOTER -->
 	<footer class="footer">

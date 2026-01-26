@@ -37,6 +37,7 @@ button {
 
 body {
 	font-family: "Noto Sans JP", sans-serif;
+	overflow-x: hidden;
 }
 
 main {
@@ -102,4 +103,18 @@ main {
 
 .overflow-hidden {
 	overflow: hidden;
+}
+
+.scroll-top-button {
+	position: fixed;
+	bottom: 302px;
+	right: 16px;
+	z-index: 5;
+	display: none;
+	cursor: pointer;
+
+	img {
+		width: 48px;
+		height: 48px;
+	}
 }

@@ -6,7 +6,7 @@
 	align-items: center;
 	gap: 48px;
 	width: 100%;
-	max-width: 1366px;
+	max-width: 2000px;
 	height: 1000px;
 	padding: 80px 80px 108px 80px;
 	background-color: white;
@@ -137,17 +137,17 @@
 
 				&:nth-child(1) {
 					z-index: 3;
-					animation: slideFromLeft1 0.6s ease-out;
+					animation: slideFromLeft1 0.8s ease-out;
 				}
 
 				&:nth-child(2) {
 					z-index: 2;
-					animation: slideFromLeft2 0.8s ease-out;
+					animation: slideFromLeft2 1s ease-out;
 				}
 
 				&:nth-child(3) {
 					z-index: 1;
-					animation: slideFromLeft3 1s ease-out;
+					animation: slideFromLeft3 1.2s ease-out;
 				}
 			}
 		}
