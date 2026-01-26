@@ -90,7 +90,7 @@
     transform: translateY(-50px);
   }
   50% {
-    width: 100%;
+    width: 688px;
     opacity: 1;
     transform: translateY(-50px);
   }
@@ -661,6 +661,7 @@ header .header-wrapper .header-button {
 }
 .banner .banner-wrapper .banner-content {
   position: relative;
+  width: 0;
   height: 100%;
   margin-top: 101px;
   opacity: 0;
@@ -807,6 +808,7 @@ header .header-wrapper .header-button {
   aspect-ratio: 243/267;
 }
 .banner.show .banner-wrapper .banner-content {
+  width: 688px;
   opacity: 1;
   animation: slideAndDrop 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
