@@ -1165,9 +1165,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		handleChangeSimulationResult();
 	})
 
-
 	const observerOptions = {
-		threshold: 0.4
+		threshold: 0.3
 	};
 
 	const observer = new IntersectionObserver((entries) => {
