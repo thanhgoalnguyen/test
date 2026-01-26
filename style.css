@@ -1008,7 +1008,7 @@ header .header-wrapper .header-button {
 .form.show .form-des,
 .form.show .form-render {
   opacity: 1;
-  animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .service {
@@ -1535,27 +1535,27 @@ header .header-wrapper .header-button {
 }
 .service.show .service-header {
   opacity: 1;
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .service.show .service-body .body-top .bg {
   opacity: 1;
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .service.show .service-body .body-top .content {
   opacity: 1;
-  animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .service.show .service-body .body-bottom .bg {
   opacity: 1;
-  animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .service.show .service-body .body-bottom .content {
   opacity: 1;
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .service.show .service-list .service-list__wrapper .service-item {
   opacity: 0;
-  animation: zoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: zoomIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .conversion {
@@ -1944,18 +1944,18 @@ header .header-wrapper .header-button {
 }
 .intro-point.show .intro-point__header {
   opacity: 1;
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .intro-point.show .intro-point__body .item .item-bg {
   opacity: 1;
-  animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .intro-point.show .intro-point__body .item .item-content {
   opacity: 1;
-  animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .intro-point.show .intro-point__body .item.item-reverse .item-bg {
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .intro-scene {
@@ -2070,22 +2070,22 @@ header .header-wrapper .header-button {
 }
 .intro-scene.show .intro-scene__header {
   opacity: 1;
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .intro-scene.show .intro-scene__body .item {
   opacity: 1;
 }
 .intro-scene.show .intro-scene__body .item:nth-child(1) {
   z-index: 3;
-  animation: slideFromLeft1 0.8s ease-out;
+  animation: slideFromLeft1 0.6s ease-out;
 }
 .intro-scene.show .intro-scene__body .item:nth-child(2) {
   z-index: 2;
-  animation: slideFromLeft2 1s ease-out;
+  animation: slideFromLeft2 0.8s ease-out;
 }
 .intro-scene.show .intro-scene__body .item:nth-child(3) {
   z-index: 1;
-  animation: slideFromLeft3 1.2s ease-out;
+  animation: slideFromLeft3 1s ease-out;
 }
 
 .feature {
@@ -2256,15 +2256,15 @@ header .header-wrapper .header-button {
 }
 .feature.show .feature-header {
   opacity: 1;
-  animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .feature.show .feature-body img {
   opacity: 1;
-  animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .feature.show .feature-body .feature-body__content {
   opacity: 1;
-  animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .simulation {
@@ -2727,17 +2727,17 @@ header .header-wrapper .header-button {
 }
 .simulation.show .simulation-header {
   opacity: 1;
-  animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .simulation.show .simulation-form .item {
   opacity: 1;
-  animation: zoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: zoomIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 .simulation.show .simulation-button,
 .simulation.show .simulation-order,
 .simulation.show .simulation-list {
   opacity: 1;
-  animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .select {

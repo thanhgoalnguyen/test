@@ -198,18 +198,18 @@
 	&.show {
 		.feature-header {
 			opacity: 1;
-			animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 
 		.feature-body {
 			img {
 				opacity: 1;
-				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 
 			.feature-body__content {
 				opacity: 1;
-				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 	}

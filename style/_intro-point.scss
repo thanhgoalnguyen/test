@@ -261,24 +261,24 @@
 	&.show {
 		.intro-point__header {
 			opacity: 1;
-			animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 
 		.intro-point__body {
 			.item {
 				.item-bg {
 					opacity: 1;
-					animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+					animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 				}
 
 				.item-content {
 					opacity: 1;
-					animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+					animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 				}
 
 				&.item-reverse {
 					.item-bg {
-						animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+						animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 					}
 				}
 			}

@@ -541,13 +541,13 @@
 	&.show {
 		.simulation-header {
 			opacity: 1;
-			animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 
 		.simulation-form {
 			.item {
 				opacity: 1;
-				animation: zoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: zoomIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 
@@ -555,7 +555,7 @@
 		.simulation-order,
 		.simulation-list {
 			opacity: 1;
-			animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 	}
 }
