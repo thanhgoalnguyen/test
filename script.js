@@ -1088,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	})
 
 	const observerOptions = {
-		threshold: 0.3
+		threshold: 0.1
 	};
 
 	const observer = new IntersectionObserver((entries) => {
@@ -1115,17 +1115,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
-	// const handleCheckScrollTop = () => {
-	// 	if (window.scrollY > window.innerHeight / 2) {
-	// 		scrollTopButton.style.display = "block";
-	// 	} else {
-	// 		scrollTopButton.style.display = "none";
-	// 	}
-	// }
+	const handleCheckScrollTop = () => {
+		if (window.scrollY > window.innerHeight / 2) {
+			scrollTopButton.style.display = "block";
+		} else {
+			scrollTopButton.style.display = "none";
+		}
+	}
 
-	// window.addEventListener('scroll', () => {
-	// 	handleCheckScrollTop();
-	// });
+	window.addEventListener('scroll', () => {
+		handleCheckScrollTop();
+	});
 
-	// handleCheckScrollTop();
+	handleCheckScrollTop();
 })
