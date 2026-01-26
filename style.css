@@ -87,17 +87,13 @@
   0% {
     transform: translateY(-50px);
     width: 0;
-    opacity: 0;
-    overflow: hidden;
   }
   50% {
     transform: translateY(-50px);
     width: 688px;
-    opacity: 1;
   }
   100% {
     transform: translateY(0);
-    overflow: visible;
   }
 }
 @keyframes fadeInLeft {
@@ -662,7 +658,7 @@ header .header-wrapper .header-button {
 }
 .banner .banner-wrapper .banner-content {
   position: relative;
-  width: 0;
+  width: 688px;
   height: 100%;
   margin-top: 101px;
   opacity: 0;
@@ -809,9 +805,7 @@ header .header-wrapper .header-button {
   aspect-ratio: 243/267;
 }
 .banner.show .banner-wrapper .banner-content {
-  width: 688px;
   opacity: 1;
-  overflow: visible;
   animation: slideAndDrop 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 

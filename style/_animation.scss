@@ -73,19 +73,15 @@
 	0% {
 		transform: translateY(-50px);
 		width: 0;
-		opacity: 0;
-		overflow: hidden;
 	}
 
 	50% {
 		transform: translateY(-50px);
 		width: 688px;
-		opacity: 1;
 	}
 
 	100% {
 		transform: translateY(0);
-		overflow: visible;
 	}
 }
 
