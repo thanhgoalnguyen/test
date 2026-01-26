@@ -86,9 +86,14 @@
 @keyframes slideAndDrop {
   0% {
     width: 0px;
+    padding-top: 61px;
   }
   50% {
     width: 100%;
+    padding-top: 61px;
+  }
+  100% {
+    padding-bottom: 101px;
   }
 }
 @keyframes fadeInLeft {
@@ -655,15 +660,13 @@ header .header-wrapper .header-button {
   position: relative;
   width: 0px;
   height: 100%;
-  margin-top: 101px;
+  padding-top: 101px;
   opacity: 0;
   overflow: hidden;
 }
 .banner .banner-wrapper .banner-content .banner-general {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 688px;
+  width: max-content;
+  max-width: 688px;
 }
 .banner .banner-wrapper .banner-content .banner-general .banner-slogan {
   position: relative;

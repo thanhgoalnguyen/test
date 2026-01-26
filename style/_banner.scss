@@ -29,15 +29,13 @@
 			position: relative;
 			width: 0px;
 			height: 100%;
-			margin-top: 101px;
+			padding-top: 101px;
 			opacity: 0;
 			overflow: hidden;
 
 			.banner-general {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 688px;
+				width: max-content;
+				max-width: 688px;
 
 				.banner-slogan {
 					position: relative;
