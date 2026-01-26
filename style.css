@@ -86,7 +86,7 @@
 @keyframes slideAndDrop {
   0% {
     transform: translateY(-50px);
-    width: 0;
+    width: 0px;
   }
   50% {
     transform: translateY(-50px);
@@ -808,6 +808,7 @@ header .header-wrapper .header-button {
 .banner.show .banner-wrapper .banner-content {
   width: 688px;
   opacity: 1;
+  animation: slideAndDrop 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .promotion {
