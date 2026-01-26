@@ -934,8 +934,8 @@ header .header-wrapper .header-button {
   justify-content: center;
   align-items: center;
   gap: 32px;
-  height: 607px;
-  padding: 0 10px;
+  width: 100%;
+  padding: 64px 10px;
 }
 .form .form-title {
   display: flex;
@@ -1987,6 +1987,8 @@ header .header-wrapper .header-button {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
   width: 100%;
+  max-width: 1226px;
+  padding: 0 10px;
 }
 .intro-scene .intro-scene__body .item {
   display: flex;
@@ -3695,10 +3697,14 @@ main {
   z-index: 5;
   display: none;
   cursor: pointer;
+  transition: 0.2s;
 }
 .scroll-top-button img {
   width: 48px;
   height: 48px;
+}
+.scroll-top-button:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

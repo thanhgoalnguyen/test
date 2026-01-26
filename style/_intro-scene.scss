@@ -47,6 +47,8 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 24px;
 		width: 100%;
+		max-width: 1226px;
+		padding: 0 10px;
 
 		.item {
 			display: flex;
