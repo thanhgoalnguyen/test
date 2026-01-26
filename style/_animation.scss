@@ -71,17 +71,17 @@
 
 @keyframes slideAndDrop {
 	0% {
-		transform: translateY(-50px);
+		// transform: translateY(-50px);
 		width: 0px;
 	}
 
 	50% {
-		transform: translateY(-50px);
+		// transform: translateY(-50px);
 		width: 688px;
 	}
 
 	100% {
-		transform: translateY(0);
+		// transform: translateY(0);
 	}
 }
 

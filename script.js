@@ -1087,8 +1087,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		handleChangeSimulationResult();
 	})
 
-	setTimeout(() => {
-			const observerOptions = {
+	const observerOptions = {
 		threshold: 0.3
 	};
 
@@ -1108,8 +1107,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.querySelectorAll('.js-el-scroll').forEach((el) => {
 		observer.observe(el);
 	});
-	}, 3000);
-
 
 	scrollTopButton.addEventListener('click', () => {
 		window.scrollTo({

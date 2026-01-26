@@ -85,15 +85,10 @@
 }
 @keyframes slideAndDrop {
   0% {
-    transform: translateY(-50px);
     width: 0px;
   }
   50% {
-    transform: translateY(-50px);
     width: 688px;
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes fadeInLeft {
@@ -805,7 +800,6 @@ header .header-wrapper .header-button {
   aspect-ratio: 243/267;
 }
 .banner.show .banner-wrapper .banner-content {
-  width: 688px;
   opacity: 1;
   animation: slideAndDrop 2s forwards;
 }
