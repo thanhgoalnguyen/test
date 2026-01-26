@@ -39,6 +39,7 @@
 			background-color: white;
 			border-radius: 16px;
 			overflow: hidden;
+			animation: zoomIn 0.3s ease forwards;
 
 			.modal-content__close {
 				position: absolute;

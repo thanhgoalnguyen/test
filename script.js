@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// RESPONSE
 	const responseSwiperWrapper = document.querySelector('.js-response-swiper-wrapper');
-	const campaignSwiperWrapper = document.querySelector('.js-campaign-swiper-wrapper');
 
 	// STEP
 	const stepContent = document.querySelector('.js-step-content');
@@ -878,7 +877,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		priceModalTags.forEach((item) => {
 			item.addEventListener('click', function () {
-				console.log(1);
 				const type = item?.dataset?.type;
 				const data = simulationResultData?.priceTable?.find((item) => item?.value === type);
 				priceModalTags.forEach((tag) => tag.classList.remove('active'));
@@ -982,7 +980,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	responseSwiperWrapper.innerHTML = responseItems;
 
-	const responseSwiper = new Swiper('.response-swiper', {
+	const responseSwiperInit = new Swiper('.response-swiper', {
 		direction: 'horizontal',
 		slidesPerView: 4.04,
   		spaceBetween: 24,
@@ -1003,17 +1001,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		on: {
 			init: function () {
 				this.autoplay.stop();
-
-				responseSwiperWrapper.classList.add('show');
-
-				setTimeout(() => {
-					this.autoplay.start();
-				}, 1000);
 			},
 		},
 	});
 
-	const campaignSwiper = new Swiper('.campaign-swiper', {
+	const campaignSwiperInit = new Swiper('.campaign-swiper', {
 		direction: 'horizontal',
 		slidesPerView: 3.278,
 		spaceBetween: 24,
@@ -1026,11 +1018,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		navigation: {
 			nextEl: '.swiper-next',
 			prevEl: '.swiper-prev',
-		},
-		on: {
-			init: function () {
-				campaignSwiperWrapper.classList.add('show');
-			},
 		},
 	});
 
@@ -1101,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	})
 
 	const observerOptions = {
-		threshold: 0.2
+		threshold: 0.3
 	};
 
 	const observer = new IntersectionObserver((entries) => {
@@ -1109,6 +1096,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			if (entry.isIntersecting) {
 				entry.target.classList.add('show');
 				observer.unobserve(entry.target);
+
+				if (entry.target.classList?.contains('js-response-swiper')) {
+						responseSwiperInit?.autoplay?.start();
+				}
 			}
 		});
 	}, observerOptions);

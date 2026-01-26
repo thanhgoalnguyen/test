@@ -8,7 +8,7 @@
 	width: 100%;
 	max-width: 2000px;
 	height: 1000px;
-	padding: 80px 80px 108px 80px;
+	padding: 80px 0px 108px 0px;
 	background-color: white;
 
 	.intro-scene__bg {
@@ -121,30 +121,34 @@
 						font-size: 16px;
 						line-height: 21px;
 						letter-spacing: -0.5px;
+						text-align: center;
 					}
 				}
 			}
 		}
 	}
 
-	&.show {
-		.intro-scene__header {
+	// ANIMATION
+	.intro-scene__header {
+		&.show {
 			opacity: 1;
-			animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.intro-scene__body {
+	.intro-scene__body {
+		&.show {
 			.item {
 				opacity: 1;
 
 				&:nth-child(1) {
 					z-index: 3;
-					animation: slideFromLeft1 0.6s ease-out;
+					animation: slideFromLeft1 0.8s ease-out;
 				}
 
 				&:nth-child(2) {
 					z-index: 2;
-					animation: slideFromLeft2 0.8s ease-out;
+					animation: slideFromLeft2 0.9s ease-out;
 				}
 
 				&:nth-child(3) {

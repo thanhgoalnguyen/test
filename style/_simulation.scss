@@ -538,24 +538,29 @@
 		}
 	}
 
-	&.show {
-		.simulation-header {
+	// ANIMATION
+	.simulation-header {
+		&.show {
 			opacity: 1;
-			animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.simulation-form {
+	.simulation-form {
+		&.show {
 			.item {
 				opacity: 1;
-				animation: zoomIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: zoomIn 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
+	}
 
-		.simulation-button,
-		.simulation-order,
-		.simulation-list {
+	.simulation-button,
+	.simulation-order,
+	.simulation-list {
+		&.show {
 			opacity: 1;
-			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 	}
 }

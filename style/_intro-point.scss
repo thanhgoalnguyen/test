@@ -258,14 +258,17 @@
 		}
 	}
 
-	&.show {
-		.intro-point__header {
+	// ANIMATION
+	.intro-point__header {
+		&.show {
 			opacity: 1;
-			animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.intro-point__body {
-			.item {
+	.intro-point__body {
+		.item {
+			&.show {
 				.item-bg {
 					opacity: 1;
 					animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;

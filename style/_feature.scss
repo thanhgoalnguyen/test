@@ -91,6 +91,7 @@
 		img {
 			width: 100%;
 			aspect-ratio: 587/630;
+			opacity: 0;
 		}
 
 		.feature-body__content {
@@ -98,6 +99,7 @@
 			flex-direction: column;
 			align-items: center;
 			gap: 64px;
+			opacity: 0;
 
 			.content-header {
 				display: flex;
@@ -195,21 +197,24 @@
 		line-height: 9px;
 	}
 
-	&.show {
-		.feature-header {
+	// ANIMATION
+	.feature-header {
+		&.show {
 			opacity: 1;
-			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.feature-body {
+	.feature-body {
+		&.show {
 			img {
 				opacity: 1;
-				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 
 			.feature-body__content {
 				opacity: 1;
-				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 	}

@@ -606,39 +606,44 @@
 		}
 	}
 
-	&.show {
-		.service-header {
+	// ANIMATION
+	.service-header {
+		&.show {
 			opacity: 1;
-			animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.service-body {
-			.body-top {
-				.bg {
-					opacity: 1;
-					animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-				}
-
-				.content {
-					opacity: 1;
-					animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-				}
+	.body-top {
+		&.show {
+			.bg {
+				opacity: 1;
+				animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 
-			.body-bottom {
-				.bg {
-					opacity: 1;
-					animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-				}
-
-				.content {
-					opacity: 1;
-					animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-				}
+			.content {
+				opacity: 1;
+				animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
+	}
 
-		.service-list {
+	.body-bottom {
+		&.show {
+			.bg {
+				opacity: 1;
+				animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.content {
+				opacity: 1;
+				animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+		}
+	}
+
+	.service-list {
+		&.show {
 			.service-list__wrapper {
 				.service-item {
 					opacity: 0;

@@ -186,22 +186,25 @@
 		}
 	}
 
-	&.show {
-		.faq-title,
-		.faq-des {
+	// ANIMATION
+	.faq-title,
+	.faq-des {
+		&.show {
 			opacity: 1;
-			animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.faq-content {
+	.faq-content {
+		&.show {
 			.faq-content__header {
 				opacity: 1;
-				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 
 			.faq-content__body {
 				opacity: 1;
-				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 	}

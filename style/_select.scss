@@ -159,16 +159,19 @@
 		}
 	}
 
-	&.show {
-		.select-header {
+	// ANIMATION
+	.select-header {
+		&.show {
 			opacity: 1;
-			animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.select-body {
+	.select-body {
+		&.show {
 			.item {
 				opacity: 1;
-				animation: zoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: zoomIn 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 	}

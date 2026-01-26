@@ -198,22 +198,25 @@
 		}
 	}
 
-	&.show {
-		.step-header,
-		.step-des {
+	// ANIMATION
+	.step-header,
+	.step-des {
+		&.show {
 			opacity: 1;
-			animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
+	}
 
-		.step-content {
+	.step-content {
+		&.show {
 			.step-content__header {
 				opacity: 1;
-				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 
 			.step-content__body {
 				opacity: 1;
-				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 	}

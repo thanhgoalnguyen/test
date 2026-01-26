@@ -68,12 +68,13 @@
 		transform: translateX(-50%);
 	}
 
-	&.show {
-		.form-title,
-		.form-des,
-		.form-render {
+	// ANIMATION
+	.form-title,
+	.form-des,
+	.form-render {
+		&.show {
 			opacity: 1;
-			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 		}
 	}
 }
