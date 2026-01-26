@@ -88,7 +88,7 @@
     width: 0px;
   }
   50% {
-    width: 688px;
+    width: 100%;
   }
 }
 @keyframes fadeInLeft {
@@ -800,6 +800,7 @@ header .header-wrapper .header-button {
   aspect-ratio: 243/267;
 }
 .banner.show .banner-wrapper .banner-content {
+  width: 100%;
   opacity: 1;
   animation: slideAndDrop 2s forwards;
 }

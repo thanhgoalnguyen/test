@@ -216,7 +216,7 @@
 	&.show {
 		.banner-wrapper {
 			.banner-content {
-				// width: 688px;
+				width: 100%;
 				opacity: 1;
 				animation: slideAndDrop 2s forwards;
 			}
