@@ -1,7 +1,8 @@
 @import "./style/root.scss";
 @import "./style/animation.scss";
+@import "./style/button.scss";
+@import "./style/modal.scss";
 @import "./style/header.scss";
-@import "./style/footer.scss";
 @import "./style/banner.scss";
 @import "./style/promotion.scss";
 @import "./style/form.scss";
@@ -10,8 +11,14 @@
 @import "./style/intro-point.scss";
 @import "./style/intro-scene.scss";
 @import "./style/feature.scss";
+@import "./style/simulation.scss";
+@import "./style/select.scss";
+@import "./style/response.scss";
+@import "./style/campaign.scss";
+@import "./style/step.scss";
 @import "./style/faq.scss";
-@import "./style/button.scss";
+@import "./style/swiper.scss";
+@import "./style/footer.scss";
 
 * {
 	margin: 0;
@@ -82,4 +89,17 @@ main {
 
 .font-black {
 	font-weight: 900;
+}
+
+.text-gradient-blue {
+	display: inline-block;
+	color: transparent;
+	background: linear-gradient(to right, #2c6fff 0%, #372cff 50%, #2ca7ff 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.overflow-hidden {
+	overflow: hidden;
 }

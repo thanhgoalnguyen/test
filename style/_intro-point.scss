@@ -27,6 +27,7 @@
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
+		opacity: 0;
 
 		img {
 			width: 648px;
@@ -82,6 +83,7 @@
 				z-index: 0;
 				width: 88.1%;
 				height: 100%;
+				opacity: 0;
 			}
 
 			.item-content {
@@ -95,6 +97,7 @@
 				margin-left: 80px;
 				background-color: white;
 				box-shadow: 16px 16px 0px 0px rgba(185, 184, 210, 0.4);
+				opacity: 0;
 
 				.item-content__main-title {
 					display: flex;
@@ -250,6 +253,33 @@
 
 				.order {
 					width: 32px;
+				}
+			}
+		}
+	}
+
+	&.show {
+		.intro-point__header {
+			opacity: 1;
+			animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+		}
+
+		.intro-point__body {
+			.item {
+				.item-bg {
+					opacity: 1;
+					animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				}
+
+				.item-content {
+					opacity: 1;
+					animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				}
+
+				&.item-reverse {
+					.item-bg {
+						animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+					}
 				}
 			}
 		}

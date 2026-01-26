@@ -29,6 +29,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 1px;
+		opacity: 0;
 
 		.service-header__title {
 			font-size: 32px;
@@ -139,6 +140,7 @@
 				z-index: 0;
 				width: 75.4%;
 				height: 100%;
+				opacity: 0;
 			}
 
 			.content {
@@ -151,6 +153,7 @@
 				height: 320px;
 				background-color: white;
 				box-shadow: 16px 16px 0px 0px rgba(185, 184, 210, 0.4);
+				opacity: 0;
 
 				.content-label {
 					position: absolute;
@@ -448,6 +451,7 @@
 				padding: 48px 24px 0px 24px;
 				background-color: white;
 				border-radius: 16px;
+				opacity: 0;
 
 				.service-item__label {
 					position: absolute;
@@ -593,6 +597,48 @@
 
 				.order {
 					width: 32px;
+				}
+			}
+		}
+	}
+
+	&.show {
+		.service-header {
+			opacity: 1;
+			animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+		}
+
+		.service-body {
+			.body-top {
+				.bg {
+					opacity: 1;
+					animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				}
+
+				.content {
+					opacity: 1;
+					animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				}
+			}
+
+			.body-bottom {
+				.bg {
+					opacity: 1;
+					animation: fadeInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				}
+
+				.content {
+					opacity: 1;
+					animation: fadeInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				}
+			}
+		}
+
+		.service-list {
+			.service-list__wrapper {
+				.service-item {
+					opacity: 0;
+					animation: zoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 				}
 			}
 		}

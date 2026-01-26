@@ -6,13 +6,12 @@
 	height: 56px;
 	padding: 0 16px 0 24px;
 	border-radius: 999px;
-	background-color: red;
 	font-size: 16px;
 	line-height: 11px;
 	font-weight: 700;
 	color: white;
 	cursor: pointer;
-	transition: padding 0.2s;
+	transition: 0.2s;
 
 	.icon {
 		width: 18px;
@@ -42,11 +41,70 @@
 	}
 
 	&:hover {
-		padding: 18px 20px 18px 28px;
+		height: 60px;
+		padding: 0 20px 0 28px;
 
 		.arrow-wrapper {
 			.arrow-group {
 				transform: translateX(15px);
+			}
+		}
+	}
+}
+
+.button-outline {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 44px;
+	padding: 0 32px;
+	border-radius: 999px;
+	font-size: 16px;
+	line-height: 12px;
+	font-weight: 700;
+	border: 1px solid var(--blue-100);
+	cursor: pointer;
+	transition: 0.2s;
+
+	p {
+		color: var(--blue-100);
+		transition: 0.2s;
+	}
+
+	.arrow-wrapper {
+		position: relative;
+		width: 16px;
+		height: 12px;
+		overflow: hidden;
+
+		.arrow-group {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: flex;
+			gap: 4px;
+			width: max-content;
+			transition: transform 0.3s;
+
+			img {
+				width: 16px;
+				height: 12px;
+			}
+		}
+	}
+
+	&:hover {
+		height: 52px;
+		padding: 0 36px;
+		background: var(--blue-100);
+
+		p {
+			color: white;
+		}
+
+		.arrow-wrapper {
+			.arrow-group {
+				transform: translateX(20px);
 			}
 		}
 	}
@@ -61,4 +119,52 @@
 	letter-spacing: -0.7px;
 	background: linear-gradient(90deg, #ec4765 0%, #f2b16f 100%);
 	border: 1px solid var(--red-100);
+}
+
+.button-secondary {
+	&.cta-button-secondary {
+		gap: 11px;
+		height: 80px;
+		padding: 0 23px 0 34px;
+		margin-bottom: 16px;
+		font-size: 29px;
+		line-height: 21px;
+		letter-spacing: -1.4px;
+
+		.icon {
+			width: 25px;
+			height: 25px;
+		}
+
+		.arrow-wrapper {
+			width: 15px;
+			height: 11px;
+
+			.arrow-group {
+				img {
+					width: 15px;
+					height: 11px;
+				}
+			}
+		}
+
+		&:hover {
+			height: 88px;
+			padding: 0 27px 0 38px;
+
+			.arrow-wrapper {
+				.arrow-group {
+					transform: translateX(19px);
+				}
+			}
+		}
+	}
+}
+
+.button-primary {
+	&.cta-button-primary {
+		font-size: 18px;
+		line-height: 13px;
+		letter-spacing: -0.1px;
+	}
 }

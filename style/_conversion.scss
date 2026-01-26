@@ -185,49 +185,6 @@
 					opacity: 0.2;
 				}
 			}
-
-			.button-secondary {
-				gap: 11px;
-				height: 80px;
-				padding: 0 23px 0 34px;
-				margin-bottom: 16px;
-				font-size: 29px;
-				line-height: 21px;
-				letter-spacing: -1.4px;
-
-				.icon {
-					width: 25px;
-					height: 25px;
-				}
-
-				.arrow-wrapper {
-					width: 15px;
-					height: 11px;
-
-					.arrow-group {
-						img {
-							width: 15px;
-							height: 11px;
-						}
-					}
-				}
-
-				&:hover {
-					padding: 0 27px 0 38px;
-
-					.arrow-wrapper {
-						.arrow-group {
-							transform: translateX(19px);
-						}
-					}
-				}
-			}
-
-			.button-primary {
-				font-size: 18px;
-				line-height: 13px;
-				letter-spacing: -0.1px;
-			}
 		}
 	}
 }

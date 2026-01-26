@@ -27,6 +27,7 @@
 
 		.banner-content {
 			margin-top: 101px;
+			opacity: 0;
 
 			.banner-slogan {
 				position: relative;
@@ -198,6 +199,15 @@
 			width: 100%;
 			margin-top: 132px;
 			aspect-ratio: 243/267;
+		}
+	}
+
+	&.show {
+		.banner-wrapper {
+			.banner-content {
+				opacity: 1;
+				animation: slideAndDrop 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
 		}
 	}
 }

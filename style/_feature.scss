@@ -13,6 +13,7 @@
 		align-items: center;
 		gap: 24px;
 		margin-bottom: 64px;
+		opacity: 0;
 
 		.feature-header__title {
 			position: relative;
@@ -192,5 +193,24 @@
 		gap: 14px;
 		font-size: 12px;
 		line-height: 9px;
+	}
+
+	&.show {
+		.feature-header {
+			opacity: 1;
+			animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+		}
+
+		.feature-body {
+			img {
+				opacity: 1;
+				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.feature-body__content {
+				opacity: 1;
+				animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+		}
 	}
 }
