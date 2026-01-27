@@ -61,7 +61,7 @@
 						z-index: 1;
 						font-size: 20px;
 						line-height: 15px;
-						letter-spacing: 1.5px;
+						letter-spacing: 0.02em;
 					}
 				}
 
@@ -94,7 +94,7 @@
 						-webkit-background-clip: text;
 						background-clip: text;
 						color: transparent;
-						letter-spacing: -1px;
+						letter-spacing: -0.02em;
 						filter: url(#smooth-outline);
 
 						span {
@@ -135,7 +135,7 @@
 						background-clip: text;
 						color: transparent;
 						display: inline-block;
-						letter-spacing: -3px;
+						letter-spacing: -0.02em;
 						filter: url(#smooth-outline);
 					}
 				}
@@ -182,10 +182,6 @@
 
 						.banner-feature__details-two,
 						.banner-feature__details-three {
-							p {
-								letter-spacing: -1px;
-							}
-
 							span {
 								font-size: 18px;
 								line-height: 18px;
@@ -195,6 +191,7 @@
 								margin-bottom: 5px;
 								font-size: 10px;
 								line-height: 12px;
+								letter-spacing: -0.04em;
 							}
 						}
 					}

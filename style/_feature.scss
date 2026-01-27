@@ -30,7 +30,6 @@
 				height: max-content;
 				font-size: 20px;
 				line-height: 24px;
-				letter-spacing: 0.15px;
 			}
 
 			img {
@@ -77,6 +76,14 @@
 							height: 16px;
 							background-color: var(--red-100);
 						}
+					}
+
+					&:first-child {
+						transform: translateY(-6px);
+					}
+
+					&:last-child {
+						transform: translateY(6px);
 					}
 				}
 			}
@@ -187,7 +194,7 @@
 
 					p {
 						font-size: 20px;
-						line-height: 22.5px;
+						line-height: 150%;
 					}
 				}
 

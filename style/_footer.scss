@@ -12,11 +12,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 5px;
+		gap: 16px;
 
 		p {
 			font-size: 24px;
-			line-height: 24px;
+			line-height: 18px;
 		}
 
 		.footer-general__redirect {
@@ -26,7 +26,7 @@
 
 			p {
 				font-size: 14px;
-				line-height: 18px;
+				line-height: 10px;
 			}
 
 			img {
@@ -41,7 +41,11 @@
 		flex-direction: column;
 		align-items: center;
 		font-size: 14px;
-		line-height: 18px;
+		line-height: 14px;
+
+		p:first-child {
+			transform: translateY(-3px);
+		}
 	}
 
 	.footer-rule {
@@ -56,12 +60,12 @@
 
 		a {
 			font-size: 12px;
-			line-height: 15px;
+			line-height: 9px;
 		}
 	}
 
 	.footer-copyright {
 		font-size: 12px;
-		line-height: 14px;
+		line-height: 9px;
 	}
 }

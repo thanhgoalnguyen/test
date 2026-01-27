@@ -150,6 +150,16 @@
 					}
 				}
 			}
+
+			&.step-content__body-move-1,
+			&.step-content__body-move-2 {
+				.item {
+					.item-title-4 {
+						font-size: 18px;
+						line-height: 125%;
+					}
+				}
+			}
 		}
 	}
 

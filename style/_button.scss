@@ -60,6 +60,7 @@
 		height: 100%;
 		border-radius: 999px;
 		transition: 0.3s;
+		box-sizing: border-box;
 	}
 
 	&:hover {
@@ -162,7 +163,7 @@
 }
 
 .button-secondary {
-	letter-spacing: -0.7px;
+	letter-spacing: -0.04em;
 
 	&::after {
 		background: linear-gradient(90deg, #ec4765 0%, #f2b16f 100%);
@@ -174,12 +175,14 @@
 .button-secondary {
 	&.cta-button-secondary {
 		gap: 11px;
+		width: 100%;
+		max-width: 426px;
 		height: 80px;
 		padding: 0 23px 0 34px;
 		margin-bottom: 16px;
 		font-size: 29px;
 		line-height: 21px;
-		letter-spacing: -1.4px;
+		letter-spacing: -0.04em;
 
 		&::after {
 			box-shadow: 0px 0px 11.43px 0px rgba(236, 71, 101, 0.4);
@@ -216,7 +219,6 @@
 	&.cta-button-primary {
 		font-size: 18px;
 		line-height: 13px;
-		letter-spacing: -0.1px;
 	}
 }
 
