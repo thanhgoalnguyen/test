@@ -47,6 +47,7 @@
 	p {
 		position: relative;
 		z-index: 1;
+		font-family: "Roboto", sans-serif;
 	}
 
 	&::after {
@@ -179,6 +180,10 @@
 		font-size: 29px;
 		line-height: 21px;
 		letter-spacing: -1.4px;
+
+		&::after {
+			box-shadow: 0px 0px 11.43px 0px rgba(236, 71, 101, 0.4);
+		}
 
 		.icon {
 			width: 25px;

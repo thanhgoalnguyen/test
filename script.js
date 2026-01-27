@@ -7,6 +7,7 @@ import female30 from "./assets/icon/response/female-30.svg";
 import female40 from "./assets/icon/response/female-40.svg";
 import female50 from "./assets/icon/response/female-50.svg";
 
+import star3 from "./assets/icon/response/star-3.svg";
 import star4 from "./assets/icon/response/star-4.svg";
 import star5 from "./assets/icon/response/star-5.svg";
 
@@ -41,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const priceModalFeeMobile = document.querySelector('.js-price-modal-fee-mobile');
 	const priceModalSaveBank = document.querySelector('.js-price-modal-save-bank');
 	const priceModalSaveMobile = document.querySelector('.js-price-modal-save-mobile');
-	// const priceModalSpeedDiscountBank = document.querySelector('.js-price-modal-speed-discount-bank');
-	// const priceModalSpeedDiscountMobile = document.querySelector('.js-price-modal-speed-discount-mobile');
+	const priceModalSpeedDiscountBank = document.querySelector('.js-price-modal-speed-discount-bank');
+	const priceModalSpeedDiscountMobile = document.querySelector('.js-price-modal-speed-discount-mobile');
 	const priceModalDiscountBank = document.querySelector('.js-price-modal-discount-bank');
 	const priceModalDiscountMobile = document.querySelector('.js-price-modal-discount-mobile');
 	const priceModalPriceBank = document.querySelector('.js-price-modal-price-bank');
@@ -53,34 +54,34 @@ document.addEventListener("DOMContentLoaded", function () {
 	const scrollTopButton = document.querySelector('.js-scroll-top-button');
 
 	const customerResponses = [
-		{ img: male20, gender: "男性", genderEn: "male", age: "20", stars: 5, review: "簡単に接続できる" },
-		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 5, review: "価格" },
-		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, review: "料金が安い" },
-		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, review: "回線が安定している" },
-		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, review: "通信が安定している" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "電池時間が短い" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "とても満足しています。" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "5Gが使える" },
-		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "家と外どちらでも" },
-		{ img: female20, gender: "女性", genderEn: "female", age: "20", stars: 5, review: "どこにいても" },
-		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, review: "100GBあると" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "通信速度" },
-		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 4, review: "外でも、使える" },
-		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 5, review: "ワイファイの" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "主に外で使用" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "ポケットwifi" },
-		{ img: female40, gender: "女性", genderEn: "female", age: "40", stars: 5, review: "ホームルーター" },
-		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "長時間の外出" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "データ通信量" },
-		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "価格" },
-		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "家でも外でも" },
-		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 5, review: "とても満足しています。" },
-		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, review: "工事不要" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, review: "速度がはやい" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "とても満足しています。" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, review: "設置が簡単" },
-		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 5, review: "外出時のネット環境" },
-		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, review: "とても満足しています。" }
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 3, imgStar: star3, review: "モバイルルーターの軽さ" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 3, imgStar: star3, review: "長時間の外出や宿泊する場合、子供たちにWiFiルーターを持たせられるところは気に入ってます" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットはとても便利でWiFiスポットを探さなくてもどこでも勝手にWi-Fiなのでギガ数気にせず" },
+		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 4, imgStar: star4, review: "通信速度も問題なく、設定も簡単だった" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットWiFiが早朝から深夜まで途中充電なしに使える" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, imgStar: star4, review: "通信速度が速くて快適です。また、外出中も安心して使えることがありがたいです。" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "据え置き型はサクサクつながり、ポケットWi-Fiは出先で便利。" },
+		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, imgStar: star5, review: "他のところよりも安く2台使えるところ" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 4, imgStar: star4, review: "ポケットwifiが使いやすい" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 3, imgStar: star3, review: "ホームルーターが無制限なのはとても助かります" },
+		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 4, imgStar: star4, review: "外用の機器が可愛い所です。" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, imgStar: star5, review: "ホームルーターとポケットWifiが併用できる。" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 3, imgStar: star3, review: "ホームルーターは、速度早くて気に入ってます" },
+		{ img: male20, gender: "男性", genderEn: "male", age: "20", stars: 4, imgStar: star4, review: "ホームルーターの値段でポケットWi-Fiもついてくる" },
+		{ img: female40, gender: "女性", genderEn: "female", age: "40", stars: 5, imgStar: star5, review: "ホームルーターもモバイルWiFiも電波状況が良い。" },
+		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, imgStar: star5, review: "ほぼストレスなくすごくお得に優秀インターネットを使えるのは本当に素晴らしい。" },
+		{ img: male20, gender: "男性", genderEn: "male", age: "20", stars: 5, imgStar: star5, review: "仕事と家庭でデータの使い分けができ、尚且つ価格が良心的であること" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "速度など何も気にせず使えてる点" },
+		{ img: female40, gender: "女性", genderEn: "female", age: "40", stars: 4, imgStar: star4, review: "ポケット型Wi-Fiの利用は初めてでしたが、使い慣れると本当に便利で助かっています。" },
+		{ img: female20, gender: "女性", genderEn: "female", age: "20", stars: 4, imgStar: star4, review: "簡単でその日からWi-Fiが使えてよかった。" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, imgStar: star4, review: "2台使えるのはとてもいい" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットに入れて持ち込みができる事。" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, imgStar: star5, review: "リモートワークのいろいろな場面（自宅・営業先）に最適" },
+		{ img: female40, gender: "女性", genderEn: "female", age: "40", stars: 4, imgStar: star4, review: "家でも車でもネットが使えるので、動画配信が見られ、子供も飽きない。" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "初めてポケットWi-Fiを使いましたが、外出中に容量が減らないので安心して携帯を使えることか" },
+		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, imgStar: star5, review: "節約につながっている" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, imgStar: star4, review: "容量無制限で速度にも満足している" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "2台ある事で、外でのデーターが気にならなくなったのと、実際に支払いをし始めて、本当に安く" }
 	];
 
 	const simulationStepMethodList = {
@@ -263,8 +264,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				priceModalFeeMobile.innerText = data?.feeMobile;
 				priceModalSaveBank.innerText = data?.saveBank;
 				priceModalSaveMobile.innerText = data?.saveMobile;
-				// priceModalSpeedDiscountBank.innerText = data?.speedDiscountBank;
-				// priceModalSpeedDiscountMobile.innerText = data?.speedDiscountMobile;
+				priceModalSpeedDiscountBank.innerText = data?.speedDiscountBank;
+				priceModalSpeedDiscountMobile.innerText = data?.speedDiscountMobile;
 				priceModalDiscountBank.innerText = data?.discountBank;
 				priceModalDiscountMobile.innerText = data?.discountMobile;
 				priceModalPriceBank.innerText = data?.priceBank;
@@ -341,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
 									<p class="title">満足度</p>
 									<div class="star">
 										<p>${item?.stars}</p>
-										<img src="${item?.stars === 5 ? star5 : star4 }" alt="star" />
+										<img src="${item?.imgStar}" alt="star" />
 									</div>
 									<div class="general">
 										<p>${item?.age}代</p>
@@ -476,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				observer.unobserve(entry.target);
 
 				if (entry.target.classList?.contains('js-response-swiper')) {
-						responseSwiperInit?.autoplay?.start();
+					responseSwiperInit?.autoplay?.start();
 				}
 
 				if (entry.target.classList?.contains('js-campaign-swiper')) {

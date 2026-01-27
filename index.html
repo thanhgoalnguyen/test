@@ -4,7 +4,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>All Connect Landing Page</title>
+
+	<title>確認中</title>
+	<meta name="description" content="確認中">
+	<meta name="keywords" content="確認中">
+
+	<style>
+		.async-hide {
+			opacity: 0 !important
+		}
+	</style>
+	<script>
+		(function (a, s, y, n, c, h, i, d, e) {
+			s.className += ' ' + y;
+			h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+			(a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c);
+		})(window, document.documentElement, 'async-hide', 'dataLayer', 4000, { 'GTM-MMLRXL4': true });
+	</script>
+
+	<script type="text/javascript" src="https://try.abtasty.com/3eca7514f1311d8c2b97d25ecd5e002d.js"></script>
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			ac_source: "google",
+			ac_asp: "",
+		});
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-MMLRXL4');
+	</script>
 	<link rel="preload" href="style.css" as="style">
 	<link rel="stylesheet" href="./style/style.scss">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +54,8 @@
 </head>
 
 <body>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMLRXL4" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- HEADER -->
 	<header class="header">
 		<div class="header-wrapper">
@@ -32,7 +68,7 @@
 			<div class="header-button">
 				<a href="https://air-mobileset.jp/form-inquiry" class="button-primary">
 					<img src="./assets/icon/button/phone.svg" alt="phone" class="icon" />
-					<p class="font-roboto">電話で相談してみる</p>
+					<p>電話で相談してみる</p>
 					<div class="arrow-wrapper">
 						<div class="arrow-group">
 							<img src="./assets/icon/button/arrow.svg" alt="arrow" />
@@ -42,7 +78,7 @@
 				</a>
 				<a href="https://air-mobileset.jp/form-entry" class="button-secondary">
 					<img src="./assets/icon/button/registration.svg" alt="registration" class="icon" />
-					<p class="font-roboto">今すぐWebで申込みする</p>
+					<p>今すぐWebで申込みする</p>
 					<div class="arrow-wrapper">
 						<div class="arrow-group">
 							<img src="./assets/icon/button/arrow.svg" alt="arrow" />
@@ -2023,12 +2059,12 @@
 								<p class="value js-price-modal-save-bank">0000</p>
 								<p class="value js-price-modal-save-mobile">0000</p>
 							</div>
-							<!-- <div class="row">
+							<div class="row">
 								<p class="title title-1gbps">1ギガ めちゃトク割（3回）※20</p>
 								<p class="title title-10gbps">10ギガ もっとめちゃトク割（6回）※20</p>
 								<p class="value js-price-modal-speed-discount-bank">0000</p>
 								<p class="value js-price-modal-speed-discount-mobile">0000</p>
-							</div> -->
+							</div>
 							<div class="row">
 								<p>端末購入応援割（48回）</p>
 								<p class="value js-price-modal-discount-bank">0000</p>
@@ -2066,6 +2102,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="modal select-modal js-modal-usb">
 		<div class="modal-wrapper">
 			<div class="modal-layer js-close-modal" data-type="usb"></div>
@@ -2123,6 +2160,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="modal select-modal js-modal-mobile">
 		<div class="modal-wrapper">
 			<div class="modal-layer js-close-modal" data-type="mobile"></div>
