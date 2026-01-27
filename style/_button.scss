@@ -1,5 +1,6 @@
 .button-primary,
 .button-secondary {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -152,23 +153,20 @@
 }
 
 .button-primary {
-	background: linear-gradient(90deg, #2c6fff 0%, #4dcdff 100%);
-	border: 1px solid var(--blue-100);
-	position: relative;
-
 	&::after {
 		background: linear-gradient(90deg, #2c6fff 0%, #4dcdff 100%);
 		border: 1px solid var(--blue-100);
+		box-shadow: 0px 0px 8px 0px rgba(8, 12, 36, 0.6);
 	}
 }
 
 .button-secondary {
-	position: relative;
 	letter-spacing: -0.7px;
 
 	&::after {
 		background: linear-gradient(90deg, #ec4765 0%, #f2b16f 100%);
 		border: 1px solid var(--red-100);
+		box-shadow: 0px 0px 8px 0px rgba(8, 12, 36, 0.6);
 	}
 }
 

@@ -79,11 +79,7 @@
 						p {
 							font-size: 16px;
 							line-height: 12px;
-							text-shadow:
-								-0.5px -0.5px 0 #fff,
-								0.5px -0.5px 0 #fff,
-								-0.5px 0.5px 0 #fff,
-								0.5px 0.5px 0 #fff;
+							filter: url(#smooth-outline);
 						}
 					}
 
@@ -99,6 +95,7 @@
 						background-clip: text;
 						color: transparent;
 						letter-spacing: -1px;
+						filter: url(#smooth-outline);
 
 						span {
 							color: transparent;
@@ -139,6 +136,7 @@
 						color: transparent;
 						display: inline-block;
 						letter-spacing: -3px;
+						filter: url(#smooth-outline);
 					}
 				}
 

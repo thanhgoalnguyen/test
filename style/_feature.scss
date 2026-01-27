@@ -27,8 +27,10 @@
 				position: relative;
 				z-index: 1;
 				display: inline-flex;
+				height: max-content;
 				font-size: 20px;
 				line-height: 24px;
+				letter-spacing: 0.15px;
 			}
 
 			img {
@@ -50,6 +52,8 @@
 			}
 
 			.feature-header__content {
+				height: max-content;
+
 				.content {
 					display: flex;
 
@@ -185,6 +189,11 @@
 						font-size: 20px;
 						line-height: 22.5px;
 					}
+				}
+
+				p {
+					font-size: 20px;
+					line-height: 15px;
 				}
 			}
 		}

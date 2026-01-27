@@ -66,6 +66,17 @@
 		top: 100%;
 		left: 50%;
 		transform: translateX(-50%);
+		z-index: 0;
+	}
+
+	.form-arrow {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateY(-16px) translateX(-50%);
+		z-index: 1;
+		width: 12px;
+		height: 48px;
 	}
 
 	// ANIMATION

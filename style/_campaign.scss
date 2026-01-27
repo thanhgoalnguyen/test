@@ -63,6 +63,12 @@
 				}
 			}
 		}
+
+		&.campaign-swiper-show {
+			.swiper-wrapper {
+				opacity: 1;
+			}
+		}
 	}
 
 	// ANIMATION
