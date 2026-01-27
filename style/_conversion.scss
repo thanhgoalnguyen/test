@@ -189,4 +189,14 @@
 			}
 		}
 	}
+
+	&.conversion-last {
+		align-items: flex-start;
+		height: 393px;
+		padding-top: 48px;
+
+		.conversion-background {
+			height: 417px;
+		}
+	}
 }
