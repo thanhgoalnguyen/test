@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const priceModalFeeMobile = document.querySelector('.js-price-modal-fee-mobile');
 	const priceModalSaveBank = document.querySelector('.js-price-modal-save-bank');
 	const priceModalSaveMobile = document.querySelector('.js-price-modal-save-mobile');
-	const priceModalSpeedDiscountBank = document.querySelector('.js-price-modal-speed-discount-bank');
-	const priceModalSpeedDiscountMobile = document.querySelector('.js-price-modal-speed-discount-mobile');
+	// const priceModalSpeedDiscountBank = document.querySelector('.js-price-modal-speed-discount-bank');
+	// const priceModalSpeedDiscountMobile = document.querySelector('.js-price-modal-speed-discount-mobile');
 	const priceModalDiscountBank = document.querySelector('.js-price-modal-discount-bank');
 	const priceModalDiscountMobile = document.querySelector('.js-price-modal-discount-mobile');
 	const priceModalPriceBank = document.querySelector('.js-price-modal-price-bank');
@@ -263,8 +263,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				priceModalFeeMobile.innerText = data?.feeMobile;
 				priceModalSaveBank.innerText = data?.saveBank;
 				priceModalSaveMobile.innerText = data?.saveMobile;
-				priceModalSpeedDiscountBank.innerText = data?.speedDiscountBank;
-				priceModalSpeedDiscountMobile.innerText = data?.speedDiscountMobile;
+				// priceModalSpeedDiscountBank.innerText = data?.speedDiscountBank;
+				// priceModalSpeedDiscountMobile.innerText = data?.speedDiscountMobile;
 				priceModalDiscountBank.innerText = data?.discountBank;
 				priceModalDiscountMobile.innerText = data?.discountMobile;
 				priceModalPriceBank.innerText = data?.priceBank;
