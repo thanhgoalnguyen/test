@@ -214,3 +214,22 @@
 		letter-spacing: -0.1px;
 	}
 }
+
+.scroll-top-button {
+	position: fixed;
+	bottom: 302px;
+	right: 16px;
+	z-index: 5;
+	display: none;
+	cursor: pointer;
+	transition: 0.2s;
+
+	img {
+		width: 48px;
+		height: 48px;
+	}
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
