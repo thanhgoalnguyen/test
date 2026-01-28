@@ -68,7 +68,7 @@
 					line-height: 22px;
 
 					&.medium-space {
-						margin-left: 6px;
+						margin-left: 4px;
 					}
 				}
 
@@ -85,11 +85,12 @@
 				}
 
 				.larger {
+					transform: translateX(-5px) translateY(1px);
 					font-size: 48px;
 					line-height: 34px;
 
 					&.larger-letter-spacing {
-						letter-spacing: -0.08em;
+						letter-spacing: -0.07em;
 					}
 				}
 			}
