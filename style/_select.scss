@@ -21,9 +21,20 @@
 		}
 
 		.select-header__sub-title {
-			font-size: 64px;
-			line-height: 68px;
-			margin-bottom: 27px;
+			position: relative;
+			width: auto;
+			height: 47px;
+			margin-bottom: 48px;
+
+			p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: max-content;
+				font-size: 64px;
+				line-height: 68px;
+			}
 		}
 
 		.select-header__des {

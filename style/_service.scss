@@ -67,14 +67,16 @@
 					font-size: 24px;
 					line-height: 18px;
 					color: black;
-					filter: url(#smooth-outline);
+					-webkit-text-stroke: 2px #fff;
+					paint-order: stroke fill;
 				}
 
 				.medium {
 					font-size: 48px;
 					line-height: 35px;
 					color: black;
-					filter: url(#smooth-outline);
+					-webkit-text-stroke: 2px #fff;
+					paint-order: stroke fill;
 				}
 			}
 
@@ -94,7 +96,6 @@
 				background-clip: text;
 				color: transparent;
 				letter-spacing: -0.03em;
-				filter: url(#smooth-outline);
 
 				span {
 					color: transparent;
@@ -121,7 +122,22 @@
 				line-height: 40px;
 				font-weight: 900;
 				color: var(--blue-200);
-				filter: url(#smooth-outline);
+			}
+
+			.service-header__fake-des {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 0;
+				display: flex;
+				align-items: flex-end;
+
+				.content,
+				.symbol {
+					-webkit-text-stroke: 4px #fff;
+					color: transparent;
+					paint-order: stroke fill;
+				}
 			}
 		}
 	}

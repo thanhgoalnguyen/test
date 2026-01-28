@@ -194,13 +194,21 @@
 
 					p {
 						font-size: 20px;
-						line-height: 150%;
+						line-height: 24px;
+					}
+
+					p:first-child {
+						transform: translateY(-5px);
+					}
+
+					p:last-child {
+						transform: translateY(5px);
 					}
 				}
 
 				p {
 					font-size: 20px;
-					line-height: 15px;
+					line-height: 10px;
 				}
 			}
 		}
