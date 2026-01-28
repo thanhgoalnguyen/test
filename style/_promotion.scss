@@ -66,6 +66,10 @@
 					margin-top: 9px;
 					font-size: 30px;
 					line-height: 22px;
+
+					&.medium-space {
+						margin-left: 6px;
+					}
 				}
 
 				.big {
@@ -83,7 +87,10 @@
 				.larger {
 					font-size: 48px;
 					line-height: 34px;
-					letter-spacing: -0.07em;
+
+					&.larger-letter-spacing {
+						letter-spacing: -0.08em;
+					}
 				}
 			}
 
