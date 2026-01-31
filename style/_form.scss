@@ -43,7 +43,7 @@
 
 		.form-des {
 			font-size: 20px;
-			line-height: 15px;
+			line-height: 19px;
 			font-weight: 700;
 			color: black;
 		}
@@ -87,7 +87,7 @@
 	// ANIMATION
 	&.show {
 		.form-header {
-			animation: slideWidth 1s forwards;
+			animation: slideWidth 0.6s linear forwards;
 		}
 	}
 }

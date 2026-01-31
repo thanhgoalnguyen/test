@@ -206,16 +206,16 @@
 	.response-header {
 		&.show {
 			.response-title {
-				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 0.8s linear forwards;
 			}
 
 			.response-des {
-				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 0.8s linear forwards;
 				animation-delay: 0.3s;
 			}
 
 			.response-info {
-				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 0.8s linear forwards;
 				animation-delay: 0.6s;
 			}
 		}

@@ -225,7 +225,7 @@
 	.feature-header {
 		&.show {
 			opacity: 1;
-			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s linear forwards;
 		}
 	}
 
@@ -233,12 +233,12 @@
 		&.show {
 			img {
 				opacity: 1;
-				animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 1.6s linear forwards;
 			}
 
 			.feature-body__content {
 				opacity: 1;
-				animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 1.6s linear forwards;
 			}
 		}
 	}

@@ -83,11 +83,11 @@
 	.campaign-header {
 		&.show {
 			.campaign-title {
-				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 0.8s linear forwards;
 			}
 
 			.campaign-des {
-				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: fadeUpScale 0.8s linear forwards;
 				animation-delay: 0.5s;
 			}
 		}
@@ -95,7 +95,7 @@
 	.campaign-title {
 		&.show {
 			opacity: 1;
-			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			animation: fadeUpScale 1.6s linear forwards;
 		}
 	}
 
@@ -107,27 +107,27 @@
 				.item {
 					&:nth-child(4) {
 						z-index: 5;
-						animation: slideFromLeft1 0.3s ease-out;
+						animation: slideFromLeft1 0.3s linear forwards;
 					}
 
 					&:nth-child(5) {
 						z-index: 4;
-						animation: slideFromLeft2 0.4s ease-out;
+						animation: slideFromLeft2 0.4s linear forwards;
 					}
 
 					&:nth-child(6) {
 						z-index: 3;
-						animation: slideFromLeft3 0.5s ease-out;
+						animation: slideFromLeft3 0.5s linear forwards;
 					}
 
 					&:nth-child(7) {
 						z-index: 2;
-						animation: slideFromLeft4 0.6s ease-out;
+						animation: slideFromLeft4 0.6s linear forwards;
 					}
 
 					&:nth-child(8) {
 						z-index: 1;
-						animation: slideFromLeft5 0.7s ease-out;
+						animation: slideFromLeft5 0.7s linear forwards;
 					}
 				}
 			}
