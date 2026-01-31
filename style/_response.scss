@@ -8,94 +8,105 @@
 	padding: 80px 0;
 	overflow: hidden;
 
-	.response-title {
+	.response-header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 22px;
-		opacity: 0;
+		gap: 48px;
 
-		p {
-			font-size: 48px;
-			line-height: 35px;
-		}
-
-		span {
-			width: 27px;
-			height: 2px;
-			background-color: var(--blue-100);
-		}
-	}
-
-	.response-des {
-		font-size: 18px;
-		line-height: 13px;
-	}
-
-	.response-info {
-		display: flex;
-		align-items: center;
-		padding: 24px 32px;
-		background-color: var(--blue-400);
-
-		.response-info__content {
+		.response-title {
 			display: flex;
 			flex-direction: column;
-			gap: 12px;
-			margin-right: 32px;
+			align-items: center;
+			gap: 22px;
+			opacity: 0;
 
-			.small {
-				font-size: 24px;
-				line-height: 24px;
+			p {
+				font-size: 48px;
+				line-height: 35px;
 			}
 
-			.medium {
-				font-size: 40px;
-				line-height: 29px;
+			span {
+				width: 27px;
+				height: 2px;
+				background-color: var(--blue-100);
 			}
+		}
 
-			.response-info__content-line {
+		.response-des {
+			font-size: 18px;
+			line-height: 13px;
+			opacity: 0;
+		}
+
+		.response-info {
+			display: flex;
+			align-items: center;
+			padding: 24px 32px;
+			background-color: var(--blue-400);
+			opacity: 0;
+
+			.response-info__content {
 				display: flex;
-				align-items: flex-end;
+				flex-direction: column;
+				gap: 12px;
+				margin-right: 32px;
 
-				.line {
-					position: relative;
+				.small {
+					font-size: 24px;
+					line-height: 24px;
+				}
 
-					span {
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						transform: translateY(11px);
-						width: 100%;
-						height: 12px;
-						background-color: var(--blue-100);
-						opacity: 0.2;
+				.medium {
+					font-size: 40px;
+					line-height: 29px;
+				}
+
+				.response-info__content-line {
+					display: flex;
+					align-items: flex-end;
+
+					.line {
+						position: relative;
+
+						span {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							transform: translateY(11px);
+							width: 100%;
+							height: 12px;
+							background-color: var(--blue-100);
+							opacity: 0.2;
+						}
 					}
 				}
 			}
-		}
 
-		.response-info__icon {
-			width: 54px;
-			height: 64px;
-			margin-right: 32px;
-		}
-
-		.response-info__percent-img {
-			width: 120px;
-			height: 120px;
-			margin-right: 16px;
-		}
-
-		.response-info__percent {
-			.small {
-				font-size: 48px;
-				line-height: 63px;
+			.response-info__icon {
+				width: 54px;
+				height: 64px;
+				margin-right: 32px;
 			}
 
-			.medium {
-				font-size: 88px;
-				line-height: 63px;
+			.response-info__percent-img {
+				width: 120px;
+				height: 120px;
+				margin-right: 16px;
+			}
+
+			.response-info__percent {
+				letter-spacing: -0.02em;
+
+				.small {
+					font-size: 48px;
+					line-height: 63px;
+				}
+
+				.medium {
+					font-size: 88px;
+					line-height: 70px;
+				}
 			}
 		}
 	}
@@ -192,10 +203,21 @@
 	}
 
 	// ANIMATION
-	.response-title {
+	.response-header {
 		&.show {
-			opacity: 1;
-			animation: fadeUpScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			.response-title {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.response-des {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation-delay: 0.3s;
+			}
+
+			.response-info {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation-delay: 0.6s;
+			}
 		}
 	}
 
@@ -209,27 +231,27 @@
 
 					&:nth-child(4) {
 						z-index: 5;
-						animation: slideFromLeft1 0.6s ease-out;
+						animation: slideFromLeft1 0.3s ease-out;
 					}
 
 					&:nth-child(5) {
 						z-index: 4;
-						animation: slideFromLeft2 0.7s ease-out;
+						animation: slideFromLeft2 0.4s ease-out;
 					}
 
 					&:nth-child(6) {
 						z-index: 3;
-						animation: slideFromLeft3 0.8s ease-out;
+						animation: slideFromLeft3 0.5s ease-out;
 					}
 
 					&:nth-child(7) {
 						z-index: 2;
-						animation: slideFromLeft4 0.9s ease-out;
+						animation: slideFromLeft4 0.6s ease-out;
 					}
 
 					&:nth-child(8) {
 						z-index: 1;
-						animation: slideFromLeft5 1s ease-out;
+						animation: slideFromLeft5 0.7s ease-out;
 					}
 				}
 			}

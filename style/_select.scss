@@ -12,12 +12,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		opacity: 0;
 
 		.select-header__title {
 			font-size: 32px;
 			line-height: 23px;
 			margin-bottom: 24px;
+			opacity: 0;
 		}
 
 		.select-header__sub-title {
@@ -25,6 +25,7 @@
 			width: auto;
 			height: 47px;
 			margin-bottom: 48px;
+			opacity: 0;
 
 			p {
 				position: absolute;
@@ -40,6 +41,7 @@
 		.select-header__des {
 			font-size: 20px;
 			line-height: 15px;
+			opacity: 0;
 		}
 	}
 
@@ -176,8 +178,18 @@
 	// ANIMATION
 	.select-header {
 		&.show {
-			opacity: 1;
-			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			.select-header__title {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.select-header__sub-title {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.select-header__des {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation-delay: 0.3s;
+			}
 		}
 	}
 
@@ -185,7 +197,7 @@
 		&.show {
 			.item {
 				opacity: 1;
-				animation: zoomIn 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 			}
 		}
 	}

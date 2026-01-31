@@ -27,35 +27,49 @@
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		opacity: 0;
 
-		img {
-			width: 648px;
-			height: 101px;
-			margin-bottom: 30px;
-		}
-
-		.title {
+		.intro-point__title {
 			display: flex;
-			align-items: flex-end;
-			margin-bottom: 16px;
-			font-size: 64px;
-			line-height: 80px;
-			color: black;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+			margin-bottom: 30px;
+			opacity: 0;
 
-			span {
-				transform: translateY(-8px);
-				font-size: 48px;
-				line-height: 48px;
+			img {
+				width: 648px;
+				height: 101px;
+			}
+
+			.title {
+				display: flex;
+				align-items: flex-end;
+				font-size: 64px;
+				line-height: 80px;
 				color: black;
+
+				span {
+					transform: translateY(-8px);
+					font-size: 48px;
+					line-height: 48px;
+					color: black;
+				}
 			}
 		}
 
-		.content {
-			font-size: 24px;
-			line-height: 27px;
-			font-weight: 700;
-			color: black;
+		.intro-point__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: max-content;
+			opacity: 0;
+
+			.content {
+				font-size: 24px;
+				line-height: 27px;
+				font-weight: 700;
+				color: black;
+			}
 		}
 	}
 
@@ -259,8 +273,14 @@
 	// ANIMATION
 	.intro-point__header {
 		&.show {
-			opacity: 1;
-			animation: fadeInLeft 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			.intro-point__title {
+				animation: slideWidth 1s forwards;
+			}
+
+			.intro-point__content {
+				animation: slideWidth 1s forwards;
+				animation-delay: 0.4s;
+			}
 		}
 	}
 
@@ -269,17 +289,17 @@
 			&.show {
 				.item-bg {
 					opacity: 1;
-					animation: fadeInRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+					animation: fadeInRight 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 				}
 
 				.item-content {
 					opacity: 1;
-					animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+					animation: fadeUpScale 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 				}
 
 				&.item-reverse {
 					.item-bg {
-						animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+						animation: fadeInLeft 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 					}
 				}
 			}

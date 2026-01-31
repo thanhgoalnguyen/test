@@ -96,51 +96,49 @@
 		<section class="banner js-el-scroll">
 			<img src="./assets/image/banner/bg.avif" alt="background" class="banner-bg" />
 			<div class="banner-wrapper">
-				<div class="banner-content">
-					<div class="banner-general">
-						<div class="banner-slogan">
-							<img src="./assets/image/banner/layer.avif" alt="layer"></img>
-							<p class="font-bold text-blue-100">ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
+				<div class="banner-general">
+					<div class="banner-slogan">
+						<img src="./assets/image/banner/layer.avif" alt="layer"></img>
+						<p class="font-bold text-blue-100">ずーっとつながる｡ネットの空白期間､ゼロへ｡</p>
+					</div>
+					<div class="banner-promotion">
+						<div class="banner-promotion__title">
+							<p class="font-bold text-blue-100">家では高速の</p>
+							<p class="font-bold text-blue-100">外では自由な</p>
 						</div>
-						<div class="banner-promotion">
-							<div class="banner-promotion__title">
-								<p class="font-bold text-blue-100">家では高速の</p>
-								<p class="font-bold text-blue-100">外では自由な</p>
+						<p class="banner-promotion__description-one">
+							<span class="medium font-bold">
+								光回線
+							</span>
+							<span class="small font-black">×</span>
+							<span class="large font-bold">モバイル</span>
+							<span class="larger font-medium font-roboto">Wi-Fi</span>
+						</p>
+						<p class="banner-promotion__description-two font-bold">これがネットの最適解。</p>
+					</div>
+					<div class="banner-feature">
+						<div class="banner-feature__item">
+							<img src="./assets/icon/banner/active.svg" alt="active"></img>
+							<div class="banner-feature__details-one">
+								<p class="font-bold text-black">最短</p>
+								<span class="font-extra-bold text-red-100 font-roboto font-italic">1</span>
+								<p class="font-bold text-black">週間でネットが使える</p>
 							</div>
-							<p class="banner-promotion__description-one">
-								<span class="medium font-bold">
-									光回線
-								</span>
-								<span class="small font-black">×</span>
-								<span class="large font-bold">モバイル</span>
-								<span class="larger font-medium font-roboto">Wi-Fi</span>
-							</p>
-							<p class="banner-promotion__description-two font-bold">これがネットの最適解。</p>
 						</div>
-						<div class="banner-feature">
-							<div class="banner-feature__item">
-								<img src="./assets/icon/banner/active.svg" alt="active"></img>
-								<div class="banner-feature__details-one">
-									<p class="font-bold text-black">最短</p>
-									<span class="font-extra-bold text-red-100 font-roboto font-italic">1</span>
-									<p class="font-bold text-black">週間でネットが使える</p>
-								</div>
+						<div class="banner-feature__item">
+							<img src="./assets/icon/banner/active.svg" alt="active"></img>
+							<div class="banner-feature__details-two">
+								<p class="title font-bold text-black">工事費実質</p>
+								<span class="font-black text-red-100">無料</span>
+								<p class="number font-bold text-black">※1</p>
 							</div>
-							<div class="banner-feature__item">
-								<img src="./assets/icon/banner/active.svg" alt="active"></img>
-								<div class="banner-feature__details-two">
-									<p class="title font-bold text-black">工事費実質</p>
-									<span class="font-black text-red-100">無料</span>
-									<p class="number font-bold text-black">※1</p>
-								</div>
-							</div>
-							<div class="banner-feature__item">
-								<img src="./assets/icon/banner/active.svg" alt="active"></img>
-								<div class="banner-feature__details-three">
-									<p class="font-bold text-black">スマホも</p>
-									<span class="font-black text-red-100">毎月割引</span>
-									<p class="number font-bold text-black">※2</p>
-								</div>
+						</div>
+						<div class="banner-feature__item">
+							<img src="./assets/icon/banner/active.svg" alt="active"></img>
+							<div class="banner-feature__details-three">
+								<p class="font-bold text-black">スマホも</p>
+								<span class="font-black text-red-100">毎月割引</span>
+								<p class="number font-bold text-black">※2</p>
 							</div>
 						</div>
 					</div>
@@ -195,15 +193,17 @@
 		</section>
 
 		<!-- FORM -->
-		<section class="form">
-			<div class="form-title js-el-scroll">
-				<p>WEBでカンタン</p>
-				<span>30</span>
-				<p>秒</p>
-				<img src="./assets/icon/form/title.svg" alt="title" />
+		<section class="form js-el-scroll">
+			<div class="form-header">
+				<div class="form-title">
+					<p>WEBでカンタン</p>
+					<span>30</span>
+					<p>秒</p>
+					<img src="./assets/icon/form/title.svg" alt="title" />
+				</div>
+				<p class="form-des">専門スタッフがお電話させていただきます!</p>
 			</div>
-			<p class="form-des js-el-scroll">専門スタッフがお電話させていただきます!</p>
-			<div class="form-render js-el-scroll">
+			<div class="form-render">
 				<div></div>
 			</div>
 			<img src="./assets/icon/form/triangle.svg" alt="triangle" class="form-icon" />
@@ -214,7 +214,11 @@
 		<section class="service">
 			<img loading="lazy" src="./assets/icon/service/icon1.svg" alt="icon" class="service-icon" />
 			<div class="service-header js-el-scroll">
-				<p class="service-header__title">おトクで便利なサービスが充実!</p>
+				<div class="service-header__title">
+					<span class="icon-left"></span>
+					<p>おトクで便利なサービスが充実!</p>
+					<span class="icon-right"></span>
+				</div>
 				<div class="service-header__des">
 					<span class="layer"></span>
 					<div class="title">
@@ -237,6 +241,12 @@
 						</p>
 						<p class="symbol">!</p>
 					</div>
+				</div>
+				<div class="service-header__content">
+					<span>※</span>
+					<p>特典総額26万1,700円は後記の特典を合算した総額です。ONE MOBILE 超おトク割 2年間62,040円割引+SoftBank光 工事費サポート はじめて割
+						31,680円割引＋SoftBank光・10ギガ もっとめちゃトク割 6ヵ月間41,580円割引＋おうち割光セット 2年間の割引総額26,400円+SoftBank
+						あんしん乗り換えキャンペーン 最大10万円還元</p>
 				</div>
 			</div>
 			<div class="service-body">
@@ -266,6 +276,10 @@
 								<p class="medium">→</p>
 								<p class="large">1,100<span class="medium">円 / 月〜</span></p>
 							</div>
+						</div>
+						<div class="content-fee">
+							<p class="text-black">※</p>
+							<p class="text-black">ONE MOBILE 基本月額3,850円</p>
 						</div>
 					</div>
 				</div>
@@ -383,23 +397,22 @@
 							class="service-item__label" />
 						<img loading="lazy" src="./assets/icon/service/item4.svg" alt="icon"
 							class="service-item__icon" />
-						<p class="service-item__title">工事費サポート はじめて割</p>
+						<p class="service-item__title">SoftBank あんしん乗り換えキャンペーン</p>
 						<div class="service-item__general">
 							<div class="service-item__name">
 								<p>乗換時の他社違約金</p>
 							</div>
-							<div class="service-item__detail">
-								<div class="service-item__max">
-									<p class="medium">最大</p>
+							<div class="service-item__info">
+								<div class="service-item__detail">
+									<p class="large font-roboto">満額</p>
+									<span></span>
 								</div>
-								<p class="large font-roboto">10</p>
-								<p class="medium">万円</p>
-								<span></span>
+								<div class="service-item__order">
+									<p class="medium">還元</p>
+									<p class="small">※6</p>
+								</div>
 							</div>
-							<div class="service-item__order">
-								<p class="medium">還元</p>
-								<p class="small">※6</p>
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -425,13 +438,14 @@
 				<li>
 					<div>
 						<p class="order">※3</p>
-						<p>当サイト経由で「SoftBank光」と「ONE MOBILE」をお申込みいただくことで超おトク割が自動適用となります。割引はONE MOBILEにのみ適用となります。</p>
+						<p>当サイト経由で「SoftBank 光」と「ONE MOBILE」をお申込みいただくことで超おトク割が自動適用となります。割引はONE MOBILEにのみ適用となります。</p>
 					</div>
 				</li>
 				<li>
 					<div>
 						<p class="order">※4</p>
-						<p>SoftBank光の工事日が確定後、モバイルWi-Fiを発送します。</p>
+						<p>SoftBank光の工事日が確定後、モバイルWi-Fiを発送します。
+						</p>
 					</div>
 				</li>
 				<li>
@@ -458,10 +472,14 @@
 		<section class="intro-point">
 			<img loading="lazy" src="./assets/image/intro-point/bg.avif" alt="background" class="intro-point__bg" />
 			<div class="intro-point__header js-el-scroll">
-				<p class="title font-black">家のネット<span>は､</span></p>
-				<img loading="lazy" src="./assets/image/intro-point/title.avif" alt="title" />
-				<p class="content">選ばれ続ける理由があります</p>
-				<p class="content">圧倒的な速度、セット割引、そして手厚い乗り換えサポート。</p>
+				<div class="intro-point__title">
+					<p class="title font-black">家のネット<span>は､</span></p>
+					<img loading="lazy" src="./assets/image/intro-point/title.avif" alt="title" />
+				</div>
+				<div class="intro-point__content">
+					<p class="content">選ばれ続ける理由があります</p>
+					<p class="content">圧倒的な速度、セット割引、そして手厚い乗り換えサポート。</p>
+				</div>
 			</div>
 			<div class="intro-point__body">
 				<div class="item js-el-scroll">
@@ -489,20 +507,26 @@
 					<img loading="lazy" src="./assets/image/intro-point/image2.avif" alt="background" class="item-bg" />
 					<div class="item-content box-shadow-blue">
 						<div class="item-content__main-title">
-							<p>おうち割で</p>
+							<p>おうち割 光セットで</p>
 						</div>
 						<div class="item-content__sub-title">
 							<p>スマホ代毎月割引</p>
 							<span class="line"></span>
 						</div>
 						<div class="item-content__des">
-							<p class="medium">SoftBank、Y!mobileユーザーなら必須。</p>
+							<p class="medium">ソフトバンク、ワイモバイルユーザーなら必須。</p>
 							<div class="order">
-								<p class="medium-highlight">スマホ代が毎月最大1,100円割引。</p>
-								<p class="medium">離れて暮らす家族も、同居中の</p>
+								<p class="medium">スマホ代がソフトバンクの場合は</p>
+								<p class="medium-highlight">毎月最大1,100円割引</p>
+								<p class="medium">、ワイモバ</p>
 							</div>
 							<div class="order">
-								<p class="medium">パートナーやシェアハウスの友人も最大10回線まで対象です。</p>
+								<p class="medium">イルの場合は</p>
+								<p class="medium-highlight">毎月最大1,650円割引。</p>
+								<p class="medium">離れて暮らす家族も、同居中</p>
+							</div>
+							<div class="order">
+								<p class="medium">のパートナーやシェアハウスの友人も最大10回線まで対象です。</p>
 								<p class="small">※2</p>
 							</div>
 						</div>
@@ -514,10 +538,10 @@
 					<img loading="lazy" src="./assets/image/intro-point/image3.avif" alt="background" class="item-bg" />
 					<div class="item-content box-shadow-blue">
 						<div class="item-content__main-title">
-							<p>乗り換え時</p>
+							<p>乗換え時の他社違約金を</p>
 						</div>
 						<div class="item-content__sub-title">
-							<p>最大10万円還元</p>
+							<p>満額還元</p>
 							<span>!</span>
 							<span class="line"></span>
 						</div>
@@ -527,7 +551,7 @@
 								<p class="medium-highlight">最大10万円まで満額還元。</p>
 								<p class="small">※6</p>
 							</div>
-							<p class="medium">さらにSoftBank光の開通工事費も実質無料になるため1、</p>
+							<p class="medium">さらにSoftBank光の開通工事費も実質無料になるため、</p>
 							<div class="order">
 								<p class="medium">初期費用の心配は不要です。</p>
 								<p class="small">※1</p>
@@ -717,7 +741,7 @@
 		</section>
 
 		<!-- CONVERSION -->
-		<section class="conversion">
+		<section class="conversion js-el-scroll">
 			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
 			<div class="conversion-wrapper">
 				<div class="conversion-content">
@@ -1021,131 +1045,132 @@
 				</div>
 			</form>
 			<img src="./assets/icon/simulation/arrow-down.svg" alt="arrow" class="simulation-arrow" />
-			<p class="simulation-result-header font-bold text-blue-100">シミュレーション結果</p>
-			<div class="simulation-result">
-				<div class="simulation-result__content">
-					<div class="header">
-						<p class="header-title font-bold text-blue-100">選択内容</p>
-						<div>
-							<img src="./assets/icon/simulation/checkbox-active.svg" alt="checkbox" />
-							<p class="js-simulation-header-step-1">マンションタイプ</p>
-						</div>
-						<div>
-							<img src="./assets/icon/simulation/checkbox-active.svg" alt="checkbox" />
-							<p class="js-simulation-header-step-2">1ギガ</p>
-						</div>
-						<div>
-							<img src="./assets/icon/simulation/checkbox-active.svg" alt="checkbox" />
-							<p class="js-simulation-header-step-3">USB型ルーター</p>
-						</div>
-					</div>
-					<div class="tag-wrapper">
-						<p class="tag-wrapper__title font-bold text-blue-100">月額料金</p>
-						<div class="tag-wrapper__button">
-							<button class="js-simulation-result-tag active" data-type="24">
-								初月～24ヵ月目
-							</button>
-							<button class="js-simulation-result-tag" data-type="25">
-								25ヵ月目～
-							</button>
-						</div>
-					</div>
-					<div class="body js-simulation-result-body">
-						<div class="item">
-							<p class="item-title">初月</p>
-							<div class="item-price">
-								<p class="medium">0</p>
-								<p class="small">円</p>
+			<div class="simulation-result-wrapper js-simulation-result-wrapper js-el-scroll">
+				<p class="simulation-result-header font-bold text-blue-100">シミュレーション結果</p>
+				<div class="simulation-result">
+					<div class="simulation-result__content">
+						<div class="header">
+							<p class="header-title font-bold text-blue-100">選択内容</p>
+							<div>
+								<img src="./assets/icon/simulation/checkbox-active.svg" alt="checkbox" />
+								<p class="js-simulation-header-step-1">マンションタイプ</p>
+							</div>
+							<div>
+								<img src="./assets/icon/simulation/checkbox-active.svg" alt="checkbox" />
+								<p class="js-simulation-header-step-2">1ギガ</p>
+							</div>
+							<div>
+								<img src="./assets/icon/simulation/checkbox-active.svg" alt="checkbox" />
+								<p class="js-simulation-header-step-3">USB型ルーター</p>
 							</div>
 						</div>
-						<span></span>
-						<div class="item">
-							<p class="item-title">2~3ヵ月目</p>
-							<div class="item-price">
-								<p class="medium">1,100</p>
-								<p class="small">円</p>
+						<div class="tag-wrapper">
+							<p class="tag-wrapper__title font-bold text-blue-100">月額料金</p>
+							<div class="tag-wrapper__button">
+								<button class="js-simulation-result-tag active" data-type="24">
+									初月～24ヵ月目
+								</button>
+								<button class="js-simulation-result-tag" data-type="25">
+									25ヵ月目～
+								</button>
 							</div>
 						</div>
-						<span></span>
-						<div class="item">
-							<p class="item-title">2~24ヵ月目</p>
-							<div class="item-price">
-								<p class="medium">5,280</p>
-								<p class="small">円</p>
+						<div class="body js-simulation-result-body">
+							<div class="item">
+								<p class="item-title">初月</p>
+								<div class="item-price">
+									<p class="medium">0</p>
+									<p class="small">円</p>
+								</div>
 							</div>
-						</div>
-					</div>
-					<button class="open-price js-open-modal" data-type="price">
-						<div>
-							<p class="font-bold text-blue-100">料金の内訳を見る</p>
 							<span></span>
-						</div>
-						<img src="./assets/icon/simulation/right-arrow.svg" alt="arrow" />
-					</button>
-				</div>
-				<div class="simulation-result__campaign">
-					<p class="title font-bold text-blue-100">実施中キャンペーン</p>
-					<div class="body">
-						<div class="item">
-							<img src="./assets/icon/simulation/label1.svg" alt="label" class="item-label" />
-							<div class="item-title">
-								<p>超おトク割</p>
+							<div class="item">
+								<p class="item-title">2~3ヶ月目</p>
+								<div class="item-price">
+									<p class="medium">1,100</p>
+									<p class="small">円</p>
+								</div>
 							</div>
-							<div class="item-des">
-								<p>モバイルWi-Fi</p>
-								<p>特別価格</p>
-							</div>
-							<div class="item-general">
-								<p class="medium">最大</p>
-								<div class="item-general__line">
-									<p class="large">62,040</p>
-									<div class="order">
-										<p class="small">※3</p>
-										<p class="medium">円割引</p>
-									</div>
-									<span></span>
+							<span></span>
+							<div class="item">
+								<p class="item-title">2~24ヶ月目</p>
+								<div class="item-price">
+									<p class="medium">5,280</p>
+									<p class="small">円</p>
 								</div>
 							</div>
 						</div>
-						<div class="item">
-							<img src="./assets/icon/simulation/label2.svg" alt="label" class="item-label" />
-							<div class="item-title">
-								<p>工事費実質無料</p>
+						<button class="open-price js-open-modal" data-type="price">
+							<div>
+								<p class="font-bold text-blue-100">料金の内訳を見る</p>
+								<span></span>
 							</div>
-							<div class="item-des">
-								<p>SoftBank 光</p>
-								<p>工事費サポート はじめて割 等</p>
-							</div>
-							<div class="item-general">
-								<p class="medium">最大</p>
-								<div class="item-general__line">
-									<p class="large">31,680</p>
-									<div class="order">
-										<p class="small">※1</p>
-										<p class="medium">円割引</p>
+							<img src="./assets/icon/simulation/right-arrow.svg" alt="arrow" />
+						</button>
+					</div>
+					<div class="simulation-result__campaign">
+						<p class="title font-bold text-blue-100">実施中キャンペーン</p>
+						<div class="body">
+							<div class="item">
+								<img src="./assets/icon/simulation/label1.svg" alt="label" class="item-label" />
+								<div class="item-title">
+									<p>超おトク割</p>
+								</div>
+								<div class="item-des">
+									<p>モバイルWi-Fi</p>
+									<p>特別価格</p>
+								</div>
+								<div class="item-general">
+									<p class="medium">最大</p>
+									<div class="item-general__line">
+										<p class="large">62,040</p>
+										<div class="order">
+											<p class="small">※3</p>
+											<p class="medium">円割引</p>
+										</div>
+										<span></span>
 									</div>
-									<span></span>
 								</div>
 							</div>
-						</div>
-						<div class="item">
-							<img src="./assets/icon/simulation/label3.svg" alt="label" class="item-label" />
-							<div class="item-title">
-								<p>他社違約金サポート</p>
-							</div>
-							<div class="item-des">
-								<p>SoftBank</p>
-								<p>あんしん乗り換えキャンペーン</p>
-							</div>
-							<div class="item-general">
-								<p class="medium">最大</p>
-								<div class="item-general__line">
-									<p class="large">10</p>
-									<div class="order">
-										<p class="small">※6</p>
-										<p class="medium">万円還元</p>
+							<div class="item">
+								<img src="./assets/icon/simulation/label2.svg" alt="label" class="item-label" />
+								<div class="item-title">
+									<p>工事費実質無料</p>
+								</div>
+								<div class="item-des">
+									<p>SoftBank 光</p>
+									<p>工事費サポート はじめて割 等</p>
+								</div>
+								<div class="item-general">
+									<p class="medium">最大</p>
+									<div class="item-general__line">
+										<p class="large">31,680</p>
+										<div class="order">
+											<p class="small">※1</p>
+											<p class="medium">円割引</p>
+										</div>
+										<span></span>
 									</div>
-									<span></span>
+								</div>
+							</div>
+							<div class="item item-three">
+								<img src="./assets/icon/simulation/label3.svg" alt="label" class="item-label" />
+								<div class="item-title">
+									<p>他社違約金サポート</p>
+								</div>
+								<div class="item-des">
+									<p>SoftBank</p>
+									<p>あんしん乗り換えキャンペーン</p>
+								</div>
+								<div class="item-general">
+									<div class="item-general__line">
+										<p class="large">満額</p>
+										<div class="order">
+											<p class="small">※6</p>
+											<p class="medium">還元</p>
+										</div>
+										<span></span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1183,7 +1208,8 @@
 				</div>
 				<div>
 					<span>※3</span>
-					<p>当サイト経由で「SoftBank光」と「ONE MOBILE」をお申込みいただくことで超おトク割が自動適用となります。割引はONE MOBILEにのみ適用となります。</p>
+					<p>当サイト経由で「SoftBank光」と「ONE MOBILE」をお申込みいただくことで超おトク割が自動適用となります。割引はONE MOBILEにのみ適用となります。
+					</p>
 				</div>
 				<div>
 					<span>※6</span>
@@ -1216,16 +1242,18 @@
 						<br />
 						詳しくは以下ページをご覧ください。
 						<br />
-						ユニバーサルサービス制度について：https://www.softbank.jp/ybb/universal/
+						ユニバーサルサービス制度について：<a class="text-black"
+							href="https://www.softbank.jp/ybb/universal/">https://www.softbank.jp/ybb/universal/</a>
 						<br />
-						電話リレーサービス制度について：https://www.softbank.jp/ybb/telephone-relay/
+						電話リレーサービス制度について：<a class="text-black"
+							href="https://www.softbank.jp/ybb/telephone-relay/">https://www.softbank.jp/ybb/telephone-relay/</a>
 					</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- CONVERSION -->
-		<section class="conversion">
+		<section class="conversion js-el-scroll">
 			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
 			<div class="conversion-wrapper">
 				<div class="conversion-content">
@@ -1305,28 +1333,30 @@
 
 		<!-- RESPONSE -->
 		<section class="response">
-			<div class="response-title js-el-scroll">
-				<p class="font-black text-black">ご利用中のお客様の声</p>
-				<span></span>
-			</div>
-			<p class="response-des font-bold text-black">家でも外でも使える便利さが、82%の”おすすめしたい”に繋がりました。</p>
-			<div class="response-info">
-				<div class="response-info__content">
-					<div class="response-info__content-line">
-						<div class="line">
-							<p class="medium font-black text-blue-100">友人におすすめしたい</p>
-							<span></span>
-						</div>
-						<p class="small font-black text-black">と</p>
-					</div>
-					<p class="small font-black text-black">お答えいただいた率</p>
+			<div class="response-header js-el-scroll">
+				<div class="response-title">
+					<p class="font-black text-black">ご利用中のお客様の声</p>
+					<span></span>
 				</div>
-				<img src="./assets/icon/response/icon.svg" alt="icon" class="response-info__icon" />
-				<img src="./assets/icon/response/chart.svg" alt="chart" class="response-info__percent-img" />
-				<p class="response-info__percent text-gradient-blue">
-					<span class="medium font-extra-bold">82</span>
-					<span class="small font-extra-bold">%</span>
-				</p>
+				<p class="response-des font-bold text-black">家でも外でも使える便利さが、82%の”おすすめしたい”に繋がりました。</p>
+				<div class="response-info">
+					<div class="response-info__content">
+						<div class="response-info__content-line">
+							<div class="line">
+								<p class="medium font-black text-blue-100">友人におすすめしたい</p>
+								<span></span>
+							</div>
+							<p class="small fontcampaign-black text-black">と</p>
+						</div>
+						<p class="small font-black text-black">お答えいただいた率</p>
+					</div>
+					<img src="./assets/icon/response/icon.svg" alt="icon" class="response-info__icon" />
+					<img src="./assets/icon/response/chart.svg" alt="chart" class="response-info__percent-img" />
+					<p class="response-info__percent text-gradient-blue">
+						<span class="medium font-extra-bold font-roboto">82</span>
+						<span class="small font-extra-bold font-roboto">%</span>
+					</p>
+				</div>
 			</div>
 			<div class="swiper response-swiper js-response-swiper js-el-scroll">
 				<div class="swiper-wrapper js-response-swiper-wrapper"></div>
@@ -1359,16 +1389,31 @@
 
 		<!-- CAMPAIGN -->
 		<section class="campaign">
-			<div class="campaign-title js-el-scroll">
-				<p class="font-black text-black">実施中のキャンペーン</p>
-				<span></span>
+			<div class="campaign-header js-el-scroll">
+				<div class="campaign-title">
+					<p class="font-black text-black">実施中のキャンペーン</p>
+					<span></span>
+				</div>
+				<p class="campaign-des font-bold text-black">お得にお申込みしていただける様に、さまざまな特典をご用意しております。</p>
 			</div>
-			<p class="campaign-des font-bold text-black">お得にお申込みしていただける様に、さまざまな特典をご用意しております。</p>
 			<div class="swiper campaign-swiper js-campaign-swiper js-el-scroll">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide item box-shadow-blue">
 						<img src="./assets/image/campaign/discount.avif" alt="discount" class="item-img" />
 						<a href="https://www.softbank.jp/mobile/special/ouchiwari-hikari/" class="button-outline">
+							<p>キャンペーン詳細を見る</p>
+							<div class="arrow-wrapper">
+								<div class="arrow-group">
+									<img src="./assets/icon/button/white-arrow.svg" alt="arrow" />
+									<img src="./assets/icon/button/blue-arrow.svg" alt="arrow" />
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide item box-shadow-blue">
+						<img src="./assets/image/campaign/refund.avif" alt="refund" class="item-img" />
+						<a href="https://www.softbank.jp/internet/campaigns/list/anshin-norikae01/?"
+							class="button-outline">
 							<p>キャンペーン詳細を見る</p>
 							<div class="arrow-wrapper">
 								<div class="arrow-group">
@@ -1496,12 +1541,15 @@
 		<!-- STEP -->
 		<section class="step js-step" data-type="feature">
 			<div class="step-header js-el-scroll">
-				<p class="title font-black text-black">かんたん<span
-						class="font-black text-blue-100 font-roboto font-italic">5</span>ステップ</p>
-				<p class="sub-title font-black text-black">ご利用開始までの流れ</p>
-				<span class="line"></span>
+				<div class="step-title">
+					<p class="title font-black text-black">かんたん<span
+							class="font-black text-blue-100 font-roboto font-italic">5</span>ステップ</p>
+					<p class="sub-title font-black text-black">ご利用開始までの流れ</p>
+					<span class="line"></span>
+				</div>
+				<p class="step-des font-bold text-black">お申し込みタイプに合わせて、最適なフローをご案内します。</p>
 			</div>
-			<p class="step-des js-el-scroll font-bold text-black">お申し込みタイプに合わせて、最適なフローをご案内します。</p>
+
 			<div class="step-content js-step js-el-scroll">
 				<div class="step-content__header">
 					<button class="js-step-tag active font-bold text-blue-100" data-type="feature">新規お申込み</button>
@@ -1646,11 +1694,14 @@
 
 		<!-- FAQ -->
 		<section class="faq">
-			<div class="faq-title js-el-scroll">
-				<p class="font-black text-black">よくある質問</p>
-				<span></span>
+			<div class="faq-header js-el-scroll">
+				<div class="faq-title">
+					<p class="font-black text-black">よくある質問</p>
+					<span></span>
+				</div>
+				<p class="faq-des font-bold text-black">お申込み時によくご質問いただく内容をまとめました</p>
 			</div>
-			<p class="faq-des js-el-scroll font-bold text-black">お申込み時によくご質問いただく内容をまとめました</p>
+
 			<div class="faq-content js-faq-content js-el-scroll" data-type="bank">
 				<div class="faq-content__header">
 					<button class="js-faq-tag active font-bold text-blue-100" data-type="bank">SoftBank光</button>
@@ -1930,7 +1981,7 @@
 		</section>
 
 		<!-- CONVERSION -->
-		<section class="conversion conversion-last">
+		<section class="conversion conversion-last js-el-scroll">
 			<img src="./assets/image/conversion/bg.avif" alt="background" class="conversion-background" />
 			<div class="conversion-wrapper">
 				<div class="conversion-content">

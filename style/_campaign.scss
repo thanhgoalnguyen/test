@@ -9,28 +9,36 @@
 	background: var(--blue-400);
 	overflow: hidden;
 
-	.campaign-title {
+	.campaign-header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 22px;
-		opacity: 0;
+		gap: 48px;
 
-		p {
-			font-size: 48px;
-			line-height: 35px;
+		.campaign-title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 22px;
+			opacity: 0;
+
+			p {
+				font-size: 48px;
+				line-height: 35px;
+			}
+
+			span {
+				width: 27px;
+				height: 2px;
+				background-color: var(--blue-100);
+			}
 		}
 
-		span {
-			width: 27px;
-			height: 2px;
-			background-color: var(--blue-100);
+		.campaign-des {
+			font-size: 18px;
+			line-height: 13px;
+			opacity: 0;
 		}
-	}
-
-	.campaign-des {
-		font-size: 18px;
-		line-height: 13px;
 	}
 
 	.campaign-swiper {
@@ -72,6 +80,18 @@
 	}
 
 	// ANIMATION
+	.campaign-header {
+		&.show {
+			.campaign-title {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.campaign-des {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation-delay: 0.5s;
+			}
+		}
+	}
 	.campaign-title {
 		&.show {
 			opacity: 1;
@@ -87,27 +107,27 @@
 				.item {
 					&:nth-child(4) {
 						z-index: 5;
-						animation: slideFromLeft1 1s ease-out;
+						animation: slideFromLeft1 0.3s ease-out;
 					}
 
 					&:nth-child(5) {
 						z-index: 4;
-						animation: slideFromLeft2 1.1s ease-out;
+						animation: slideFromLeft2 0.4s ease-out;
 					}
 
 					&:nth-child(6) {
 						z-index: 3;
-						animation: slideFromLeft3 1.2s ease-out;
+						animation: slideFromLeft3 0.5s ease-out;
 					}
 
 					&:nth-child(7) {
 						z-index: 2;
-						animation: slideFromLeft4 1.3s ease-out;
+						animation: slideFromLeft4 0.6s ease-out;
 					}
 
 					&:nth-child(8) {
 						z-index: 1;
-						animation: slideFromLeft5 1.4s ease-out;
+						animation: slideFromLeft5 0.7s ease-out;
 					}
 				}
 			}

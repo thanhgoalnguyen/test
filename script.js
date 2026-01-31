@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// SIMULATION
 	const simulationForm = document.querySelector('.js-simulation-form');
+	const simulationResultWrapper = document.querySelector('.simulation-result-wrapper');
 	const simulationResultBody = document.querySelector('.js-simulation-result-body');
 	const simulationResultTags = document.querySelectorAll('.js-simulation-result-tag');
 	const simulationHeaderStep1 = document.querySelector('.js-simulation-header-step-1');
@@ -122,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "apartment",
 			step2: "1gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヵ月目", value: "1,320" }, { title: "4~24ヵ月目", value: "5,500" }],
-			type25: [{ title: "25ヵ月目~", value: "8,030" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,320" }, { title: "4~24ヶ月目", value: "5,500" }],
+			type25: [{ title: "25ヶ月目~", value: "8,030" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
 				{ title: "2~3ヶ月目", value: "row2", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
@@ -136,98 +137,98 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "family",
 			step2: "1gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヵ月目", value: "1,320" }, { title: "4~24ヵ月目", value: "7,040" }],
-			type25: [{ title: "25ヵ月目~", value: "9,570" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,320" }, { title: "4~24ヶ月目", value: "7,040" }],
+			type25: [{ title: "25ヶ月目~", value: "9,570" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヵ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "4~24ヵ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "7,040" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "9,570" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "9,570" }
+				{ title: "2~3ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
+				{ title: "4~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "7,040" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "9,570" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "9,570" }
 			]
 		},
 		{
 			step1: "apartment",
 			step2: "10gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,320" }, { title: "7~24ヵ月目", value: "8,250" }],
-			type25: [{ title: "25ヵ月目~", value: "10,780" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,320" }, { title: "7~24ヶ月目", value: "8,250" }],
+			type25: [{ title: "25ヶ月目~", value: "10,780" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヵ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "7~24ヵ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,250" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "10,780" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ title: "2~6ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
+				{ title: "7~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,250" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "10,780" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
 			]
 		},
 		{
 			step1: "family",
 			step2: "10gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,320" }, { title: "7~24ヵ月目", value: "8,250" }],
-			type25: [{ title: "25ヵ月目~", value: "10,780" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,320" }, { title: "7~24ヶ月目", value: "8,250" }],
+			type25: [{ title: "25ヶ月目~", value: "10,780" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヵ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "7~24ヵ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,250" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "10,780" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ title: "2~6ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
+				{ title: "7~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,250" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "10,780" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
 			]
 		},
 		{
 			step1: "apartment",
 			step2: "1gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヵ月目", value: "1,100" }, { title: "4~24ヵ月目", value: "5,280" }],
-			type25: [{ title: "25ヵ~49ヵ月目", value: "7,810" }, { title: "50ヵ月目~", value: "8,030" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,100" }, { title: "4~24ヶ月目", value: "5,280" }],
+			type25: [{ title: "25ヶ~49ヶ月目", value: "7,810" }, { title: "50ヶ月目~", value: "8,030" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヵ月", value: "row2", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "4~24ヵ月目", value: "row3", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "5,280" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "7,810" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "8,030" }
+				{ title: "2~3ヶ月", value: "row2", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
+				{ title: "4~24ヶ月目", value: "row3", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "5,280" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "7,810" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "8,030" }
 			]
 		},
 		{
 			step1: "family",
 			step2: "1gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヵ月目", value: "1,100" }, { title: "4~24ヵ月目", value: "6,820" }],
-			type25: [{ title: "25ヵ~49ヵ月目", value: "9,350" }, { title: "50ヵ月目~", value: "9,570" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,100" }, { title: "4~24ヶ月目", value: "6,820" }],
+			type25: [{ title: "25ヶ~49ヶ月目", value: "9,350" }, { title: "50ヶ月目~", value: "9,570" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヵ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "4~24ヵ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "6,820" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "9,350" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "9,570" }
+				{ title: "2~3ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
+				{ title: "4~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "6,820" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "9,350" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "9,570" }
 			]
 		},
 		{
 			step1: "apartment",
 			step2: "10gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,100" }, { title: "7~24ヵ月目", value: "8,030" }],
-			type25: [{ title: "25ヵ~49ヵ月目", value: "10,560" }, { title: "50ヵ月目~", value: "10,780" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,100" }, { title: "7~24ヶ月目", value: "8,030" }],
+			type25: [{ title: "25ヶ~49ヶ月目", value: "10,560" }, { title: "50ヶ月目~", value: "10,780" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヵ月", value: "row2", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "7~24ヵ月目", value: "row3", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "8,030" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "10,560" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ title: "2~6ヶ月", value: "row2", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
+				{ title: "7~24ヶ月目", value: "row3", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "8,030" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "10,560" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
 			]
 		},
 		{
 			step1: "family",
 			step2: "10gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,100" }, { title: "7~24ヵ月目", value: "8,030" }],
-			type25: [{ title: "25ヵ~49ヵ月目", value: "10,560" }, { title: "50ヵ月目~", value: "10,780" }],
+			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,100" }, { title: "7~24ヶ月目", value: "8,030" }],
+			type25: [{ title: "25ヶ~49ヶ月目", value: "10,560" }, { title: "50ヶ月目~", value: "10,780" }],
 			priceTable: [
 				{ title: "初月", value: "row1", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヵ月", value: "row2", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "7~24ヵ月目", value: "row3", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "8,030" },
-				{ title: "25~49ヵ月目", value: "row4", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "10,560" },
-				{ title: "50ヵ月目~", value: "row5", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ title: "2~6ヶ月", value: "row2", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
+				{ title: "7~24ヶ月目", value: "row3", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "8,030" },
+				{ title: "25~49ヶ月目", value: "row4", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "10,560" },
+				{ title: "50ヶ月目~", value: "row5", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
 			]
 		}
 	];
@@ -404,7 +405,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	stepTags.forEach((item) => {
 		item.addEventListener('click', function () {
 			const type = item?.dataset?.type;
-			step.setAttribute('data-type', type)
+			step.setAttribute('data-type', type);
 
 			stepTags.forEach((tag) => tag.classList.remove('active'));
 			this.classList.add('active');
@@ -452,6 +453,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	simulationForm.addEventListener('change', function (e) {
+		simulationResultWrapper.classList.remove('show');
+
 		const formData = new FormData(e.currentTarget);
 		const formValues = Object.fromEntries(formData.entries());
 
@@ -464,6 +467,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		simulationHeaderStep3.innerText = dataStep3?.label;
 
 		handleChangeSimulationResult();
+
+		setTimeout(() => {
+			simulationResultWrapper.classList.add('show');
+		})
 	})
 
 	const observerOptions = {
@@ -485,6 +492,12 @@ document.addEventListener("DOMContentLoaded", function () {
 						entry.target.classList.remove('show');
 						entry.target.classList.add('campaign-swiper-show');
 					}, 1600)
+				}
+
+				if (entry.target.classList?.contains('js-step')) {
+					setTimeout(() => {
+						entry.target.classList.add('show-slower');
+					}, 1300)
 				}
 			}
 		});

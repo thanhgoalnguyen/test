@@ -12,36 +12,43 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		opacity: 0;
+		gap: 48px;
 
-		.title {
-			margin-bottom: 24px;
-			font-size: 32px;
-			line-height: 23px;
+		.step-title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			opacity: 0;
 
-			span {
+			.title {
+				margin-bottom: 24px;
+				font-size: 32px;
+				line-height: 23px;
+
+				span {
+					font-size: 48px;
+					line-height: 34px;
+				}
+			}
+
+			.sub-title {
+				margin-bottom: 22px;
 				font-size: 48px;
-				line-height: 34px;
+				line-height: 35px;
+			}
+
+			.line {
+				width: 27px;
+				height: 2px;
+				background-color: var(--blue-100);
 			}
 		}
 
-		.sub-title {
-			margin-bottom: 22px;
-			font-size: 48px;
-			line-height: 35px;
+		.step-des {
+			font-size: 18px;
+			height: 13px;
+			opacity: 0;
 		}
-
-		.line {
-			width: 27px;
-			height: 2px;
-			background-color: var(--blue-100);
-		}
-	}
-
-	.step-des {
-		font-size: 18px;
-		height: 13px;
-		opacity: 0;
 	}
 
 	.step-content {
@@ -50,7 +57,6 @@
 		align-items: center;
 		gap: 16px;
 		width: 100%;
-		opacity: 0;
 
 		.step-content__header {
 			display: grid;
@@ -60,6 +66,7 @@
 			height: 44px;
 			background-color: white;
 			border-radius: 999px;
+			opacity: 0;
 
 			button {
 				display: flex;
@@ -94,6 +101,7 @@
 			padding: 32px;
 			background-color: var(--blue-600);
 			border-radius: 16px;
+			opacity: 0;
 
 			.arrow {
 				aspect-ratio: 8/16;
@@ -227,18 +235,36 @@
 	}
 
 	// ANIMATION
-	.step-header,
-	.step-des {
+
+	.step-header {
 		&.show {
-			opacity: 1;
-			animation: fadeUpScale 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			.step-title {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.step-des {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation-delay: 0.3s;
+			}
 		}
 	}
 
 	.step-content {
 		&.show {
-			opacity: 1;
-			animation: fadeUpScale 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			.step-content__header {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+			}
+
+			.step-content__body {
+				animation: fadeUpScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+				animation-delay: 0.5s;
+			}
+		}
+
+		&.show-slower {
+			.step-content__body {
+				animation: fadeUpScale 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
+			}
 		}
 	}
 }
