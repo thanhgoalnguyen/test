@@ -108,6 +108,7 @@
 			}
 
 			.item {
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -144,6 +145,47 @@
 					line-height: 17.3px;
 					color: black;
 					text-align: center;
+				}
+
+				.item-badge {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateY(-21px) translateX(-50%);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 130px;
+					height: 47px;
+					padding: 8px 16px 0 16px;
+
+					img {
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 0;
+						width: 100%;
+						height: 100%;
+					}
+
+					p {
+						position: relative;
+						z-index: 1;
+						font-size: 12px;
+						line-height: 12px;
+						font-weight: 700;
+						font-style: italic;
+						color: white;
+						letter-spacing: -0.04em;
+					}
+
+					.top {
+						transform: translateY(-3px);
+					}
+
+					.bottom {
+						transform: translateX(-3px);
+					}
 				}
 
 				&.highlight {
