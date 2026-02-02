@@ -232,6 +232,7 @@
 	height: 48px;
 	margin-left: auto;
 	cursor: pointer;
+	transition: 0.2s;
 
 	img {
 		width: 100%;
@@ -239,6 +240,6 @@
 	}
 
 	&:hover {
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 }
