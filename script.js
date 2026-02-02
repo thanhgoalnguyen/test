@@ -12,6 +12,9 @@ import star4 from "./assets/icon/response/star-4.svg";
 import star5 from "./assets/icon/response/star-5.svg";
 
 document.addEventListener("DOMContentLoaded", function () {
+	// HEADER
+	const header = document.querySelector('.js-header');
+
 	// FAQ
 	const faqTags = document.querySelectorAll('.js-faq-tag');
 	const faqContent = document.querySelector('.js-faq-content');
@@ -30,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// SIMULATION
 	const simulationForm = document.querySelector('.js-simulation-form');
-	const simulationResultWrapper = document.querySelector('.simulation-result-wrapper');
+	const simulationResultWrapper = document.querySelector('.js-simulation-result-wrapper');
 	const simulationResultBody = document.querySelector('.js-simulation-result-body');
 	const simulationResultTags = document.querySelectorAll('.js-simulation-result-tag');
 	const simulationHeaderStep1 = document.querySelector('.js-simulation-header-step-1');
@@ -39,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// PRICE MODAL
 	const priceModalTagWrapper = document.querySelector('.js-price-modal-tag-wrapper');
+	const priceModalTableList = document.querySelector('.js-price-modal-table-list');
 	const priceModalFeeBank = document.querySelector('.js-price-modal-fee-bank');
 	const priceModalFeeMobile = document.querySelector('.js-price-modal-fee-mobile');
 	const priceModalSaveBank = document.querySelector('.js-price-modal-save-bank');
@@ -123,28 +127,234 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "apartment",
 			step2: "1gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,320" }, { title: "4~24ヶ月目", value: "5,500" }],
+			type24: [{ title: "初月", value: "4,180" }, { title: "2~24ヶ月目", value: "5,500" }],
 			type25: [{ title: "25ヶ月目~", value: "8,030" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヶ月目", value: "row2", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "4~24ヶ月目", value: "row3", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "5,500" },
-				{ title: "25~48ヶ月目", value: "row4", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,030" },
-				{ title: "49ヶ月目~", value: "row5", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "8,030" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "4,180",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~24ヵ月目", 
+					value: "row2",
+					total: "5,500",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row3", 
+					total: "8,030",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row4", 
+					total: "8,030",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
 			step1: "family",
 			step2: "1gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,320" }, { title: "4~24ヶ月目", value: "7,040" }],
+			type24: [{ title: "初月", value: "5,720" }, { title: "4~24ヶ月目", value: "7,040" }],
 			type25: [{ title: "25ヶ月目~", value: "9,570" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "4~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "7,040" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "9,570" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "9,570" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "5,720",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~24ヵ月目", 
+					value: "row2",
+					total: "7,040",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row3", 
+					total: "9,570",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row4", 
+					total: "9,570",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
@@ -154,11 +364,166 @@ document.addEventListener("DOMContentLoaded", function () {
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,320" }, { title: "7~24ヶ月目", value: "8,250" }],
 			type25: [{ title: "25ヶ月目~", value: "10,780" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "7~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,250" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "10,780" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "0",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~6ヵ月", 
+					value: "row2",
+					total: "1,320",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "7~24ヵ月目", 
+					value: "row3", 
+					total: "8,250",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row4", 
+					total: "10,780",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row5", 
+					total: "10,780",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
@@ -168,39 +533,400 @@ document.addEventListener("DOMContentLoaded", function () {
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,320" }, { title: "7~24ヶ月目", value: "8,250" }],
 			type25: [{ title: "25ヶ月目~", value: "10,780" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "1,320" },
-				{ title: "7~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "8,250" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-660", priceBank: "0", priceMobile: "660", total: "10,780" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "0",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~6ヵ月", 
+					value: "row2",
+					total: "1,320",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "7~24ヵ月目", 
+					value: "row3", 
+					total: "8,250",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row4", 
+					total: "10,780",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "660"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row5", 
+					total: "10,780",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
 			step1: "apartment",
 			step2: "1gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,100" }, { title: "4~24ヶ月目", value: "5,280" }],
+			type24: [{ title: "初月", value: "4,180" }, { title: "4~24ヶ月目", value: "5,280" }],
 			type25: [{ title: "25ヶ~49ヶ月目", value: "7,810" }, { title: "50ヶ月目~", value: "8,030" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヶ月", value: "row2", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-4,180", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "4~24ヶ月目", value: "row3", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "5,280" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "7,810" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "4,180", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "8,030" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "4,180",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~24ヵ月目", 
+					value: "row2",
+					total: "5,280",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row3", 
+					total: "7,810",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row4", 
+					total: "8,030",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "4,180",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
 			step1: "family",
 			step2: "1gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "0" }, { title: "2~3ヶ月目", value: "1,100" }, { title: "4~24ヶ月目", value: "6,820" }],
+			type24: [{ title: "初月", value: "5,720" }, { title: "2~24ヵ月目", value: "6,820" }],
 			type25: [{ title: "25ヶ~49ヶ月目", value: "9,350" }, { title: "50ヶ月目~", value: "9,570" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~3ヶ月", value: "row2", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-5,720", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "4~24ヶ月目", value: "row3", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "6,820" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "9,350" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "5,720", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "9,570" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "5,720",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~24ヵ月目", 
+					value: "row2",
+					total: "6,820",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row3", 
+					total: "9,350",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row4", 
+					total: "9,570",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "5,720",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
@@ -210,11 +936,166 @@ document.addEventListener("DOMContentLoaded", function () {
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,100" }, { title: "7~24ヶ月目", value: "8,030" }],
 			type25: [{ title: "25ヶ~49ヶ月目", value: "10,560" }, { title: "50ヶ月目~", value: "10,780" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヶ月", value: "row2", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "7~24ヶ月目", value: "row3", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "8,030" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "10,560" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "0",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~6ヵ月", 
+					value: "row2",
+					total: "1,100",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "7~24ヵ月目", 
+					value: "row3", 
+					total: "8,030",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row4", 
+					total: "10,560",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row5", 
+					total: "10,780",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		},
 		{
@@ -224,11 +1105,166 @@ document.addEventListener("DOMContentLoaded", function () {
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヶ月目", value: "1,100" }, { title: "7~24ヶ月目", value: "8,030" }],
 			type25: [{ title: "25ヶ~49ヶ月目", value: "10,560" }, { title: "50ヶ月目~", value: "10,780" }],
 			priceTable: [
-				{ title: "初月", value: "row1", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-3,850", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "0" },
-				{ title: "2~6ヶ月", value: "row2", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "-6,930", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "1,100" },
-				{ title: "7~24ヶ月目", value: "row3", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "-2,530", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "8,030" },
-				{ title: "25~49ヶ月目", value: "row4", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "-440", priceBank: "0", priceMobile: "440", total: "10,560" },
-				{ title: "50ヶ月目~", value: "row5", feeBank: "6,930", feeMobile: "3,850", saveBank: "0", saveMobile: "0", speedDiscountBank: "0", speedDiscountMobile: "0", discountBank: "0", discountMobile: "0", priceBank: "0", priceMobile: "0", total: "10,780" }
+				{ 
+					title: "初月", 
+					value: "row1", 
+					total: "0",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-3,850"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
+				{ 
+					title: "2~6ヵ月", 
+					value: "row2",
+					total: "1,100",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "-6,930",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "7~24ヵ月目", 
+					value: "row3", 
+					total: "8,030",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "-2,530"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "25~49ヵ月目", 
+					value: "row4", 
+					total: "10,560",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "-660"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "440"
+						},
+					]
+				},
+				{ 
+					title: "50ヵ月目~", 
+					value: "row5", 
+					total: "10,780",
+					list: [
+						{
+							title: "基本料金※11",
+							bank: "6,930",
+							mobile: "3,850"
+						},
+						{
+							title: "超おトク割（24回）※12",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "10ギガ もっとめちゃトク割（6回）※13",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末購入応援割（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+						{
+							title: "端末代金（48回）",
+							bank: "0",
+							mobile: "0"
+						},
+					]
+				},
 			]
 		}
 	];
@@ -256,21 +1292,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		priceModalTags.forEach((item) => {
 			item.addEventListener('click', function () {
+				let listRow = "";
+
 				const type = item?.dataset?.type;
 				const data = simulationResultData?.priceTable?.find((item) => item?.value === type);
 				priceModalTags.forEach((tag) => tag.classList.remove('active'));
 				this.classList.add('active');
 
-				priceModalFeeBank.innerText = data?.feeBank;
-				priceModalFeeMobile.innerText = data?.feeMobile;
-				priceModalSaveBank.innerText = data?.saveBank;
-				priceModalSaveMobile.innerText = data?.saveMobile;
-				priceModalSpeedDiscountBank.innerText = data?.speedDiscountBank;
-				priceModalSpeedDiscountMobile.innerText = data?.speedDiscountMobile;
-				priceModalDiscountBank.innerText = data?.discountBank;
-				priceModalDiscountMobile.innerText = data?.discountMobile;
-				priceModalPriceBank.innerText = data?.priceBank;
-				priceModalPriceMobile.innerText = data?.priceMobile;
+				data?.list?.forEach((item) => {
+					const newRow = `
+						<div class="row">
+							<p>${item?.title}</p>
+							<p class="value">${item?.bank}</p>
+							<p class="value">${item?.mobile}</p>
+						</div>
+					`;
+					listRow += newRow;
+				});
+
+				priceModalTableList.innerHTML = listRow;
 				priceModalTotal.innerText = data?.total;
 			});
 		});
@@ -468,6 +1508,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		handleChangeSimulationResult();
 
+		const elementPosition = simulationResultWrapper.getBoundingClientRect().top;
+		const offsetPosition = elementPosition + window.pageYOffset - 100;
+
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: "smooth"
+		});
+
 		setTimeout(() => {
 			simulationResultWrapper.classList.add('show');
 		})
@@ -499,6 +1547,12 @@ document.addEventListener("DOMContentLoaded", function () {
 						entry.target.classList.add('show-slower');
 					}, 1300)
 				}
+
+				if (entry.target.classList?.contains('js-faq-content')) {
+					setTimeout(() => {
+						entry.target.classList.add('show-slower');
+					}, 1100)
+				}
 			}
 		});
 	}, observerOptions);
@@ -515,6 +1569,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	const handleCheckScrollTop = () => {
+		console.log(window.scrollY);
 		if (window.scrollY > window.innerHeight / 2) {
 			scrollTopButton.style.display = "block";
 		} else {
@@ -522,9 +1577,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	const handleCheckScrollHeader = () => {
+		if (window.scrollY > 0) {
+			header.classList.add("header-scroll");
+		} else {
+			header.classList.remove("header-scroll");
+		}
+	}
+
 	window.addEventListener('scroll', () => {
 		handleCheckScrollTop();
+		handleCheckScrollHeader();
 	});
 
 	handleCheckScrollTop();
+	handleCheckScrollHeader();
 })

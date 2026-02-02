@@ -221,5 +221,11 @@
 				animation-delay: 0.3s;
 			}
 		}
+
+		&.show-slower {
+			.faq-content__body {
+				animation: fadeUpScale 0.4s linear forwards !important;
+			}
+		}
 	}
 }
