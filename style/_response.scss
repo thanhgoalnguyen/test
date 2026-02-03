@@ -13,6 +13,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 48px;
+		width: 100%;
 
 		.response-title {
 			display: flex;
@@ -34,9 +35,13 @@
 		}
 
 		.response-des {
-			font-size: 18px;
-			line-height: 13px;
+			display: flex;
 			opacity: 0;
+
+			p {
+				font-size: 18px;
+				line-height: 13px;
+			}
 		}
 
 		.response-info {
@@ -83,29 +88,34 @@
 				}
 			}
 
-			.response-info__icon {
-				width: 54px;
-				height: 64px;
-				margin-right: 32px;
-			}
+			.response-info__image {
+				display: flex;
+				align-items: center;
 
-			.response-info__percent-img {
-				width: 120px;
-				height: 120px;
-				margin-right: 16px;
-			}
-
-			.response-info__percent {
-				letter-spacing: -0.02em;
-
-				.small {
-					font-size: 48px;
-					line-height: 63px;
+				.response-info__icon {
+					width: 54px;
+					height: 64px;
+					margin-right: 32px;
 				}
 
-				.medium {
-					font-size: 88px;
-					line-height: 70px;
+				.response-info__percent-img {
+					width: 120px;
+					height: 120px;
+					margin-right: 16px;
+				}
+
+				.response-info__percent {
+					letter-spacing: -0.02em;
+
+					.small {
+						font-size: 48px;
+						line-height: 63px;
+					}
+
+					.medium {
+						font-size: 88px;
+						line-height: 70px;
+					}
 				}
 			}
 		}
@@ -195,6 +205,16 @@
 				}
 			}
 		}
+
+		&.response-swiper-show {
+			.swiper-wrapper {
+				opacity: 1;
+
+				.item {
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	.response-footer {
@@ -255,6 +275,169 @@
 					}
 				}
 			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		gap: 24px;
+		padding: 40px 0;
+
+		.response-header {
+			gap: 24px;
+			padding: 0 15px;
+
+			.response-title {
+				gap: 12px;
+
+				p {
+					font-size: clamp(24px, 6.4vw, 48px);
+					line-height: clamp(18px, 4.6vw, 35px);
+				}
+			}
+
+			.response-des {
+				flex-direction: column;
+				align-items: center;
+
+				p {
+					font-size: clamp(13px, 3.4vw, 26px);
+					line-height: clamp(15px, 3.8vw, 29px);
+				}
+			}
+
+			.response-info {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 16px;
+				padding: 20px 24px;
+
+				.response-info__content {
+					align-items: center;
+					gap: 12px;
+					margin-right: 0;
+
+					.small {
+						font-size: clamp(14px, 3.7vw, 28px);
+						line-height: clamp(14px, 3.7vw, 28px);
+						font-weight: 700;
+					}
+
+					.medium {
+						font-size: clamp(24px, 6.4vw, 48px);
+						line-height: clamp(24px, 6.4vw, 48px);
+					}
+				}
+
+				.response-info__image {
+					.response-info__icon {
+						width: 75px;
+						height: 90px;
+						margin-right: 14px;
+					}
+
+					.response-info__percent-img {
+						width: 90px;
+						height: 90px;
+						margin-right: 12px;
+					}
+
+					.response-info__percent {
+						letter-spacing: -0.02em;
+
+						.small {
+							font-size: clamp(36px, 9.6vw, 72px);
+							line-height: clamp(52px, 13.3vw, 100px);
+						}
+
+						.medium {
+							font-size: clamp(66px, 17.6vw, 132px);
+							line-height: clamp(52px, 13.3vw, 100px);
+						}
+					}
+				}
+			}
+		}
+
+		.response-swiper {
+			.swiper-wrapper {
+				.item {
+					padding: 35px 22px;
+
+					.item-header {
+						grid-template-columns: 144fr 265fr;
+						gap: 12px;
+						padding: 0 0 24px 0;
+
+						.item-header__avatar {
+							width: 100%;
+							aspect-ratio: 1;
+						}
+
+						.item-header__info {
+							display: flex;
+							flex-direction: column;
+							gap: 14px;
+
+							.title {
+								font-size: clamp(14px, 3.7vw, 28px);
+								line-height: clamp(11px, 2.8vw, 21px);
+							}
+
+							.star {
+								gap: 14px;
+
+								p {
+									font-size: clamp(36px, 9.6vw, 72px);
+									line-height: clamp(26px, 6.8vw, 51px);
+								}
+
+								img {
+									aspect-ratio: 147/22;
+								}
+							}
+
+							.general {
+								padding: 8px;
+
+								p {
+									font-size: clamp(13px, 3.3vw, 25px);
+									line-height: clamp(9px, 2.4vw, 18px);
+								}
+							}
+						}
+					}
+
+					.item-body {
+						font-size: clamp(13px, 3.4vw, 26px);
+						line-height: clamp(21px, 5.6vw, 42px);
+					}
+				}
+			}
+
+			.swiper-button {
+				margin-top: 12px;
+
+				.swiper-navigation,
+				.swiper-arrow {
+					width: 48px !important;
+					height: 48px !important;
+				}
+
+				.swiper-pagination {
+					.swiper-pagination-bullet {
+						width: 12px;
+						height: 12px;
+					}
+				}
+			}
+		}
+
+		.response-footer {
+			max-width: 490px;
+			font-size: clamp(10px, 2.6vw, 20px);
+			line-height: clamp(12px, 3vw, 23px);
+			text-align: center;
 		}
 	}
 }

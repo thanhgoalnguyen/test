@@ -69,6 +69,7 @@
 			opacity: 0;
 
 			button {
+				position: relative;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -79,6 +80,25 @@
 				border-radius: 999px;
 				cursor: pointer;
 
+				.arrow {
+					position: absolute;
+					top: 50%;
+					right: 16px;
+					transform: translateY(-50%);
+					opacity: 0;
+				}
+
+				.arrow-unactive {
+					width: 6px;
+					height: 11px;
+				}
+
+				.arrow-active {
+					display: none;
+					width: 11px;
+					height: 6px;
+				}
+
 				&.active {
 					color: white;
 					background: linear-gradient(
@@ -87,6 +107,14 @@
 						#372cff 50%,
 						#2ca7ff 100%
 					);
+
+					.arrow-unactive {
+						display: none;
+					}
+
+					.arrow-active {
+						display: block;
+					}
 				}
 			}
 		}
@@ -396,6 +424,10 @@
 					font-size: clamp(13px, 3.4vw, 26px);
 					line-height: clamp(10px, 2.5vw, 19px);
 					background-color: white;
+
+					.arrow {
+						opacity: 1;
+					}
 				}
 			}
 

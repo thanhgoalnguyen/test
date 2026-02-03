@@ -43,16 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// PRICE MODAL
 	const priceModalTagWrapper = document.querySelector('.js-price-modal-tag-wrapper');
 	const priceModalTableList = document.querySelector('.js-price-modal-table-list');
-	const priceModalFeeBank = document.querySelector('.js-price-modal-fee-bank');
-	const priceModalFeeMobile = document.querySelector('.js-price-modal-fee-mobile');
-	const priceModalSaveBank = document.querySelector('.js-price-modal-save-bank');
-	const priceModalSaveMobile = document.querySelector('.js-price-modal-save-mobile');
-	const priceModalSpeedDiscountBank = document.querySelector('.js-price-modal-speed-discount-bank');
-	const priceModalSpeedDiscountMobile = document.querySelector('.js-price-modal-speed-discount-mobile');
-	const priceModalDiscountBank = document.querySelector('.js-price-modal-discount-bank');
-	const priceModalDiscountMobile = document.querySelector('.js-price-modal-discount-mobile');
-	const priceModalPriceBank = document.querySelector('.js-price-modal-price-bank');
-	const priceModalPriceMobile = document.querySelector('.js-price-modal-price-mobile');
 	const priceModalTotal = document.querySelector('.js-price-modal-total');
 
 	// SCROLL TOP
@@ -1375,7 +1365,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	})
 
-	customerResponses?.forEach((item) => {
+	customerResponses?.forEach((item, index) => {
 		const newItem = `<div class="swiper-slide item">
 							<div class="item-header">
 								<img src="${item?.img}" alt="avatar" class="item-header__avatar" />
@@ -1396,15 +1386,18 @@ document.addEventListener("DOMContentLoaded", function () {
 								${item?.review}
 							</p>
 						</div>`;
-		responseItems += newItem;
+
+		if (window.screen > 1024 || index <= 10) {
+			responseItems += newItem;
+		}
 	})
 
 	responseSwiperWrapper.innerHTML = responseItems;
 
 	const responseSwiperInit = new Swiper('.response-swiper', {
 		direction: 'horizontal',
-		slidesPerView: 4.04,
-  		spaceBetween: 24,
+		slidesPerView: 1.525,
+  		spaceBetween: 36,
 		centeredSlides: true,
 		loop: true,
 		pagination: {
@@ -1424,12 +1417,18 @@ document.addEventListener("DOMContentLoaded", function () {
 				this.autoplay.stop();
 			},
 		},
+		breakpoints: {
+			1204: {
+				slidesPerView: 4.04,
+  				spaceBetween: 24,
+			},
+		}
 	});
 
 	const campaignSwiperInit = new Swiper('.campaign-swiper', {
 		direction: 'horizontal',
-		slidesPerView: 3.278,
-		spaceBetween: 24,
+		slidesPerView: 1.24,
+		spaceBetween: 36,
 		centeredSlides: true,
 		loop: true,
 		pagination: {
@@ -1440,6 +1439,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			nextEl: '.swiper-next',
 			prevEl: '.swiper-prev',
 		},
+		breakpoints: {
+			1204: {
+				slidesPerView: 3.278,
+				spaceBetween: 24,
+			},
+		}
 	});
 
 	stepTags.forEach((item) => {
@@ -1533,25 +1538,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				if (entry.target.classList?.contains('js-response-swiper')) {
 					responseSwiperInit?.autoplay?.start();
+
+					setTimeout(() => {
+						entry.target.classList.remove('show');
+						entry.target.classList.add('response-swiper-show');
+					}, 700)
 				}
 
 				if (entry.target.classList?.contains('js-campaign-swiper')) {
 					setTimeout(() => {
 						entry.target.classList.remove('show');
 						entry.target.classList.add('campaign-swiper-show');
-					}, 1600)
+					}, 700)
 				}
 
 				if (entry.target.classList?.contains('js-step')) {
 					setTimeout(() => {
 						entry.target.classList.add('show-slower');
-					}, 1300)
+					}, 450)
 				}
 
 				if (entry.target.classList?.contains('js-faq-content')) {
 					setTimeout(() => {
 						entry.target.classList.add('show-slower');
-					}, 1100)
+					}, 450)
 				}
 			}
 		});
