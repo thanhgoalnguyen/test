@@ -384,7 +384,10 @@
 				position: absolute;
 				bottom: 5.2%;
 				right: 4.4%;
-				max-width: 34.5%;
+				width: 34.5%;
+				max-width: 129px;
+				margin-top: 0;
+				aspect-ratio: unset;
 			}
 		}
 	}
