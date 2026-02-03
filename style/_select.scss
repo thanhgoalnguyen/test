@@ -7,6 +7,7 @@
 	max-width: 2000px;
 	padding: 80px 10px;
 	background: linear-gradient(90deg, #d9e6ff 0%, #d9ffec 100%);
+	// overflow: hidden;
 
 	.select-header {
 		display: flex;
@@ -57,8 +58,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			width: 100%;
-			padding: 32px 51px;
+			padding: 32px 0px;
 			background-color: white;
 			border-radius: 16px;
 			opacity: 0;
@@ -179,16 +179,16 @@
 	.select-header {
 		&.show {
 			.select-header__title {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 
 			.select-header__sub-title {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 
 			.select-header__des {
-				animation: fadeUpScale 0.8s linear forwards;
-				animation-delay: 0.3s;
+				animation: fadeUpScale 0.3s linear forwards;
+				animation-delay: 0.15s;
 			}
 		}
 	}
@@ -197,7 +197,7 @@
 		&.show {
 			.item {
 				opacity: 1;
-				animation: zoomIn 0.8s linear forwards;
+				// animation: zoomIn 0.8s linear forwards;
 			}
 		}
 	}

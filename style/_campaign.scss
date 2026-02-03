@@ -82,19 +82,13 @@
 	.campaign-header {
 		&.show {
 			.campaign-title {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 
 			.campaign-des {
-				animation: fadeUpScale 0.8s linear forwards;
-				animation-delay: 0.5s;
+				animation: fadeUpScale 0.3s linear forwards;
+				animation-delay: 0.15s;
 			}
-		}
-	}
-	.campaign-title {
-		&.show {
-			opacity: 1;
-			animation: fadeUpScale 1.6s linear forwards;
 		}
 	}
 

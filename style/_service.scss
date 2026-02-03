@@ -701,7 +701,7 @@
 	// ANIMATION
 	.service-header {
 		&.show {
-			animation: slideWidth 0.6s linear forwards;
+			animation: slideWidth 0.3s linear forwards;
 		}
 	}
 
@@ -709,12 +709,12 @@
 		&.show {
 			.bg {
 				opacity: 1;
-				animation: fadeInLeft 1s linear forwards;
+				animation: fadeInLeft 0.3s linear forwards;
 			}
 
 			.content {
 				opacity: 1;
-				animation: fadeInRight 1s linear forwards;
+				animation: fadeInRight 0.3s linear forwards;
 			}
 		}
 	}
@@ -723,12 +723,12 @@
 		&.show {
 			.bg {
 				opacity: 1;
-				animation: fadeInRight 1s linear forwards;
+				animation: fadeInRight 0.3s linear forwards;
 			}
 
 			.content {
 				opacity: 1;
-				animation: fadeInLeft 1s linear forwards;
+				animation: fadeInLeft 0.3s linear forwards;
 			}
 		}
 	}
@@ -738,9 +738,15 @@
 			.service-list__wrapper {
 				.service-item {
 					opacity: 0;
-					animation: zoomIn 1s linear forwards;
+					animation: zoomIn 0.3s linear forwards;
 				}
 			}
 		}
+	}
+
+	// RESPONSIVE {
+	@media (max-width: 1024px) {
+		gap: 40px;
+		padding: 40px 0 32px 0;
 	}
 }

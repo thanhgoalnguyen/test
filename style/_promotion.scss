@@ -161,4 +161,223 @@
 			}
 		}
 	}
+
+	// RESPONSIVE
+	@media (max-width: 1200px) {
+		.promotion-detail {
+			.promotion-detail__wrapper {
+				.promotion-detail__content {
+					justify-content: center;
+
+					.small {
+						font-size: 19px;
+					}
+
+					.medium {
+						font-size: 22px;
+
+						&.medium-space {
+							margin-left: 5px;
+						}
+					}
+
+					.big {
+						font-size: 24px;
+					}
+
+					.large {
+						font-size: 26px;
+					}
+
+					.larger {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.promotion-detail {
+			.promotion-detail__wrapper {
+				.promotion-detail__content {
+					.small {
+						font-size: 15px;
+					}
+
+					.medium {
+						font-size: 18px;
+
+						&.medium-space {
+							margin-left: 5px;
+						}
+					}
+
+					.big {
+						font-size: 20px;
+					}
+
+					.large {
+						font-size: 22px;
+					}
+
+					.larger {
+						font-size: 36px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		// .promotion-detail {
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	width: 100%;
+		// 	height: 72px;
+		// 	background: linear-gradient(90deg, #2c6fff 0%, #372cff 50%, #2ca7ff 100%);
+
+		// 	.promotion-detail__wrapper {
+		// 		position: relative;
+		// 		display: flex;
+		// 		align-items: center;
+		// 		width: 100%;
+		// 		max-width: 1204px;
+		// 		height: 100%;
+		// 		padding-left: 47px;
+		// 		padding-right: 42px;
+
+		// 		.promotion-detail__label {
+		// 			position: absolute;
+		// 			top: 0;
+		// 			left: 0;
+		// 			transform: translateY(-15px);
+		// 			width: 159px;
+		// 			height: 39px;
+		// 		}
+
+		// 		.promotion-detail__time {
+		// 			display: flex;
+		// 			justify-content: center;
+		// 			align-items: center;
+		// 			width: 182px;
+		// 			height: 28px;
+		// 			margin-right: 12px;
+		// 			border: 1px solid white;
+
+		// 			p {
+		// 				font-size: 16px;
+		// 				line-height: 12px;
+		// 				font-weight: 700;
+		// 			}
+		// 		}
+
+		// 		.promotion-detail__content {
+		// 			display: flex;
+		// 			align-items: flex-end;
+		// 			flex-grow: 1;
+		// 			margin-left: 1px;
+		// 			font-weight: 700;
+
+		// 			.text-shadow {
+		// 				text-shadow:
+		// 					0 0 16px #00b7ff,
+		// 					0 0 16px #00b7ff;
+		// 			}
+
+		// 			.small {
+		// 				transform: translateY(1px);
+		// 				font-size: 22px;
+		// 				line-height: 22px;
+		// 			}
+
+		// 			.medium {
+		// 				transform: translateY(-2px);
+		// 				font-size: 30px;
+		// 				line-height: 22px;
+
+		// 				&.medium-space {
+		// 					margin-left: auto;
+		// 				}
+
+		// 				&.text-shadow {
+		// 					transform: translateY(-4px);
+		// 				}
+		// 			}
+
+		// 			.big {
+		// 				transform: translateY(6px);
+		// 				font-size: 32px;
+		// 				line-height: 34px;
+		// 			}
+
+		// 			.large {
+		// 				font-size: 34px;
+		// 				line-height: 25px;
+		// 			}
+
+		// 			.larger {
+		// 				transform: translateX(-5px);
+		// 				font-size: 48px;
+		// 				line-height: 34px;
+
+		// 				&.larger-letter-spacing {
+		// 					letter-spacing: -0.07em;
+		// 				}
+		// 			}
+		// 		}
+
+		// 		.promotion-detail__img {
+		// 			position: relative;
+		// 			width: 203px;
+		// 			height: 100%;
+
+		// 			.promotion-detail__img-one {
+		// 				position: absolute;
+		// 				bottom: 0;
+		// 				left: 0;
+		// 				transform: translateY(1px);
+		// 				width: 100%;
+		// 				height: 116px;
+		// 			}
+
+		// 			.promotion-detail__img-two {
+		// 				position: absolute;
+		// 				bottom: 100%;
+		// 				right: 0;
+		// 				transform: translateY(-41px);
+		// 				width: 68px;
+		// 				height: 48px;
+		// 				filter: drop-shadow(0px 0px 8px #2c6fff)
+		// 					drop-shadow(0px 0px 20px rgba(0, 255, 191, 0.8));
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		.promotion-content {
+			padding: 40px 0;
+
+			.promotion-content__wrapper {
+				gap: 16px;
+				padding: 0 30px;
+
+				div {
+					gap: 10px;
+
+					span {
+						font-size: 20px;
+						line-height: 15px;
+						color: var(--neutral-700);
+					}
+
+					p {
+						font-size: 20px;
+						line-height: 23px;
+						color: var(--neutral-700);
+					}
+				}
+			}
+		}
+	}
 }

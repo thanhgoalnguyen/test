@@ -277,16 +277,15 @@
 	}
 
 	// ANIMATION
-
 	.step-header {
 		&.show {
 			.step-title {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 
 			.step-des {
-				animation: fadeUpScale 0.8s linear forwards;
-				animation-delay: 0.3s;
+				animation: fadeUpScale 0.3s linear forwards;
+				animation-delay: 0.15s;
 			}
 		}
 	}
@@ -294,18 +293,44 @@
 	.step-content {
 		&.show {
 			.step-content__header {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 
 			.step-content__body {
-				animation: fadeUpScale 0.8s linear forwards;
-				animation-delay: 0.5s;
+				animation: fadeUpScale 0.3s linear forwards;
+				animation-delay: 0.15s;
 			}
 		}
 
 		&.show-slower {
 			.step-content__body {
-				animation: fadeUpScale 0.4s linear forwards !important;
+				animation: fadeUpScale 0.3s linear forwards !important;
+			}
+		}
+	}
+
+	// RESPONSIVE
+	@media (max-width: 1200px) {
+		.step-content {
+			.step-content__body {
+				gap: 4px;
+				padding: 16px;
+			}
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.step-content {
+			.step-content__body {
+				grid-template-columns: 1fr;
+				gap: 8px;
+
+				.arrow {
+					transform: rotate(90deg);
+					width: 16px;
+					height: 32px;
+					margin: 0 auto;
+				}
 			}
 		}
 	}

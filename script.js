@@ -1375,7 +1375,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	})
 
-	customerResponses.forEach((item) => {
+	customerResponses?.forEach((item) => {
 		const newItem = `<div class="swiper-slide item">
 							<div class="item-header">
 								<img src="${item?.img}" alt="avatar" class="item-header__avatar" />

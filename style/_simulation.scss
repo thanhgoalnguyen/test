@@ -587,26 +587,26 @@
 		&.show {
 			.simulation-title,
 			.simulation-sub-title {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 
 			.simulation-des {
-				animation: fadeUpScale 0.8s linear forwards;
-				animation-delay: 0.3s;
+				animation: fadeUpScale 0.3s linear forwards;
+				animation-delay: 0.15s;
 			}
 		}
 	}
 
 	.simulation-result-wrapper {
 		&.show {
-			animation: fadeUpScale 0.8s linear forwards;
+			animation: fadeUpScale 0.3s linear forwards;
 		}
 	}
 
 	.simulation-form {
 		&.show {
 			.item {
-				animation: fadeUpScale 0.8s linear forwards;
+				animation: fadeUpScale 0.3s linear forwards;
 			}
 		}
 	}
@@ -616,7 +616,68 @@
 	.simulation-list {
 		&.show {
 			opacity: 1;
-			animation: fadeUpScale 1.6s linear forwards;
+			animation: fadeUpScale 0.3s linear forwards;
+		}
+	}
+
+	// RESPONSIVE
+	@media (max-width: 1200px) {
+		.simulation-form {
+			padding: 12px;
+		}
+
+		.simulation-result-wrapper {
+			.simulation-result {
+				.simulation-result__content {
+					padding: 38px 23px 40px 23px;
+				}
+
+				.simulation-result__campaign {
+					padding: 40px 23px 38px 23px;
+
+					.body {
+						gap: 16px;
+
+						.item {
+							padding: 39px 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.simulation-form {
+			padding: 12px;
+		}
+
+		.simulation-result-wrapper {
+			.simulation-result {
+				.simulation-result__campaign {
+					.body {
+						.item {
+							.item-title {
+								p {
+									font-size: 27px;
+								}
+							}
+
+							.item-general {
+								.item-general__line {
+									.medium {
+										font-size: 19px;
+									}
+
+									.large {
+										font-size: 43px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

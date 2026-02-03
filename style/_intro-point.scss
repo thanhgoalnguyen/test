@@ -275,12 +275,12 @@
 	.intro-point__header {
 		&.show {
 			.intro-point__title {
-				animation: slideWidth 0.6s linear forwards;
+				animation: slideWidth 0.3s linear forwards;
 			}
 
 			.intro-point__content {
-				animation: slideWidth 0.6s linear forwards;
-				animation-delay: 0.3s;
+				animation: slideWidth 0.3s linear forwards;
+				animation-delay: 0.15s;
 			}
 		}
 	}
@@ -290,17 +290,17 @@
 			&.show {
 				.item-bg {
 					opacity: 1;
-					animation: fadeInRight 1s linear forwards;
+					animation: fadeInRight 0.3s linear forwards;
 				}
 
 				.item-content {
 					opacity: 1;
-					animation: fadeUpScale 1s linear forwards;
+					animation: fadeUpScale 0.3s linear forwards;
 				}
 
 				&.item-reverse {
 					.item-bg {
-						animation: fadeInLeft 1s linear forwards;
+						animation: fadeInLeft 0.3s linear forwards;
 					}
 				}
 			}
