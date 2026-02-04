@@ -1563,7 +1563,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				observer.unobserve(entry.target);
 
 				if (entry.target.classList?.contains('js-response-swiper')) {
-					// responseSwiperInit?.autoplay?.start();
+					responseSwiperInit?.autoplay?.start();
 
 					setTimeout(() => {
 						entry.target.classList.remove('show');
