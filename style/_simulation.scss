@@ -760,6 +760,7 @@
 					.item-header__des {
 						font-size: clamp(15px, 4vw, 30px);
 						line-height: clamp(11px, 2.9vw, 22px);
+						color: var(--neutral-800);
 					}
 				}
 
@@ -1036,7 +1037,8 @@
 				gap: 5px;
 
 				span {
-					width: 16px;
+					transform: translateY(3%);
+					width: max-content;
 					font-size: clamp(10px, 2.6vw, 20px);
 					line-height: clamp(8px, 2vw, 15px);
 					color: var(--neutral-700);
@@ -1064,6 +1066,14 @@
 						font-size: clamp(10px, 2.6vw, 20px);
 						line-height: clamp(8px, 2vw, 15px);
 						color: var(--neutral-700);
+					}
+
+					a {
+						color: var(--neutral-700);
+					}
+
+					p:first-child {
+						transform: translateY(3%);
 					}
 
 					p:last-child {

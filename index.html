@@ -536,7 +536,10 @@
 
 		<!-- INTRO POINT -->
 		<section class="intro-point">
-			<img loading="lazy" src="./assets/image/intro-point/bg.avif" alt="background" class="intro-point__bg" />
+			<img loading="lazy" src="./assets/image/intro-point/bg.avif" alt="background"
+				class="intro-point__bg intro-point__bg--pc" />
+			<img loading="lazy" src="./assets/image/intro-point/bg-mb.avif" alt="background"
+				class="intro-point__bg intro-point__bg--mb" />
 			<div class="intro-point__header js-el-scroll">
 				<div class="intro-point__title">
 					<p class="title font-black">家のネット<span>は､</span></p>
@@ -691,14 +694,20 @@
 
 		<!-- INTRO SCENE -->
 		<section class="intro-scene">
-			<img src="./assets/image/intro-scene/bg.avif" alt="background" class="intro-scene__bg" />
+			<img src="./assets/image/intro-scene/bg.avif" alt="background"
+				class="intro-scene__bg intro-scene__bg--pc" />
+			<img loading="lazy" src="./assets/image/intro-scene/bg-mb.avif" alt="background"
+				class="intro-scene__bg intro-scene__bg--mb" />
 			<div class="intro-scene__header js-el-scroll">
 				<p class="small font-black text-black">さらに、モバイルWi-Fiがあれば叶う！</p>
 				<p class="medium text-gradient-blue font-black">ストレスフリーな毎日</p>
 			</div>
 			<div class="intro-scene__body js-el-scroll">
 				<div class="item box-shadow-blue">
-					<img src="./assets/image/intro-scene/scene1.avif" alt="scene 1" class="item-bg" />
+					<picture class="item-bg">
+						<source media="(max-width: 1024px)" srcset="./assets/image/intro-scene/scene1-mb.avif">
+						<img src="./assets/image/intro-scene/scene1.avif" alt="image">
+					</picture>
 					<div class="item-content">
 						<img src="./assets/icon/intro-scene/label1.svg" alt="label 1" class="item-label" />
 						<div class="item-header">
@@ -722,7 +731,10 @@
 					</div>
 				</div>
 				<div class="item box-shadow-blue">
-					<img src="./assets/image/intro-scene/scene2.avif" alt="scene 2" class="item-bg" />
+					<picture class="item-bg">
+						<source media="(max-width: 1024px)" srcset="./assets/image/intro-scene/scene2-mb.avif">
+						<img src="./assets/image/intro-scene/scene2.avif" alt="image">
+					</picture>
 					<div class="item-content">
 						<img src="./assets/icon/intro-scene/label2.svg" alt="label 2" class="item-label" />
 						<div class="item-header">
@@ -744,7 +756,10 @@
 					</div>
 				</div>
 				<div class="item box-shadow-blue">
-					<img src="./assets/image/intro-scene/scene3.avif" alt="scene 3" class="item-bg" />
+					<picture class="item-bg">
+						<source media="(max-width: 1024px)" srcset="./assets/image/intro-scene/scene3-mb.avif">
+						<img src="./assets/image/intro-scene/scene3.avif" alt="image">
+					</picture>
 					<div class="item-content">
 						<img src="./assets/icon/intro-scene/label3.svg" alt="label 3" class="item-label" />
 						<div class="item-header">
@@ -784,7 +799,10 @@
 				</div>
 			</div>
 			<div class="feature-body js-el-scroll">
-				<img src="./assets/image/feature/image.avif" alt="image" />
+				<picture class="feature-body__image">
+					<source media="(max-width: 1024px)" srcset="./assets/image/feature/image-mb.avif">
+					<img src="./assets/image/feature/image.avif" alt="image">
+				</picture>
 				<div class="feature-body__content">
 					<div class="content-header">
 						<div class="title-wrap">
@@ -1040,7 +1058,7 @@
 					<p class="text-black">月間容量を超過後は当月末まで128Kbpsに速度制限となり、翌月1日の午前0時に解除いたします。</p>
 				</div>
 				<div class="select-footer__note">
-					<p class="text-black">※</p>
+					<span class="text-black">※</span>
 					<p class="select-footer__note-content text-black">
 						クラウドSIfMは端末のご利用場所における電波の受信強度・通信速度の安定性などあらゆる条件を踏まえた上でクラウドサーバーに用意している複数のSIMカードの中から最適なものを自動割り当てすることが可能です。
 						<br />

@@ -21,6 +21,10 @@
 		height: 100%;
 	}
 
+	.intro-point__bg--mb {
+		display: none;
+	}
+
 	.intro-point__header {
 		position: relative;
 		z-index: 1;
@@ -323,7 +327,15 @@
 	// RESPONSIVE
 	@media (max-width: 1024px) {
 		gap: 32px;
-		padding: 40px 0 104px 0;
+		padding: 40px 0 68px 0;
+
+		.intro-point__bg--pc {
+			display: none;
+		}
+
+		.intro-point__bg--mb {
+			display: block;
+		}
 
 		.intro-point__header {
 			position: relative;

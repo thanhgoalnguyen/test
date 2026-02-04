@@ -1423,6 +1423,22 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		},
 		breakpoints: {
+			600: {
+				slidesPerView: 1.9,
+  				spaceBetween: 24,
+			},
+			744: {
+				slidesPerView: 2.8,
+  				spaceBetween: 24,
+			},
+			834: {
+				slidesPerView: 2.9,
+  				spaceBetween: 24,
+			},
+			991: {
+				slidesPerView: 3,
+  				spaceBetween: 24,
+			},
 			1204: {
 				slidesPerView: 4.04,
   				spaceBetween: 24,
@@ -1445,6 +1461,22 @@ document.addEventListener("DOMContentLoaded", function () {
 			prevEl: '.swiper-prev',
 		},
 		breakpoints: {
+			480: {
+				slidesPerView: 1.5,
+  				spaceBetween: 18,
+			},
+			600: {
+				slidesPerView: 1.9,
+  				spaceBetween: 18,
+			},
+			768: {
+				slidesPerView: 2.2,
+  				spaceBetween: 18,
+			},
+			834: {
+				slidesPerView: 2.5,
+  				spaceBetween: 18,
+			},
 			1204: {
 				slidesPerView: 3.278,
 				spaceBetween: 24,

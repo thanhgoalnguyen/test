@@ -19,6 +19,10 @@
 		height: 100%;
 	}
 
+	.intro-scene__bg--mb {
+		display: none;
+	}
+
 	.intro-scene__header {
 		position: relative;
 		z-index: 1;
@@ -63,6 +67,11 @@
 				z-index: 0;
 				width: 100%;
 				aspect-ratio: 386/248;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
 			}
 
 			.item-content {
@@ -163,7 +172,15 @@
 	// RESPONSIVE
 	@media (max-width: 1024px) {
 		gap: 24px;
-		padding: 40px 26px 182px 26px;
+		padding: 40px 26px 142px 26px;
+
+		.intro-scene__bg--pc {
+			display: none;
+		}
+
+		.intro-scene__bg--mb {
+			display: block;
+		}
 
 		.intro-scene__header {
 			gap: 12px;

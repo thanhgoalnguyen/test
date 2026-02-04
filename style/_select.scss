@@ -232,6 +232,7 @@
 			}
 
 			.select-header__sub-title {
+				height: clamp(24px, 6.2vw, 47px);
 				margin-bottom: 24px;
 
 				p {
@@ -390,6 +391,12 @@
 			.select-footer__note {
 				gap: 4px;
 				padding: 16px;
+
+				span {
+					transform: translateY(3%);
+					font-size: clamp(10px, 2.6vw, 20px);
+					line-height: clamp(8px, 2vw, 15px);
+				}
 
 				.select-footer__note-content {
 					font-size: clamp(10px, 2.6vw, 20px);

@@ -446,6 +446,8 @@
 
 				.item {
 					padding: 16px 20px;
+					border: 2px solid transparent;
+					border-radius: 8px;
 
 					.item-icon,
 					.item-badge,
@@ -503,6 +505,8 @@
 					}
 
 					&.highlight {
+						border-width: 2px solid var(--red-100);
+
 						.item-mobile {
 							.item-mobile__des {
 								font-weight: 700;
