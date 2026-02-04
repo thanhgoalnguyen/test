@@ -1519,6 +1519,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	simulationForm.addEventListener('change', function (e) {
+		const changedElement = e.target;
+		const nameTarget = changedElement.name;
+
 		simulationResultWrapper.classList.remove('show');
 
 		const formData = new FormData(e.currentTarget);
@@ -1534,13 +1537,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		handleChangeSimulationResult();
 
-		const elementPosition = simulationResultWrapper.getBoundingClientRect().top;
-		const offsetPosition = elementPosition + window.pageYOffset - 100;
+		if (nameTarget === "step3") {
+			const elementPosition = simulationResultWrapper.getBoundingClientRect().top;
+			const offsetPosition = elementPosition + window.pageYOffset - 100;
 
-		window.scrollTo({
-			top: offsetPosition,
-			behavior: "smooth"
-		});
+			window.scrollTo({
+				top: offsetPosition,
+				behavior: "smooth"
+			});
+		}
 
 		setTimeout(() => {
 			simulationResultWrapper.classList.add('show');
@@ -1558,7 +1563,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				observer.unobserve(entry.target);
 
 				if (entry.target.classList?.contains('js-response-swiper')) {
-					responseSwiperInit?.autoplay?.start();
+					// responseSwiperInit?.autoplay?.start();
 
 					setTimeout(() => {
 						entry.target.classList.remove('show');

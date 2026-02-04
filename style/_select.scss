@@ -131,24 +131,32 @@
 
 			.item-feature {
 				display: flex;
+				justify-content: center;
 				gap: 8px;
+				width: 100%;
 				margin-bottom: 32px;
 
-				div {
+				.item-group {
 					display: flex;
-					align-items: center;
 					gap: 8px;
-					padding: 8px;
-					background-color: var(--neutral-400);
 
-					img {
-						width: 10px;
-						height: 8px;
-					}
+					div {
+						display: flex;
+						align-items: center;
+						gap: 8px;
+						width: max-content;
+						padding: 8px;
+						background-color: var(--neutral-400);
 
-					p {
-						font-size: 14px;
-						line-height: 10px;
+						img {
+							width: 10px;
+							height: 8px;
+						}
+
+						p {
+							font-size: 14px;
+							line-height: 10px;
+						}
 					}
 				}
 			}
