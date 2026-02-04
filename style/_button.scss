@@ -229,7 +229,7 @@
 			}
 		}
 
-		@media (max-width: 1024px) {
+		@media (max-width: 874px) {
 			justify-content: center;
 			align-items: center;
 			gap: 6px;
@@ -240,24 +240,24 @@
 			margin-bottom: 11px;
 
 			p {
-				font-size: clamp(20px, 5.3vw, 40px);
-				line-height: clamp(15px, 3.8vw, 29px);
+				font-size: 20px;
+				line-height: 15px;
 				font-weight: 700;
 			}
 
 			.icon {
-				width: clamp(17px, 4.4vw, 33px);
-				height: clamp(17px, 4.4vw, 33px);
+				width: 17px;
+				height: 17px;
 			}
 
 			.arrow-wrapper {
-				width: clamp(7px, 1.7vw, 13px);
-				height: clamp(13px, 3.3vw, 25px);
+				width: 7px;
+				height: 13px;
 
 				.arrow-group {
 					img {
-						width: clamp(7px, 1.7vw, 13px);
-						height: clamp(13px, 3.3vw, 25px);
+						width: 7px;
+						height: 13px;
 					}
 
 					.arrow {
@@ -290,7 +290,7 @@
 			display: none;
 		}
 
-		@media (max-width: 1024px) {
+		@media (max-width: 874px) {
 			justify-content: center;
 			width: 100%;
 			max-width: 100%;
@@ -298,23 +298,23 @@
 			padding: 14px 0;
 
 			p {
-				font-size: clamp(14px, 3.6vw, 27px);
-				line-height: clamp(10px, 2.6vw, 20px);
+				font-size: 14px;
+				line-height: 10px;
 			}
 
 			.icon {
-				width: clamp(14px, 3.6vw, 27px);
-				height: clamp(14px, 3.6vw, 27px);
+				width: 14px;
+				height: 14px;
 			}
 
 			.arrow-wrapper {
-				width: clamp(7px, 1.7vw, 13px);
-				height: clamp(13px, 3.3vw, 25px);
+				width: 7px;
+				height: 13px;
 
 				.arrow-group {
 					img {
-						width: clamp(7px, 1.7vw, 13px);
-						height: clamp(13px, 3.3vw, 25px);
+						width: 7px;
+						height: 13px;
 					}
 
 					.arrow {
@@ -359,7 +359,7 @@
 		transform: scale(1.1);
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		bottom: 15px;
 		right: 15px;
 	}

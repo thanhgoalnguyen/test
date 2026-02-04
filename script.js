@@ -1392,7 +1392,7 @@ document.addEventListener("DOMContentLoaded", function () {
 							</p>
 						</div>`;
 
-		if (window.innerWidth > 1024 || index <= 12) {
+		if (window.innerWidth > 874 || index <= 12) {
 			responseItems += newItem;
 		}
 	})
@@ -1484,7 +1484,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	if (window?.innerWidth <= 1024) {
+	if (window?.innerWidth <= 874) {
 		const simulationSwiperInit = new Swiper('.simulation-swiper', {
 			direction: 'horizontal',
 			slidesPerView: 1.22,
@@ -1497,6 +1497,16 @@ document.addEventListener("DOMContentLoaded", function () {
 				nextEl: '.swiper-next',
 				prevEl: '.swiper-prev',
 			},
+			breakpoints: {
+				600: {
+					slidesPerView: 1.6,
+					spaceBetween: 15,
+				},
+				744: {
+					slidesPerView: 1.9,
+					spaceBetween: 15,
+				},
+			}
 		});
 	}
 

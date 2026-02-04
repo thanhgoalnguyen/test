@@ -669,7 +669,15 @@
 
 	@media (max-width: 1100px) {
 		.simulation-form {
+			grid-template-columns: 1fr;
 			padding: 12px;
+
+			.arrow {
+				transform: rotate(90deg);
+				width: 24px;
+				margin: 0 auto;
+				aspect-ratio: 24/16;
+			}
 		}
 
 		.simulation-result-wrapper {
@@ -679,7 +687,7 @@
 						.item {
 							.item-title {
 								p {
-									font-size: 27px;
+									font-size: 24px;
 								}
 							}
 
@@ -690,7 +698,8 @@
 									}
 
 									.large {
-										font-size: 43px;
+										transform: translateY(15%);
+										font-size: 40px;
 									}
 								}
 							}
@@ -701,7 +710,7 @@
 		}
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		padding: 0 0 5px 0;
 
 		.simulation-header {
@@ -710,24 +719,24 @@
 			background-color: var(--blue-400);
 
 			.simulation-title {
-				font-size: clamp(16px, 4.2vw, 32px);
-				line-height: clamp(12px, 3vw, 23px);
+				font-size: 16px;
+				line-height: 12px;
 				margin-bottom: 12px;
 			}
 
 			.simulation-sub-title {
-				height: clamp(24px, 6.2vw, 47px);
+				height: 24px;
 				margin-bottom: 15px;
 
 				p {
-					font-size: clamp(32px, 8.5vw, 64px);
-					line-height: clamp(32px, 8.5vw, 64px);
+					font-size: 32px;
+					line-height: 32px;
 				}
 			}
 
 			.simulation-des {
-				font-size: clamp(13px, 3.4vw, 26px);
-				line-height: clamp(9px, 2.4vw, 18px);
+				font-size: 13px;
+				line-height: 9px;
 			}
 		}
 
@@ -753,13 +762,13 @@
 					gap: 12px;
 
 					.item-header__title {
-						font-size: clamp(13px, 3.4vw, 26px);
-						line-height: clamp(9px, 2.4vw, 18px);
+						font-size: 13px;
+						line-height: 9px;
 					}
 
 					.item-header__des {
-						font-size: clamp(15px, 4vw, 30px);
-						line-height: clamp(11px, 2.9vw, 22px);
+						font-size: 15px;
+						line-height: 11px;
 						color: var(--neutral-800);
 					}
 				}
@@ -780,13 +789,13 @@
 							gap: 9px;
 
 							.small {
-								font-size: clamp(11px, 2.9vw, 21px);
-								line-height: clamp(8px, 2vw, 15px);
+								font-size: 11px;
+								line-height: 8px;
 							}
 
 							.medium {
-								font-size: clamp(15px, 4vw, 30px);
-								line-height: clamp(11px, 2.9vw, 22px);
+								font-size: 15px;
+								line-height: 11px;
 							}
 						}
 
@@ -813,8 +822,8 @@
 			margin-bottom: 32px;
 
 			.simulation-result-header {
-				font-size: clamp(14px, 3.7vw, 28px);
-				line-height: clamp(19px, 5vw, 38px);
+				font-size: 14px;
+				line-height: 19px;
 				margin-bottom: 16px;
 			}
 
@@ -830,14 +839,15 @@
 						margin-bottom: 16px;
 
 						.header-title {
-							font-size: clamp(14px, 3.7vw, 28px);
-							line-height: clamp(11px, 2.9vw, 21px);
+							font-size: 14px;
+							line-height: 11px;
 						}
 
 						.header-wrapper__method {
 							justify-content: space-between;
-							gap: 0;
+							gap: 0px;
 							width: 100%;
+							max-width: 375px;
 
 							div {
 								gap: 3px;
@@ -848,8 +858,8 @@
 								}
 
 								p {
-									font-size: clamp(12px, 3.2vw, 24px);
-									line-height: clamp(9px, 2.4vw, 18px);
+									font-size: 12px;
+									line-height: 9px;
 								}
 							}
 						}
@@ -862,8 +872,8 @@
 						width: 100%;
 
 						.tag-wrapper__title {
-							font-size: clamp(13px, 3.4vw, 26px);
-							line-height: clamp(10px, 2.5vw, 19px);
+							font-size: 13px;
+							line-height: 10px;
 						}
 
 						.tag-wrapper__button {
@@ -871,8 +881,8 @@
 								width: max-content;
 								height: max-content;
 								padding: 12px 13px;
-								font-size: clamp(13px, 3.4vw, 26px);
-								line-height: clamp(10px, 2.5vw, 19px);
+								font-size: 13px;
+								line-height: 10px;
 							}
 						}
 					}
@@ -894,8 +904,8 @@
 							margin: 0 auto;
 
 							.item-title {
-								font-size: clamp(11px, 2.9vw, 21px);
-								line-height: clamp(8px, 2vw, 15px);
+								font-size: 11px;
+								line-height: 8px;
 							}
 
 							.item-price {
@@ -903,14 +913,14 @@
 
 								.small {
 									transform: translateY(10%);
-									font-size: clamp(17px, 2.9vw, 34px);
-									line-height: clamp(24px, 6.4vw, 48px);
+									font-size: 17px;
+									line-height: 24px;
 									letter-spacing: -0.03px;
 								}
 
 								.medium {
-									font-size: clamp(34px, 9vw, 67px);
-									line-height: clamp(24px, 6.4vw, 48px);
+									font-size: 34px;
+									line-height: 24px;
 									letter-spacing: -0.03px;
 								}
 							}
@@ -924,8 +934,8 @@
 							padding-bottom: 2px;
 
 							p {
-								font-size: clamp(12px, 3.2vw, 24px);
-								line-height: clamp(9px, 2.4vw, 18px);
+								font-size: 12px;
+								line-height: 9px;
 							}
 						}
 
@@ -950,8 +960,8 @@
 
 					.title {
 						margin-left: 24px;
-						font-size: clamp(14px, 3.7vw, 28px);
-						line-height: clamp(11px, 2.9vw, 21px);
+						font-size: 14px;
+						line-height: 11px;
 					}
 
 					.body {
@@ -977,16 +987,16 @@
 								padding-bottom: 8px;
 
 								p {
-									font-size: clamp(20px, 5.3vw, 40px);
-									line-height: clamp(15px, 3.8vw, 29px);
+									font-size: 20px;
+									line-height: 15px;
 								}
 							}
 
 							.item-des {
 								height: max-content;
 								padding: 0 10px;
-								font-size: clamp(14px, 3.7vw, 28px);
-								line-height: clamp(14px, 3.7vw, 28px);
+								font-size: 14px;
+								line-height: 14px;
 								font-weight: 700;
 								color: black;
 								text-align: center;
@@ -994,19 +1004,26 @@
 
 							.item-general {
 								.small {
-									font-size: clamp(11px, 2.9vw, 21px);
-									line-height: clamp(8px, 2vw, 15px);
+									font-size: 11px;
+									line-height: 8px;
 								}
 
 								.medium {
-									font-size: clamp(18px, 4.8vw, 36px);
-									line-height: clamp(13px, 3.4vw, 26px);
+									font-size: 18px;
+									line-height: 13px;
 								}
 
 								.large {
-									font-size: clamp(42px, 11.2vw, 84px);
-									line-height: clamp(30px, 8vw, 60px);
+									font-size: 42px;
+									line-height: 30px;
 									letter-spacing: -0.03em;
+								}
+
+								.item-general__line {
+									span {
+										transform: translateY(5px);
+										height: 12px;
+									}
 								}
 							}
 						}
@@ -1039,14 +1056,14 @@
 				span {
 					transform: translateY(3%);
 					width: max-content;
-					font-size: clamp(10px, 2.6vw, 20px);
-					line-height: clamp(8px, 2vw, 15px);
+					font-size: 10px;
+					line-height: 8px;
 					color: var(--neutral-700);
 				}
 
 				p {
-					font-size: clamp(10px, 2.6vw, 20px);
-					line-height: clamp(10px, 2.6vw, 20px);
+					font-size: 10px;
+					line-height: 10px;
 					color: var(--neutral-700);
 				}
 			}
@@ -1063,8 +1080,8 @@
 					gap: 4px;
 
 					p {
-						font-size: clamp(10px, 2.6vw, 20px);
-						line-height: clamp(8px, 2vw, 15px);
+						font-size: 10px;
+						line-height: 8px;
 						color: var(--neutral-700);
 					}
 
@@ -1077,7 +1094,7 @@
 					}
 
 					p:last-child {
-						line-height: clamp(12px, 3.2vw, 24px);
+						line-height: 12px;
 					}
 				}
 			}

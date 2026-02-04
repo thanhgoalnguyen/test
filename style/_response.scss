@@ -278,7 +278,27 @@
 		}
 	}
 
-	@media (max-width: 1024px) {
+	// RESPONSIVE
+	@media (max-width: 900px) {
+		.response-header {
+			.response-info {
+				.response-info__content {
+					.small {
+						font-size: 14px;
+						line-height: 14px;
+						font-weight: 700;
+					}
+
+					.medium {
+						font-size: 24px;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 874px) {
 		gap: 24px;
 		padding: 40px 0;
 
@@ -290,8 +310,8 @@
 				gap: 12px;
 
 				p {
-					font-size: clamp(24px, 6.4vw, 48px);
-					line-height: clamp(18px, 4.6vw, 35px);
+					font-size: 24px;
+					line-height: 18px;
 				}
 			}
 
@@ -300,8 +320,8 @@
 				align-items: center;
 
 				p {
-					font-size: clamp(13px, 3.4vw, 26px);
-					line-height: clamp(15px, 3.8vw, 29px);
+					font-size: 13px;
+					line-height: 15px;
 				}
 			}
 
@@ -318,14 +338,14 @@
 					margin-right: 0;
 
 					.small {
-						font-size: clamp(14px, 3.7vw, 28px);
-						line-height: clamp(14px, 3.7vw, 28px);
+						font-size: 14px;
+						line-height: 14px;
 						font-weight: 700;
 					}
 
 					.medium {
-						font-size: clamp(24px, 6.4vw, 48px);
-						line-height: clamp(24px, 6.4vw, 48px);
+						font-size: 24px;
+						line-height: 24px;
 					}
 
 					.response-info__content-line {
@@ -353,13 +373,13 @@
 
 					.response-info__percent {
 						.small {
-							font-size: clamp(36px, 9.6vw, 72px);
-							line-height: clamp(52px, 13.3vw, 100px);
+							font-size: 36px;
+							line-height: 52px;
 						}
 
 						.medium {
-							font-size: clamp(66px, 17.6vw, 132px);
-							line-height: clamp(52px, 13.3vw, 100px);
+							font-size: 66px;
+							line-height: 52px;
 						}
 					}
 				}
@@ -388,16 +408,16 @@
 							gap: 14px;
 
 							.title {
-								font-size: clamp(14px, 3.7vw, 28px);
-								line-height: clamp(11px, 2.8vw, 21px);
+								font-size: 14px;
+								line-height: 11px;
 							}
 
 							.star {
 								gap: 14px;
 
 								p {
-									font-size: clamp(36px, 9.6vw, 72px);
-									line-height: clamp(26px, 6.8vw, 51px);
+									font-size: 36px;
+									line-height: 26px;
 								}
 
 								img {
@@ -409,16 +429,16 @@
 								padding: 8px;
 
 								p {
-									font-size: clamp(13px, 3.3vw, 25px);
-									line-height: clamp(9px, 2.4vw, 18px);
+									font-size: 13px;
+									line-height: 9px;
 								}
 							}
 						}
 					}
 
 					.item-body {
-						font-size: clamp(13px, 3.4vw, 26px);
-						line-height: clamp(21px, 5.6vw, 42px);
+						font-size: 13px;
+						line-height: 21px;
 					}
 				}
 			}
@@ -426,8 +446,8 @@
 
 		.response-footer {
 			max-width: 66.6%;
-			font-size: clamp(10px, 2.6vw, 20px);
-			line-height: clamp(12px, 3vw, 23px);
+			font-size: 10px;
+			line-height: 12px;
 			color: var(--neutral-700);
 			text-align: center;
 		}

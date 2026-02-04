@@ -95,7 +95,8 @@
 		line-height: 9px;
 	}
 
-	@media (max-width: 1024px) {
+	// RESPONSIVE
+	@media (max-width: 874px) {
 		gap: 16px;
 		padding: 0 0 24px 0;
 
@@ -108,8 +109,8 @@
 			gap: 16px;
 
 			p {
-				font-size: clamp(12px, 3.2vw, 24px);
-				line-height: clamp(9px, 2.4vw, 18px);
+				font-size: 12px;
+				line-height: 9px;
 			}
 
 			.footer-general__redirect {
@@ -118,8 +119,8 @@
 				gap: 8px;
 
 				p {
-					font-size: clamp(12px, 3.2vw, 24px);
-					line-height: clamp(9px, 2.4vw, 18px);
+					font-size: 12px;
+					line-height: 9px;
 				}
 
 				img {
@@ -130,8 +131,8 @@
 		}
 
 		.footer-contact {
-			font-size: clamp(10px, 2.6vw, 20px);
-			line-height: clamp(10px, 2.6vw, 20px);
+			font-size: 10px;
+			line-height: 10px;
 
 			p:first-child {
 				transform: translateY(-3px);
@@ -146,15 +147,15 @@
 				gap: 13px;
 
 				a {
-					font-size: clamp(12px, 3.2vw, 24px);
-					line-height: clamp(9px, 2.4vw, 18px);
+					font-size: 12px;
+					line-height: 9px;
 				}
 			}
 		}
 
 		.footer-copyright {
-			font-size: clamp(9px, 2.4vw, 18px);
-			line-height: clamp(7px, 1.7vw, 13px);
+			font-size: 9px;
+			line-height: 7px;
 			color: var(--neutral-200);
 		}
 	}

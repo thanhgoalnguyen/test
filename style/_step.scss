@@ -368,7 +368,7 @@
 		}
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		gap: 24px;
 		padding: 40px 15px;
 
@@ -378,19 +378,19 @@
 			.step-title {
 				.title {
 					margin-bottom: 12px;
-					font-size: clamp(16px, 4.2vw, 32px);
-					line-height: clamp(12px, 3vw, 23px);
+					font-size: 16px;
+					line-height: 12px;
 
 					span {
-						font-size: clamp(24px, 6.4vw, 48px);
-						line-height: clamp(17px, 4.5vw, 34px);
+						font-size: 24px;
+						line-height: 17px;
 					}
 				}
 
 				.sub-title {
 					margin-bottom: 11px;
-					font-size: clamp(24px, 6.4vw, 48px);
-					line-height: clamp(18px, 4.6vw, 35px);
+					font-size: 24px;
+					line-height: 18px;
 				}
 
 				.line {
@@ -403,8 +403,8 @@
 			.step-des {
 				max-width: 53%;
 				height: max-content;
-				font-size: clamp(13px, 3.4vw, 26px);
-				line-height: clamp(15px, 3.8vw, 29px);
+				font-size: 13px;
+				line-height: 15px;
 				text-align: center;
 			}
 		}
@@ -422,8 +422,8 @@
 				button {
 					height: max-content;
 					padding: 9px 0;
-					font-size: clamp(13px, 3.4vw, 26px);
-					line-height: clamp(10px, 2.5vw, 19px);
+					font-size: 13px;
+					line-height: 10px;
 					background-color: white;
 
 					.arrow {
@@ -485,16 +485,16 @@
 								}
 
 								.item-mobile__title {
-									font-size: clamp(14px, 3.6vw, 27px);
-									line-height: clamp(10px, 2.6vw, 20px);
+									font-size: 14px;
+									line-height: 10px;
 									font-weight: 700;
 									color: var(--neutral-800);
 								}
 							}
 
 							.item-mobile__des {
-								font-size: clamp(12px, 3.2vw, 24px);
-								line-height: clamp(12px, 3.2vw, 24px);
+								font-size: 12px;
+								line-height: 12px;
 								color: black;
 							}
 						}
@@ -519,8 +519,8 @@
 
 		.step-detail {
 			height: max-content;
-			font-size: clamp(10px, 2.6vw, 20px);
-			line-height: clamp(10px, 2.6vw, 20px);
+			font-size: 10px;
+			line-height: 10px;
 			color: var(--neutral-700);
 
 			span {
@@ -537,8 +537,8 @@
 				gap: 5px;
 
 				p {
-					font-size: clamp(10px, 2.6vw, 20px);
-					line-height: clamp(10px, 2.6vw, 20px);
+					font-size: 10px;
+					line-height: 10px;
 					color: var(--neutral-700);
 				}
 			}

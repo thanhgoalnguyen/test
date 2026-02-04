@@ -112,6 +112,7 @@
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
+				width: 100%;
 
 				div {
 					display: flex;
@@ -228,6 +229,28 @@
 			grid-template-columns: 1fr;
 			gap: 20px;
 
+			.conversion-cta {
+				padding: 0 10px;
+			}
+		}
+
+		&.conversion-last {
+			height: max-content;
+
+			.conversion-background {
+				height: calc(100% + 24px);
+			}
+		}
+	}
+
+	@media (max-width: 874px) {
+		height: max-content;
+		padding: 19px 15px;
+
+		.conversion-wrapper {
+			grid-template-columns: 1fr;
+			gap: 20px;
+
 			.conversion-content {
 				gap: 12px;
 
@@ -235,8 +258,8 @@
 					gap: 8px;
 
 					p {
-						font-size: clamp(14px, 3.7vw, 28px);
-						line-height: clamp(11px, 2.9vw, 21px);
+						font-size: 14px;
+						line-height: 11px;
 					}
 				}
 
@@ -249,31 +272,31 @@
 						padding: 14px 0;
 
 						img {
-							width: clamp(28px, 7.4vw, 56px);
-							height: clamp(28px, 7.4vw, 56px);
+							width: 28px;
+							height: 28px;
 						}
 
 						.content-item__title {
-							font-size: clamp(12px, 3.2vw, 24px);
-							line-height: clamp(9px, 2.4vw, 18px);
+							font-size: 12px;
+							line-height: 9px;
 						}
 
 						div {
 							.text {
 								margin-right: 8px;
-								font-size: clamp(14px, 3.7vw, 28px);
-								line-height: clamp(12px, 2.8vw, 21px);
+								font-size: 14px;
+								line-height: 12px;
 							}
 
 							.number {
-								font-size: clamp(28px, 7.4vw, 56px);
-								line-height: clamp(20px, 5.3vw, 40px);
+								font-size: 28px;
+								line-height: 20px;
 							}
 
 							.order {
 								margin-bottom: 10%;
-								font-size: clamp(7px, 1.8vw, 14px);
-								line-height: clamp(5px, 1.3vw, 10px);
+								font-size: 7px;
+								line-height: 5px;
 							}
 						}
 					}
@@ -286,14 +309,14 @@
 						gap: 5px;
 
 						span {
-							min-width: clamp(23px, 6.1vw, 46px);
-							font-size: clamp(10px, 2.6vw, 20px);
-							line-height: clamp(8px, 2vw, 15px);
+							min-width: 23px;
+							font-size: 10px;
+							line-height: 8px;
 						}
 
 						p {
-							font-size: clamp(10px, 2.6vw, 20px);
-							line-height: clamp(10px, 2.6vw, 20px);
+							font-size: 10px;
+							line-height: 10px;
 						}
 					}
 				}
@@ -309,31 +332,38 @@
 					.content {
 						.small {
 							margin-bottom: 4px;
-							font-size: clamp(12px, 3.2vw, 24px);
-							line-height: clamp(15px, 3.8vw, 29px);
+							font-size: 12px;
+							line-height: 15px;
 						}
 
 						.medium {
-							font-size: clamp(16px, 4.2vw, 32px);
-							line-height: clamp(22px, 5.7vw, 43px);
+							margin-bottom: 2px;
+							font-size: 16px;
+							line-height: 22px;
 						}
 
 						.big {
-							font-size: clamp(18px, 4.8vw, 36px);
-							line-height: clamp(22px, 5.7vw, 43px);
+							margin-bottom: 3px;
+							font-size: 18px;
+							line-height: 22px;
 						}
 
 						.symbol {
 							margin-bottom: 3px;
-							font-size: clamp(18px, 4.8vw, 36px);
-							line-height: clamp(18px, 4.8vw, 36px);
+							font-size: 18px;
+							line-height: 18px;
 						}
 
 						.number {
 							margin-bottom: 5px;
-							font-size: clamp(24px, 6.4vw, 48px);
-							line-height: clamp(17px, 4.5vw, 34px);
+							font-size: 24px;
+							line-height: 17px;
 						}
+					}
+
+					.layer {
+						transform: translateY(-4px);
+						height: 8px;
 					}
 				}
 			}

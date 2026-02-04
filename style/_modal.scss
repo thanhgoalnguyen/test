@@ -99,7 +99,7 @@
 	}
 
 	// RESPONSIVE
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		.modal-wrapper {
 			padding: 15px;
 
@@ -218,7 +218,7 @@
 	}
 
 	// RESPONSIVE
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		&.select-modal-usb {
 			.modal-wrapper {
 				.modal-content {
@@ -226,8 +226,8 @@
 						gap: 18px;
 
 						p {
-							font-size: clamp(20px, 5.3vw, 40px);
-							line-height: clamp(15px, 3.8vw, 29px);
+							font-size: 20px;
+							line-height: 15px;
 						}
 					}
 				}
@@ -242,8 +242,8 @@
 
 						p {
 							max-width: 90%;
-							font-size: clamp(20px, 5.3vw, 40px);
-							line-height: clamp(22px, 5.8vw, 44px);
+							font-size: 20px;
+							line-height: 22px;
 							text-align: center;
 						}
 					}
@@ -264,8 +264,8 @@
 					}
 
 					.title {
-						font-size: clamp(13px, 3.4vw, 26px);
-						line-height: clamp(10px, 2.5vw, 19px);
+						font-size: 13px;
+						line-height: 10px;
 					}
 
 					.table {
@@ -278,13 +278,13 @@
 							padding: 8px 0;
 
 							.table-title {
-								font-size: clamp(13px, 3.4vw, 26px);
-								line-height: clamp(10px, 2.5vw, 19px);
+								font-size: 13px;
+								line-height: 10px;
 							}
 
 							.table-content {
-								font-size: clamp(13px, 3.4vw, 26px);
-								line-height: clamp(13px, 3.4vw, 26px);
+								font-size: 13px;
+								line-height: 13px;
 							}
 						}
 					}
@@ -296,8 +296,8 @@
 					padding: 6px 0;
 
 					p {
-						font-size: clamp(13px, 3.4vw, 26px);
-						line-height: clamp(10px, 2.5vw, 19px);
+						font-size: 13px;
+						line-height: 10px;
 					}
 				}
 			}
@@ -459,7 +459,7 @@
 	}
 
 	// RESPONSIVE
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		.modal-wrapper {
 			.modal-content {
 				.modal-content__header {
@@ -467,8 +467,8 @@
 					margin-bottom: 15px;
 
 					p {
-						font-size: clamp(20px, 5.3vw, 40px);
-						line-height: clamp(15px, 3.8vw, 29px);
+						font-size: 20px;
+						line-height: 15px;
 					}
 				}
 
@@ -487,8 +487,8 @@
 							width: 100%;
 							height: max-content;
 							padding: 9px 0;
-							font-size: clamp(13px, 3.4vw, 26px);
-							line-height: clamp(10px, 2.5vw, 19px);
+							font-size: 13px;
+							line-height: 10px;
 							background-color: white;
 
 							.arrow {
@@ -542,14 +542,14 @@
 									align-items: center;
 
 									p {
-										font-size: clamp(13px, 3.4vw, 26px);
-										line-height: clamp(13px, 3.4vw, 26px);
+										font-size: 13px;
+										line-height: 13px;
 									}
 								}
 
 								p {
-									font-size: clamp(13px, 3.4vw, 26px);
-									line-height: clamp(10px, 2.5vw, 19px);
+									font-size: 13px;
+									line-height: 10px;
 									font-weight: 500;
 								}
 
@@ -568,18 +568,18 @@
 
 						.total {
 							.total-title {
-								font-size: clamp(14px, 3.7vw, 28px);
-								line-height: clamp(11px, 2.9vw, 21px);
+								font-size: 14px;
+								line-height: 11px;
 								font-weight: 500;
 							}
 
 							.total-value {
-								font-size: clamp(12px, 3.2vw, 24px);
-								line-height: clamp(15px, 3.8vw, 29px);
+								font-size: 12px;
+								line-height: 15px;
 
 								span {
-									font-size: clamp(20px, 5.3vw, 40px);
-									line-height: clamp(15px, 3.8vw, 29px);
+									font-size: 20px;
+									line-height: 15px;
 								}
 							}
 						}
@@ -597,8 +597,8 @@
 
 							p,
 							span {
-								font-size: clamp(10px, 2.6vw, 20px);
-								line-height: clamp(12px, 3.2vw, 24px);
+								font-size: 10px;
+								line-height: 12px;
 								color: var(--neutral-700);
 							}
 						}

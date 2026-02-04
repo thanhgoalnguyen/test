@@ -97,7 +97,7 @@
 	}
 
 	// RESPONSIVE
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		gap: 16px;
 		padding: 32px 15px;
 
@@ -112,26 +112,26 @@
 
 				div {
 					p {
-						font-size: clamp(16px, 4.2vw, 32px);
-						line-height: clamp(12px, 3vw, 23px);
+						font-size: 16px;
+						line-height: 12px;
 					}
 
 					span {
-						font-size: clamp(28px, 7.4vw, 56px);
-						line-height: clamp(20px, 5.3vw, 40px);
+						font-size: 28px;
+						line-height: 20px;
 					}
 				}
 
 				img {
 					transform: translate(0);
-					width: clamp(278px, 74.2vw, 557px);
+					width: 278px;
 					height: auto;
 				}
 			}
 
 			.form-des {
-				font-size: clamp(13px, 3.4vw, 26px);
-				line-height: clamp(10px, 2.5vw, 19px);
+				font-size: 13px;
+				line-height: 13px;
 			}
 		}
 

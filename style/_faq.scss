@@ -260,7 +260,7 @@
 	}
 
 	// RESPONSIVE
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		gap: 24px;
 		padding: 40px 15px;
 
@@ -269,14 +269,14 @@
 
 			.faq-title {
 				p {
-					font-size: clamp(24px, 6.4vw, 48px);
-					line-height: clamp(18px, 4.6vw, 35px);
+					font-size: 24px;
+					line-height: 18px;
 				}
 			}
 
 			.faq-des {
-				font-size: clamp(13px, 3.4vw, 26px);
-				line-height: clamp(10px, 2.5vw, 19px);
+				font-size: 13px;
+				line-height: 10px;
 			}
 		}
 
@@ -295,8 +295,8 @@
 				button {
 					padding: 9px 0;
 					height: max-content;
-					font-size: clamp(13px, 3.4vw, 26px);
-					line-height: clamp(10px, 2.5vw, 19px);
+					font-size: 13px;
+					line-height: 10px;
 					background-color: white;
 
 					.arrow {
@@ -315,22 +315,22 @@
 						padding: 24px;
 
 						.icon {
-							width: clamp(15px, 4vw, 30px);
-							height: clamp(15px, 4vw, 30px);
+							width: 15px;
+							height: 15px;
 							margin-right: 12px;
 						}
 
 						p {
 							transform: translateY(1px);
 							margin-right: 24px;
-							font-size: clamp(13px, 3.4vw, 26px);
-							line-height: clamp(13px, 3.4vw, 26px);
+							font-size: 13px;
+							line-height: 13px;
 						}
 
 						.arrow {
 							transform: translateY(1px);
-							width: clamp(9px, 2.4vw, 18px);
-							height: clamp(12px, 3.2vw, 24px);
+							width: 9px;
+							height: 12px;
 						}
 					}
 
@@ -343,13 +343,13 @@
 
 							img {
 								transform: translateY(25%);
-								width: clamp(15px, 4vw, 30px);
-								height: clamp(15px, 4vw, 30px);
+								width: 15px;
+								height: 15px;
 							}
 
 							p {
-								font-size: clamp(13px, 3.4vw, 26px);
-								line-height: clamp(21px, 5.6vw, 42px);
+								font-size: 13px;
+								line-height: 21px;
 							}
 						}
 					}

@@ -26,9 +26,10 @@
 		grid-template-columns: 688fr 243fr;
 		gap: 42px;
 		width: 100%;
-		max-width: 1014px;
+		max-width: 1024px;
 		height: 100%;
 		padding-right: 41px;
+		padding-left: 10px;
 
 		.banner-general {
 			width: 100%;
@@ -245,6 +246,79 @@
 		}
 	}
 
+	@media (max-width: 1024px) {
+		.banner-wrapper {
+			gap: 21px;
+
+			.banner-general {
+				.banner-promotion {
+					.banner-promotion__description-one {
+						.small {
+							font-size: 30px;
+						}
+
+						.medium {
+							font-size: 40px;
+						}
+
+						.large {
+							font-size: 48px;
+						}
+
+						.larger {
+							font-size: 56px;
+						}
+					}
+
+					.banner-promotion__description-two,
+					.banner-promotion__description-two--mobile {
+						font-size: 49px;
+						line-height: 61px;
+					}
+
+					.banner-promotion__description-two--mobile {
+						display: none;
+					}
+				}
+
+				.banner-feature {
+					gap: 8px;
+
+					.banner-feature__item {
+						gap: 4px;
+						height: 48px;
+						padding: 0 8px;
+
+						.banner-feature__details-one,
+						.banner-feature__details-two,
+						.banner-feature__details-three {
+							p {
+								font-size: 12px;
+							}
+						}
+
+						.banner-feature__details-one {
+							span {
+								font-size: 24px;
+							}
+						}
+
+						.banner-feature__details-two,
+						.banner-feature__details-three {
+							span {
+								font-size: 14px;
+							}
+
+							.number {
+								font-size: 8px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	@media (max-width: 874px) {
 		height: max-content;
 
@@ -293,8 +367,8 @@
 						margin-bottom: 8px;
 
 						p {
-							font-size: 14px;
-							line-height: 11px;
+							font-size: 13px;
+							line-height: 10px;
 						}
 					}
 
@@ -303,7 +377,7 @@
 
 						.small {
 							font-size: 25px;
-							line-height: 36px;
+							line-height: 30px;
 						}
 
 						.medium {
@@ -367,7 +441,7 @@
 						.banner-feature__details-one {
 							span {
 								font-size: 24px;
-								line-height: 10px;
+								line-height: 20px;
 							}
 						}
 
