@@ -270,8 +270,9 @@
 
 			.promotion-detail__content--mobile {
 				display: flex;
+				justify-content: space-between;
 				gap: 5px;
-				margin-bottom: 5px;
+				margin-bottom: 6px;
 
 				.content {
 					display: flex;
@@ -296,6 +297,8 @@
 					}
 
 					.large {
+						transform: translateX(-5%);
+						display: inline-block;
 						font-size: clamp(32px, 8.4vw, 63px);
 						line-height: clamp(23px, 6vw, 45px);
 						letter-spacing: -0.08em;
@@ -326,10 +329,50 @@
 			}
 
 			.promotion-detail__button {
-				display: flex;
-				gap: 5px;
-				margin-bottom: 5px;
-			
+				width: 100%;
+				padding-right: 4px;
+
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					width: 100%;
+					padding: 14px 0 15px 0;
+					background: linear-gradient(90deg, #ec4765 0%, #f2b16f 100%);
+					border: 2px solid var(--red-100);
+					border-radius: 999px;
+
+					div {
+						display: flex;
+						flex-direction: column;
+						gap: 8px;
+
+						span {
+							font-size: clamp(13px, 3.4vw, 26px);
+							line-height: clamp(10px, 2.5vw, 19px);
+							font-style: 700;
+							letter-spacing: -0.04em;
+						}
+
+						p {
+							font-size: clamp(20px, 5.3vw, 40px);
+							line-height: clamp(15px, 3.8vw, 29px);
+							font-style: 700;
+							letter-spacing: -0.04em;
+						}
+					}
+
+					.icon {
+						width: 26px;
+						height: 26px;
+					}
+
+					.arrow {
+						width: 7px;
+						height: 13px;
+					}
+				}
 			}
 		}
 
@@ -341,14 +384,9 @@
 				padding: 0 15px;
 
 				div {
-					gap: 10px;
+					gap: 5px;
 
-					span {
-						font-size: clamp(10px, 2.6vw, 20px);
-						line-height: clamp(8px, 2vw, 15px);
-						color: var(--neutral-700);
-					}
-
+					span,
 					p {
 						font-size: clamp(10px, 2.6vw, 20px);
 						line-height: clamp(12px, 3vw, 23px);

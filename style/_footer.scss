@@ -96,6 +96,9 @@
 	}
 
 	@media (max-width: 1024px) {
+		gap: 16px;
+		padding: 0 0 24px 0;
+
 		.footer-general {
 			position: relative;
 			z-index: 1;
@@ -136,11 +139,11 @@
 		}
 
 		.footer-rule {
-			gap: 26px;
-			padding: 34px 0 24px 0;
+			gap: 13px;
+			padding: 12px 0 12px 0;
 
 			div {
-				gap: 26px;
+				gap: 13px;
 
 				a {
 					font-size: clamp(12px, 3.2vw, 24px);

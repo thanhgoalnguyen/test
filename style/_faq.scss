@@ -131,7 +131,6 @@
 
 				.faq-item__header {
 					display: flex;
-					align-items: center;
 					width: 100%;
 					padding: 31px;
 					cursor: pointer;
@@ -291,7 +290,7 @@
 				background-color: transparent;
 
 				button {
-					padding: 17px 0;
+					padding: 9px 0;
 					height: max-content;
 					font-size: clamp(13px, 3.4vw, 26px);
 					line-height: clamp(10px, 2.5vw, 19px);
@@ -331,7 +330,7 @@
 					}
 
 					.faq-item__body {
-						gap: 8px;
+						padding: 0 24px;
 
 						.faq-item__body-wrapper {
 							gap: 12px;

@@ -283,10 +283,10 @@
 					gap: 10px;
 
 					div {
-						gap: 10px;
+						gap: 5px;
 
 						span {
-							min-width: 46px;
+							min-width: 26px;
 							font-size: clamp(10px, 2.6vw, 20px);
 							line-height: clamp(8px, 2vw, 15px);
 						}
@@ -333,63 +333,6 @@
 							margin-bottom: 5px;
 							font-size: clamp(24px, 6.4vw, 48px);
 							line-height: clamp(17px, 4.5vw, 34px);
-						}
-					}
-				}
-
-				.cta-button-secondary {
-					justify-content: center;
-					width: 100%;
-					max-width: 100%;
-					height: max-content;
-					padding: 21px 26px 21px 33px;
-					margin-bottom: 11px;
-
-					p {
-						font-size: clamp(20px, 5.3vw, 40px);
-						line-height: clamp(15px, 3.8vw, 29px);
-					}
-
-					.icon {
-						width: clamp(17px, 4.4vw, 33px);
-						height: clamp(17px, 4.4vw, 33px);
-					}
-
-					.arrow-wrapper {
-						width: 13px;
-						height: 25px;
-
-						img {
-							width: 13px;
-							height: 25px;
-						}
-					}
-				}
-
-				.cta-button-primary {
-					justify-content: center;
-					width: 100%;
-					max-width: 100%;
-					height: max-content;
-					padding: 14px 0;
-
-					p {
-						font-size: clamp(14px, 3.6vw, 27px);
-						line-height: clamp(10px, 2.6vw, 20px);
-					}
-
-					.icon {
-						width: clamp(14px, 3.6vw, 27px);
-						height: clamp(14px, 3.6vw, 27px);
-					}
-
-					.arrow-wrapper {
-						width: 10px;
-						height: 19px;
-
-						img {
-							width: 10px;
-							height: 19px;
 						}
 					}
 				}

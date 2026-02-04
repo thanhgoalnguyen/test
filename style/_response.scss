@@ -327,6 +327,15 @@
 						font-size: clamp(24px, 6.4vw, 48px);
 						line-height: clamp(24px, 6.4vw, 48px);
 					}
+
+					.response-info__content-line {
+						.line {
+							span {
+								transform: translateY(5px);
+								height: 14px;
+							}
+						}
+					}
 				}
 
 				.response-info__image {
@@ -343,8 +352,6 @@
 					}
 
 					.response-info__percent {
-						letter-spacing: -0.02em;
-
 						.small {
 							font-size: clamp(36px, 9.6vw, 72px);
 							line-height: clamp(52px, 13.3vw, 100px);
@@ -362,12 +369,13 @@
 		.response-swiper {
 			.swiper-wrapper {
 				.item {
-					padding: 35px 22px;
+					gap: 18px;
+					padding: 18px 11px;
 
 					.item-header {
 						grid-template-columns: 144fr 265fr;
 						gap: 12px;
-						padding: 0 0 24px 0;
+						padding: 0 0 12px 0;
 
 						.item-header__avatar {
 							width: 100%;
@@ -414,29 +422,13 @@
 					}
 				}
 			}
-
-			.swiper-button {
-				margin-top: 12px;
-
-				.swiper-navigation,
-				.swiper-arrow {
-					width: 48px !important;
-					height: 48px !important;
-				}
-
-				.swiper-pagination {
-					.swiper-pagination-bullet {
-						width: 12px;
-						height: 12px;
-					}
-				}
-			}
 		}
 
 		.response-footer {
-			max-width: 490px;
+			max-width: 250px;
 			font-size: clamp(10px, 2.6vw, 20px);
 			line-height: clamp(12px, 3vw, 23px);
+			color: var(--neutral-700);
 			text-align: center;
 		}
 	}

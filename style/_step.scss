@@ -401,10 +401,11 @@
 			}
 
 			.step-des {
-				max-width: 51.1%;
+				max-width: 53%;
 				height: max-content;
 				font-size: clamp(13px, 3.4vw, 26px);
 				line-height: clamp(15px, 3.8vw, 29px);
+				text-align: center;
 			}
 		}
 
@@ -434,7 +435,7 @@
 			.step-content__body {
 				grid-template-columns: 1fr;
 				align-items: center;
-				gap: 8px;
+				gap: 4px;
 				padding: 16px;
 
 				.arrow {
@@ -499,6 +500,14 @@
 
 					.item-badge {
 						display: none;
+					}
+
+					&.highlight {
+						.item-mobile {
+							.item-mobile__des {
+								font-weight: 700;
+							}
+						}
 					}
 				}
 			}

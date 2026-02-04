@@ -214,6 +214,10 @@
 					width: 15px;
 					height: 11px;
 				}
+
+				.arrow-mobile {
+					display: none;
+				}
 			}
 		}
 
@@ -224,6 +228,56 @@
 				}
 			}
 		}
+
+		@media (max-width: 1024px) {
+			justify-content: center;
+			align-items: center;
+			gap: 6px;
+			width: 100%;
+			max-width: 100%;
+			height: max-content;
+			padding: 21px 26px 21px 33px;
+			margin-bottom: 11px;
+
+			p {
+				font-size: clamp(20px, 5.3vw, 40px);
+				line-height: clamp(15px, 3.8vw, 29px);
+				font-weight: 700;
+			}
+
+			.icon {
+				width: clamp(17px, 4.4vw, 33px);
+				height: clamp(17px, 4.4vw, 33px);
+			}
+
+			.arrow-wrapper {
+				width: clamp(7px, 1.7vw, 13px);
+				height: clamp(13px, 3.3vw, 25px);
+
+				.arrow-group {
+					img {
+						width: clamp(7px, 1.7vw, 13px);
+						height: clamp(13px, 3.3vw, 25px);
+					}
+
+					.arrow {
+						display: none;
+					}
+
+					.arrow-mobile {
+						display: block;
+					}
+				}
+			}
+
+			&:hover {
+				.arrow-wrapper {
+					.arrow-group {
+						transform: translateX(calc(50% + 2px));
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -231,6 +285,56 @@
 	&.cta-button-primary {
 		font-size: 18px;
 		line-height: 13px;
+
+		.arrow-mobile {
+			display: none;
+		}
+
+		@media (max-width: 1024px) {
+			justify-content: center;
+			width: 100%;
+			max-width: 100%;
+			height: max-content;
+			padding: 14px 0;
+
+			p {
+				font-size: clamp(14px, 3.6vw, 27px);
+				line-height: clamp(10px, 2.6vw, 20px);
+			}
+
+			.icon {
+				width: clamp(14px, 3.6vw, 27px);
+				height: clamp(14px, 3.6vw, 27px);
+			}
+
+			.arrow-wrapper {
+				width: clamp(7px, 1.7vw, 13px);
+				height: clamp(13px, 3.3vw, 25px);
+
+				.arrow-group {
+					img {
+						width: clamp(7px, 1.7vw, 13px);
+						height: clamp(13px, 3.3vw, 25px);
+					}
+
+					.arrow {
+						display: none;
+					}
+
+					.arrow-mobile {
+						display: block;
+					}
+				}
+			}
+
+			&:hover {
+				.arrow-wrapper {
+					.arrow-group {
+						transform: translateX(calc(50% + 2px));
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -253,5 +357,10 @@
 
 	&:hover {
 		transform: scale(1.1);
+	}
+
+	@media (max-width: 1024px) {
+		bottom: 15px;
+		right: 15px;
 	}
 }

@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const simulationHeaderStep1 = document.querySelector('.js-simulation-header-step-1');
 	const simulationHeaderStep2 = document.querySelector('.js-simulation-header-step-2');
 	const simulationHeaderStep3 = document.querySelector('.js-simulation-header-step-3');
+	const simulationSwiper = document.querySelector('.js-simulation-swiper');
 
 	// PRICE MODAL
 	const priceModalTagWrapper = document.querySelector('.js-price-modal-tag-wrapper');
@@ -50,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const customerResponses = [
 		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 3, imgStar: star3, review: "モバイルルーターの軽さ" },
-		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 3, imgStar: star3, review: "長時間の外出や宿泊する場合、子供たちにWiFiルーターを持たせられるところは気に入ってます" },
-		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットはとても便利でWiFiスポットを探さなくてもどこでも勝手にWi-Fiなのでギガ数気にせず" },
+		{ img: male40, gender: "男性", genderEn: "male", age: "40", stars: 3, imgStar: star3, review: "長時間の外出や宿泊する場合、子供たちにWiFiルーターを持たせられるところは気に入ってます。" },
+		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットはとても便利でWiFiスポットを探さなくてもどこでも勝手にWi-Fiなのでギガ数気にせず使えるのが1番私には有り難い部分です。" },
 		{ img: female30, gender: "女性", genderEn: "female", age: "30", stars: 4, imgStar: star4, review: "通信速度も問題なく、設定も簡単だった" },
 		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットWiFiが早朝から深夜まで途中充電なしに使える" },
 		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, imgStar: star4, review: "通信速度が速くて快適です。また、外出中も安心して使えることがありがたいです。" },
@@ -73,10 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 4, imgStar: star4, review: "ポケットに入れて持ち込みができる事。" },
 		{ img: male50, gender: "男性", genderEn: "male", age: "50", stars: 5, imgStar: star5, review: "リモートワークのいろいろな場面（自宅・営業先）に最適" },
 		{ img: female40, gender: "女性", genderEn: "female", age: "40", stars: 4, imgStar: star4, review: "家でも車でもネットが使えるので、動画配信が見られ、子供も飽きない。" },
-		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "初めてポケットWi-Fiを使いましたが、外出中に容量が減らないので安心して携帯を使えることか" },
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "初めてポケットWi-Fiを使いましたが、外出中に容量が減らないので安心して携帯を使えることがよかったです" },
 		{ img: male30, gender: "男性", genderEn: "male", age: "30", stars: 5, imgStar: star5, review: "節約につながっている" },
 		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 4, imgStar: star4, review: "容量無制限で速度にも満足している" },
-		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "2台ある事で、外でのデーターが気にならなくなったのと、実際に支払いをし始めて、本当に安く" }
+		{ img: female50, gender: "女性", genderEn: "female", age: "50", stars: 5, imgStar: star5, review: "2台ある事で、外でのデーターが気にならなくなったのと、実際に支払いをし始めて、本当に安くて感謝しかない！" }
 	];
 
 	const simulationStepMethodList = {
@@ -1271,7 +1272,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		simulationResultData?.priceTable?.forEach((item ) => {
 			const newTag = `
-				<button class="js-price-modal-tag" data-type="${item?.value}">${item?.title}</button>
+				<button class="js-price-modal-tag" data-type="${item?.value}">
+					${item?.title}
+					<img src="./assets/icon/faq/arrow-right.svg" alt="arrow" class="arrow arrow-unactive" />
+					<img src="./assets/icon/faq/arrow-down.svg" alt="arrow" class="arrow arrow-active" />
+				</button>
 			`;
 			newTags += newTag;
 		});
@@ -1387,7 +1392,7 @@ document.addEventListener("DOMContentLoaded", function () {
 							</p>
 						</div>`;
 
-		if (window.screen > 1024 || index <= 10) {
+		if (window.innerWidth > 1024 || index <= 12) {
 			responseItems += newItem;
 		}
 	})
@@ -1446,6 +1451,22 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		}
 	});
+
+	if (window?.innerWidth <= 1024) {
+		const simulationSwiperInit = new Swiper('.simulation-swiper', {
+			direction: 'horizontal',
+			slidesPerView: 1.22,
+			spaceBetween: 15,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-next',
+				prevEl: '.swiper-prev',
+			},
+		});
+	}
 
 	stepTags.forEach((item) => {
 		item.addEventListener('click', function () {
@@ -1579,7 +1600,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	const handleCheckScrollTop = () => {
-		console.log(window.scrollY);
 		if (window.scrollY > window.innerHeight / 2) {
 			scrollTopButton.style.display = "block";
 		} else {
