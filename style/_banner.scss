@@ -245,7 +245,7 @@
 		}
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: 874px) {
 		height: max-content;
 
 		.banner-bg {
@@ -278,8 +278,8 @@
 					margin: 0 auto 18px auto;
 
 					p {
-						font-size: clamp(14px, 3.7vw, 28px);
-						line-height: clamp(11px, 2.9vw, 21px);
+						font-size: 14px;
+						line-height: 11px;
 					}
 				}
 
@@ -293,8 +293,8 @@
 						margin-bottom: 8px;
 
 						p {
-							font-size: clamp(14px, 3.7vw, 28px);
-							line-height: clamp(11px, 2.9vw, 21px);
+							font-size: 14px;
+							line-height: 11px;
 						}
 					}
 
@@ -302,24 +302,24 @@
 						margin-bottom: 0;
 
 						.small {
-							font-size: clamp(25px, 6.53vw, 49px);
-							line-height: clamp(36px, 2.9vw, 71px);
+							font-size: 25px;
+							line-height: 36px;
 						}
 
 						.medium {
-							font-size: clamp(30px, 8vw, 60px);
-							line-height: clamp(22px, 5.8vw, 44px);
+							font-size: 30px;
+							line-height: 22px;
 						}
 
 						.large {
-							font-size: clamp(35px, 9.3vw, 70px);
-							line-height: clamp(26px, 6.8vw, 51px);
+							font-size: 35px;
+							line-height: 26px;
 							letter-spacing: -0.02em;
 						}
 
 						.larger {
-							font-size: clamp(40px, 10.6vw, 80px);
-							line-height: clamp(29px, 7.6vw, 57px);
+							font-size: 40px;
+							line-height: 29px;
 						}
 					}
 
@@ -330,8 +330,8 @@
 					.banner-promotion__description-two--mobile {
 						display: block;
 						width: max-content;
-						font-size: clamp(57px, 15.2vw, 114px);
-						line-height: clamp(57px, 15.2vw, 114px);
+						font-size: 57px;
+						line-height: 57px;
 						letter-spacing: -0.07em;
 					}
 				}
@@ -348,8 +348,8 @@
 						padding: 11px 14px;
 
 						img {
-							width: clamp(13.5px, 3.6vw, 27px);
-							height: clamp(13.5px, 3.6vw, 27px);
+							width: 14px;
+							height: 14px;
 						}
 
 						.banner-feature__details-one,
@@ -359,28 +359,28 @@
 							align-items: center;
 
 							p {
-								font-size: clamp(14px, 3.6vw, 27px);
-								line-height: clamp(10px, 2.6vw, 20px);
+								font-size: 14px;
+								line-height: 10px;
 							}
 						}
 
 						.banner-feature__details-one {
 							span {
-								font-size: clamp(24px, 6.2vw, 47px);
-								line-height: clamp(10px, 5.2vw, 39px);
+								font-size: 24px;
+								line-height: 10px;
 							}
 						}
 
 						.banner-feature__details-two,
 						.banner-feature__details-three {
 							span {
-								font-size: clamp(15px, 4vw, 30px);
-								line-height: clamp(11px, 2.9vw, 22px);
+								font-size: 15px;
+								line-height: 11px;
 							}
 
 							.number {
-								font-size: clamp(13px, 3.6vw, 27px);
-								line-height: clamp(10px, 2.6vw, 20px);
+								font-size: 14px;
+								line-height: 10px;
 							}
 						}
 					}
