@@ -212,6 +212,10 @@
 					}
 				}
 			}
+
+			.banner-icon--mobile {
+				display: none;
+			}
 		}
 
 		.banner-icon {
@@ -259,11 +263,13 @@
 			padding: 0;
 
 			.banner-general {
+				position: relative;
 				display: flex;
 				flex-direction: column;
+				width: max-content;
 				max-width: 100%;
 				padding: 79px 9px 29px 9px;
-				margin: 0;
+				margin: 0 auto;
 
 				.banner-slogan {
 					width: calc(100% - 12px);
@@ -379,16 +385,21 @@
 						}
 					}
 				}
+
+				.banner-icon--mobile {
+					position: absolute;
+					bottom: 5.2%;
+					right: 4.4%;
+					display: block;
+					width: 34.5%;
+					max-width: 129px;
+					margin-top: 0;
+					aspect-ratio: unset;
+				}
 			}
 
 			.banner-icon {
-				position: absolute;
-				bottom: 5.2%;
-				right: 4.4%;
-				width: 34.5%;
-				max-width: 129px;
-				margin-top: 0;
-				aspect-ratio: unset;
+				display: none;
 			}
 		}
 	}

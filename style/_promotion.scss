@@ -366,11 +366,13 @@
 					.icon {
 						width: 26px;
 						height: 26px;
+						width: clamp(26px, 6.8vw, 51px);
+						height: clamp(26px, 6.9vw, 52px);
 					}
 
 					.arrow {
-						width: 7px;
-						height: 13px;
+						width: clamp(7px, 1.7vw, 13px);
+						height: clamp(13px, 3.3vw, 25px);
 					}
 				}
 			}
