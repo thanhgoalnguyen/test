@@ -844,10 +844,8 @@
 						}
 
 						.header-wrapper__method {
-							justify-content: space-between;
-							gap: 0px;
+							gap: 24px;
 							width: 100%;
-							max-width: 375px;
 
 							div {
 								gap: 3px;
@@ -935,7 +933,7 @@
 
 							p {
 								font-size: 12px;
-								line-height: 9px;
+								line-height: 11px;
 							}
 						}
 

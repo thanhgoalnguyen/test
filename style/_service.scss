@@ -200,7 +200,6 @@
 				position: absolute;
 				z-index: 0;
 				width: 75.4%;
-				max-width: 1030px;
 				height: 100%;
 				opacity: 0;
 			}
@@ -289,8 +288,8 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			height: 560px;
-			padding-right: 80px;
+			padding-right: 5.85vw;
+			aspect-ratio: 1366/560;
 
 			.bg {
 				top: 0;
@@ -382,8 +381,10 @@
 		}
 
 		.body-bottom {
-			height: 528px;
-			padding: 88px 0 0 80px;
+			display: flex;
+			align-items: center;
+			padding: 0 0 0 5.85vw;
+			aspect-ratio: 1366/528;
 
 			.icon {
 				position: absolute;
@@ -397,7 +398,8 @@
 			.bg {
 				bottom: 0;
 				right: 0;
-				height: 560px;
+				height: max-content;
+				aspect-ratio: 1030/560;
 
 				.bg-image {
 					width: 100%;
@@ -415,6 +417,7 @@
 
 			.content {
 				padding: 53px 32px 32px 32px;
+				margin-bottom: 2.34vw;
 
 				.content-title {
 					margin-bottom: 16px;
@@ -633,6 +636,7 @@
 							margin-top: 2px;
 							font-size: 12px;
 							line-height: 9px;
+							font-weight: 400;
 							color: black;
 						}
 
@@ -973,6 +977,7 @@
 			.body-bottom {
 				height: max-content;
 				padding: 100px 38px 57px 38px;
+				overflow: hidden;
 
 				.icon {
 					display: none;
@@ -983,7 +988,6 @@
 					left: 0;
 					width: 100%;
 					height: max-content;
-					max-height: 100%;
 					aspect-ratio: 750/375;
 
 					.bg-image,
