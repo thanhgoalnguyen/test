@@ -9,6 +9,14 @@
 	<meta name="description" content="確認中">
 	<meta name="keywords" content="確認中">
 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			ac_source: "google",
+			ac_asp: "",
+		});
+	</script>
+
 	<style>
 		.async-hide {
 			opacity: 0 !important
@@ -18,39 +26,23 @@
 		(function (a, s, y, n, c, h, i, d, e) {
 			s.className += ' ' + y;
 			h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-			(a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c);
-		})(window, document.documentElement, 'async-hide', 'dataLayer', 4000, { 'GTM-MMLRXL4': true });
+			(a[n] = a[n] || []).hide = h;
+			setTimeout(function () { i(); h.end = null }, c);
+		})(window, document.documentElement, 'async-hide', 'dataLayer', 2000, { 'GTM-MMLRXL4': true });
 	</script>
 
-	<script type="text/javascript" src="https://try.abtasty.com/3eca7514f1311d8c2b97d25ecd5e002d.js"></script>
-
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		window.dataLayer.push({
-			ac_source: "google",
-			ac_asp: "",
-		});
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-MMLRXL4');
-	</script>
-	<link rel="preload" href="style.css" as="style">
 	<link rel="stylesheet" href="./style/style.scss">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
-		onload="this.media='all'">
-	<noscript>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-	</noscript>
+
+	<script async type="text/javascript" src="https://try.abtasty.com/3eca7514f1311d8c2b97d25ecd5e002d.js"></script>
+	<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MMLRXL4"></script>
 </head>
 
 <body>
