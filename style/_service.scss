@@ -163,6 +163,10 @@
 					color: transparent;
 					paint-order: stroke fill;
 				}
+
+				.content {
+					background: transparent;
+				}
 			}
 		}
 
@@ -1204,7 +1208,7 @@
 					.content-label {
 						left: 16px;
 						transform: translateY(-17px) translateX(0);
-						width: max-content;
+						width: 146px;
 						height: 31px;
 					}
 
