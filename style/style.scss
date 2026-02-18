@@ -119,6 +119,11 @@ sup {
 	line-height: 10px;
 	color: inherit;
 	font-weight: 700;
+
+	@media (max-width: 874px) {
+		font-size: 9px !important;
+		line-height: 6px !important;
+	}
 }
 
 .scroll-content {

@@ -176,6 +176,11 @@
 						line-height: 19px;
 					}
 
+					sup {
+						display: inline-block;
+						transform: translateY(2px);
+					}
+
 					.banner-feature__details-one {
 						display: flex;
 						align-items: center;

@@ -166,6 +166,11 @@
 					line-height: 12px;
 					color: black;
 				}
+
+				a {
+					color: var(--blue-100);
+					text-decoration: underline;
+				}
 			}
 		}
 	}

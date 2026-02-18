@@ -437,10 +437,12 @@
 							border-bottom: 1px solid var(--neutral-400);
 
 							p {
+								padding: 0 5px;
 								font-size: 32px;
 								line-height: 23px;
 								font-weight: 700;
 								color: var(--blue-100);
+								text-align: center;
 							}
 						}
 
@@ -995,7 +997,7 @@
 
 								p {
 									font-size: 20px;
-									line-height: 15px;
+									line-height: 20px;
 								}
 							}
 
