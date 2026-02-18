@@ -119,6 +119,11 @@
 						font-size: 16px;
 						line-height: 12px;
 					}
+
+					sup {
+						display: inline-block;
+						transform: translateY(2px);
+					}
 				}
 			}
 
@@ -172,7 +177,7 @@
 
 		p {
 			font-size: 12px;
-			line-height: 9px;
+			line-height: 12px;
 		}
 
 		.select-footer__order {

@@ -93,16 +93,35 @@
 	}
 
 	.feature-body {
-		display: flex;
-		justify-content: center;
 		width: 100%;
+		max-width: 1038px;
 		margin-bottom: 60px;
 		opacity: 0;
 
 		img {
 			width: 100%;
-			max-width: 1038px;
-			aspect-ratio: 1038/304;
+			margin-bottom: 32px;
+			aspect-ratio: 1038/235;
+			object-fit: cover;
+		}
+
+		.list {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			width: 100%;
+			padding: 0 8.3%;
+
+			div {
+				display: flex;
+				gap: 8px;
+
+				p {
+					font-size: 12px;
+					line-height: 9px;
+					color: black;
+				}
+			}
 		}
 	}
 
@@ -222,6 +241,21 @@
 
 		.feature-body {
 			margin-bottom: 32px;
+
+			img {
+				margin-bottom: 16px;
+			}
+
+			.list {
+				padding: 0 10px;
+
+				div {
+					p {
+						font-size: 10px;
+						line-height: 11px;
+					}
+				}
+			}
 		}
 
 		.feature-footer {

@@ -549,43 +549,43 @@
 		opacity: 0;
 	}
 
-	.simulation-order {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
+	.simulation-content__wrapper {
 		width: 100%;
-		max-width: 1206px;
-		margin-bottom: 32px;
+		max-width: 1226px;
+		height: 119px;
+		padding: 0 10px;
+		overflow: auto;
 		opacity: 0;
 
-		div {
+		.simulation-order {
 			display: flex;
-			font-size: 12px;
-			line-height: 12px;
+			flex-direction: column;
+			gap: 16px;
+			width: 100%;
+			margin-bottom: 32px;
 
-			span {
-				width: 32px;
-				color: black;
-			}
+			div {
+				display: flex;
+				font-size: 12px;
+				line-height: 12px;
 
-			p {
-				color: black;
-			}
+				span {
+					width: 32px;
+					color: black;
+				}
 
-			a {
-				color: var(--blue-100);
-				text-decoration: underline;
+				p {
+					color: black;
+				}
+
+				a {
+					color: var(--blue-100);
+					text-decoration: underline;
+				}
 			}
 		}
-	}
 
-	.simulation-list {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		opacity: 0;
-
-		.simulation-list__wrapper {
+		.simulation-list {
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
@@ -642,8 +642,7 @@
 	}
 
 	.simulation-button,
-	.simulation-order,
-	.simulation-list {
+	.simulation-content__wrapper {
 		&.show {
 			opacity: 1;
 			animation: fadeUpScale 0.3s linear forwards;
@@ -1053,34 +1052,31 @@
 			}
 		}
 
-		.simulation-order {
-			gap: 8px;
-			padding: 0 15px;
-			margin-bottom: 16px;
+		.simulation-content__wrapper {
+			.simulation-order {
+				gap: 8px;
+				margin-bottom: 16px;
 
-			div {
-				gap: 5px;
+				div {
+					gap: 5px;
 
-				span {
-					transform: translateY(3%);
-					width: max-content;
-					font-size: 10px;
-					line-height: 8px;
-					color: var(--neutral-700);
-				}
+					span {
+						transform: translateY(3%);
+						width: max-content;
+						font-size: 10px;
+						line-height: 8px;
+						color: var(--neutral-700);
+					}
 
-				p {
-					font-size: 10px;
-					line-height: 10px;
-					color: var(--neutral-700);
+					p {
+						font-size: 10px;
+						line-height: 10px;
+						color: var(--neutral-700);
+					}
 				}
 			}
-		}
 
-		.simulation-list {
-			padding: 0 15px;
-
-			.simulation-list__wrapper {
+			.simulation-list {
 				gap: 8px;
 				padding: 16px;
 
