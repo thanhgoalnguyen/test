@@ -180,6 +180,16 @@
 						font-size: 48px;
 						line-height: 34px;
 					}
+
+					sup {
+						position: absolute;
+						top: 0;
+						right: 0;
+						transform: translateY(-5px);
+						font-size: 14px;
+						line-height: 10px;
+						color: black;
+					}
 				}
 
 				.layer {

@@ -571,6 +571,11 @@
 			p {
 				color: black;
 			}
+
+			a {
+				color: var(--blue-100);
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -597,6 +602,11 @@
 					font-size: 12px;
 					line-height: 13px;
 					color: black;
+				}
+
+				a {
+					color: var(--blue-100);
+					text-decoration: underline;
 				}
 			}
 		}

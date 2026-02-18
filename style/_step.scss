@@ -247,9 +247,10 @@
 	}
 
 	.step-detail {
-		display: none;
+		padding: 0 26px;
 		font-size: 14px;
 		height: 10px;
+		color: black;
 	}
 
 	.step-list {
@@ -267,7 +268,7 @@
 
 			p {
 				font-size: 12px;
-				line-height: 9px;
+				line-height: 12px;
 				color: black;
 			}
 		}
