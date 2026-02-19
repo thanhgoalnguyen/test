@@ -1,3 +1,5 @@
+import './style/style.scss';
+
 import male20 from "./assets/icon/response/male-20.svg";
 import male30 from "./assets/icon/response/male-30.svg";
 import male40 from "./assets/icon/response/male-40.svg";
@@ -14,6 +16,9 @@ import star5 from "./assets/icon/response/star-5.svg";
 document.addEventListener("DOMContentLoaded", function () {
 	// HEADER
 	const header = document.querySelector('.js-header');
+
+	// FORM
+	const form = document.querySelector('.js-form');
 
 	// FAQ
 	const faqTags = document.querySelectorAll('.js-faq-tag');
@@ -1260,6 +1265,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	];
 
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const idValue = urlParams.get('id');
+
 	let responseItems = "";
 	let simulationType = 24;
 	let simulationResultData = simulationResult?.[4];
@@ -1327,6 +1336,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			modal.classList.remove('show');
 			document.body.classList.remove('overflow-hidden');
 		}
+	}
+
+	if (idValue === "show") {
+		form.style.display = "flex";
 	}
 
 	faqTags.forEach((item) => {
