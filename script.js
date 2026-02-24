@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	const simulationHeaderStep1 = document.querySelector('.js-simulation-header-step-1');
 	const simulationHeaderStep2 = document.querySelector('.js-simulation-header-step-2');
 	const simulationHeaderStep3 = document.querySelector('.js-simulation-header-step-3');
-	const simulationSwiper = document.querySelector('.js-simulation-swiper');
 
 	// PRICE MODAL
 	const priceModalTagWrapper = document.querySelector('.js-price-modal-tag-wrapper');
@@ -1340,6 +1339,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (idValue === "show") {
 		form.style.display = "flex";
+
+		const formIframe = document.querySelector('.js-form-iframe');
+		const formWrapper = document.querySelector('.js-form-wrapper');
+
+		formIframe.onload = function() {
+			formWrapper.style.width = formIframe?.clientWidth + "px";
+			formWrapper.style.height = formIframe?.clientHeight + "px";
+        };
 	}
 
 	faqTags.forEach((item) => {
