@@ -210,20 +210,23 @@
 							line-height: 18px;
 						}
 
-						sup {
-							color: black;
-						}
-
 						.title {
 							transform: translateY(2px);
 							letter-spacing: -0.04em;
 						}
+					}
+				}
 
-						.sub-title {
-							font-size: 12px;
-							line-height: 9px;
-							color: black;
-						}
+				.banner-feature__item-wrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 7px;
+
+					.sub-title {
+						font-size: 12px;
+						line-height: 12px;
+						color: var(--neutral-900);
 					}
 				}
 			}

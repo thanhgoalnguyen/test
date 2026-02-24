@@ -386,7 +386,7 @@
 
 					p {
 						font-size: 14px;
-						line-height: 10px;
+						line-height: 14px;
 						font-weight: 700;
 						color: black;
 
@@ -449,10 +449,15 @@
 				}
 
 				span,
-				p {
+				p,
+				a {
 					font-size: 12px;
 					line-height: 125%;
 					color: black;
+				}
+
+				a {
+					text-decoration: underline;
 				}
 			}
 		}
@@ -542,13 +547,13 @@
 									align-items: center;
 
 									p {
-										font-size: 13px;
-										line-height: 13px;
+										font-size: 8px;
+										line-height: 10px;
 									}
 								}
 
 								p {
-									font-size: 13px;
+									font-size: 8px;
 									line-height: 10px;
 									font-weight: 500;
 								}

@@ -181,14 +181,22 @@
 
 		.select-footer__order {
 			display: flex;
-			gap: 7px;
+
+			.order {
+				min-width: 31px;
+			}
 		}
 
 		.select-footer__note {
 			font-size: 12px;
 			line-height: 14px;
-			font-weight: 700;
+			font-weight: 500;
 			color: black;
+
+			a {
+				color: black;
+				text-decoration: underline;
+			}
 		}
 	}
 
