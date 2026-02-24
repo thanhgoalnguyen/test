@@ -104,6 +104,7 @@
 		opacity: 0;
 
 		.content {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -122,6 +123,15 @@
 
 			span {
 				color: var(--red-100);
+			}
+
+			img {
+				position: absolute;
+				top: 50%;
+				left: 100%;
+				transform: translateY(-50%) translateX(-4vw);
+				width: 16.7vw;
+				max-width: 228px;
 			}
 		}
 
@@ -260,6 +270,15 @@
 				}
 			}
 		}
+
+		.feature-body {
+			.content {
+				img {
+					transform: translateY(-50%) translateX(-3vw);
+					width: 100px;
+				}
+			}
+		}
 	}
 
 	@media (max-width: 874px) {
@@ -332,6 +351,13 @@
 
 				sup {
 					font-size: 10px;
+				}
+
+				img {
+					top: 0;
+					left: auto;
+					right: 0;
+					width: 50px;
 				}
 			}
 
