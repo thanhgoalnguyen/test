@@ -35,6 +35,7 @@
 
 		.response-des {
 			display: flex;
+			align-items: flex-end;
 			opacity: 0;
 
 			p {
@@ -211,6 +212,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
+		width: max-content;
+		max-width: 100%;
+		padding: 0 10px;
 
 		p {
 			font-size: 14px;
@@ -290,6 +294,13 @@
 						line-height: 24px;
 					}
 				}
+			}
+		}
+
+		.response-footer {
+			p {
+				font-size: 12px;
+				line-height: 12px;
 			}
 		}
 	}
@@ -442,10 +453,13 @@
 
 		.response-footer {
 			max-width: 66.6%;
-			font-size: 10px;
-			line-height: 12px;
-			color: var(--neutral-700);
 			text-align: center;
+
+			p {
+				font-size: 12px;
+				line-height: 12px;
+				color: var(--neutral-700);
+			}
 		}
 	}
 }

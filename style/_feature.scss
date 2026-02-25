@@ -266,7 +266,7 @@
 
 				.feature-header__content {
 					p {
-						font-size: 55px;
+						font-size: 45px;
 					}
 				}
 			}
@@ -277,6 +277,28 @@
 				img {
 					transform: translateY(-50%) translateX(-3vw);
 					width: 100px;
+				}
+			}
+
+			.tag {
+				.item {
+					div {
+						align-items: center;
+
+						.small {
+							font-size: 18px;
+							line-height: 18px;
+						}
+
+						.medium {
+							font-size: 32px;
+							line-height: 32px;
+						}
+
+						sup {
+							transform: translateY(0px);
+						}
+					}
 				}
 			}
 		}
