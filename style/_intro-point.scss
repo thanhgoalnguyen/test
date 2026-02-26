@@ -446,7 +446,7 @@
 
 				&.item-reverse {
 					justify-content: flex-end;
-					padding-right: 11.7vw;
+					padding-right: 15px;
 
 					.item-content {
 						.item-content__main-title {
@@ -555,7 +555,7 @@
 
 				.item-content {
 					width: 100%;
-					max-width: 345px;
+					// max-width: 345px;
 					padding: 24px 14px;
 					margin-left: 0;
 
@@ -607,6 +607,13 @@
 							font-size: 12px;
 							line-height: 16px;
 							text-align: center;
+						}
+
+						.content-pc {
+							display: none;
+						}
+						.content-mb {
+							display: block;
 						}
 					}
 

@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step2: "1gbps",
 			step3: "mobile",
 			type24: [{ title: "初月", value: "4,180" }, { title: "2~24ヵ月目", value: "5,500" }],
-			type25: [{ title: "25ヵ月目~", value: "8,030" }],
+			type25: [{ title: "25~49ヵ月目", value: "8,030" },{ title: "50ヵ月目~", value: "8,030" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -239,8 +239,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "family",
 			step2: "1gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "5,720" }, { title: "4~24ヵ月目", value: "7,040" }],
-			type25: [{ title: "25ヵ月目~", value: "9,570" }],
+			type24: [{ title: "初月", value: "5,720" }, { title: "2~24ヵ月目", value: "7,040" }],
+			type25: [{ title: "25~49ヵ月目", value: "9,570" },{ title: "50ヵ月目~", value: "9,570" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -357,7 +357,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step2: "10gbps",
 			step3: "mobile",
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,320" }, { title: "7~24ヵ月目", value: "8,250" }],
-			type25: [{ title: "25ヵ月目~", value: "10,780" }],
+			type25: [{ title: "25~49ヵ月目", value: "10,780" },{ title: "50ヵ月目~", value: "10,780" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -526,7 +526,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step2: "10gbps",
 			step3: "mobile",
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,320" }, { title: "7~24ヵ月目", value: "8,250" }],
-			type25: [{ title: "25ヵ月目~", value: "10,780" }],
+			type25: [{ title: "25~49ヵ月目", value: "10,780" },{ title: "50ヵ月目~", value: "10,780" }],
 			priceTable: [
 				{ 
 					title: "初月", 

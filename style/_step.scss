@@ -215,6 +215,10 @@
 					}
 				}
 
+				.item-badge--mb {
+					display: none;
+				}
+
 				&.highlight {
 					border: 4px solid var(--red-100);
 
@@ -500,11 +504,16 @@
 						}
 					}
 
-					.item-badge {
-						display: none;
+					.item-badge--mb {
+						position: absolute;
+						top: 0;
+						left: 0;
+						transform: translateY(-10px) translateX(-8px);
+						display: block;
+						width: 129px;
+						height: 20px;
 					}
-
-					&.highlight {
+					Ơ &.highlight {
 						border-width: 2px solid var(--red-100);
 
 						.item-mobile {
