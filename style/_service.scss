@@ -649,7 +649,7 @@
 			.service-item--four {
 				.service-item__general {
 					.service-item__order {
-						margin-top: 0;
+						margin-top: auto;
 						margin-bottom: 16px;
 					}
 				}
@@ -1358,6 +1358,11 @@
 
 							p {
 								font-size: 12px;
+								line-height: 9px;
+							}
+
+							span {
+								font-size: 9px;
 								line-height: 9px;
 							}
 						}
