@@ -52,6 +52,7 @@
 			.promotion-detail__content {
 				position: relative;
 				display: flex;
+				justify-content: center;
 				align-items: flex-end;
 				flex-grow: 1;
 				margin-right: 11px;
@@ -108,7 +109,7 @@
 					transform: translateX(-6px);
 					font-size: 48px;
 					line-height: 34px;
-					letter-spacing: -0.08em;
+					letter-spacing: -0.07em;
 				}
 			}
 
