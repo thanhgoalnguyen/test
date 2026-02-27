@@ -694,7 +694,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "apartment",
 			step2: "1gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "4,180" }, { title: "4~24ヵ月目", value: "5,280" }],
+			type24: [{ title: "初月", value: "4,180" }, { title: "2~24ヵ月目", value: "5,280" }],
 			type25: [{ title: "25ヵ~49ヵ月目", value: "7,810" }, { title: "50ヵ月目~", value: "8,030" }],
 			priceTable: [
 				{ 

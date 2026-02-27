@@ -134,6 +134,17 @@
 					.text-mb {
 						display: none;
 					}
+
+					.move-right {
+						display: inline-block;
+						transform: translateX(3px);
+						color: black;
+					}
+
+					.move-left {
+						display: inline-block;
+						transform: translateX(-3px);
+					}
 				}
 			}
 		}

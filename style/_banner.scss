@@ -229,6 +229,10 @@
 						color: var(--neutral-900);
 						letter-spacing: -0.04em;
 					}
+
+					.content-mb {
+						display: none;
+					}
 				}
 			}
 
@@ -430,6 +434,7 @@
 					display: flex;
 					flex-direction: column;
 					gap: 10px;
+					padding-bottom: 20px;
 
 					.banner-feature__item {
 						gap: 7px;
@@ -478,11 +483,21 @@
 							}
 						}
 					}
+
+					.banner-feature__item-wrapper {
+						.content-mb {
+							display: block;
+						}
+
+						.content-pc {
+							display: none;
+						}
+					}
 				}
 
 				.banner-icon--mobile {
 					position: absolute;
-					bottom: 5.1%;
+					bottom: 5.2%;
 					right: 4.4%;
 					display: block;
 					width: 34.5%;
