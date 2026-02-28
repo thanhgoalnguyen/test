@@ -441,10 +441,14 @@
 		}
 
 		.feature-footer {
-			div {
-				p {
-					font-size: 10px;
-					line-height: 11px;
+			.feature-footer__wrapper {
+				div {
+					gap: 5px;
+
+					p {
+						font-size: 10px;
+						line-height: 11px;
+					}
 				}
 			}
 		}
