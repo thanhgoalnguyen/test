@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	// base: '/hikari/',git 
+	// base: '/hikari/',
 	build: {
 		minify: 'esbuild',
 		cssMinify: true,
