@@ -7,13 +7,17 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Gom các file lẻ thành tên cố định hoặc có hash
-		assetFileNames: (assetInfo) => {
-          let name = assetInfo.name;
-          // Giữ nguyên cấu trúc thư mục cho ảnh
-          if (/\.(avif|png|jpe?g|svg|gif)$/.test(name)) {
+	assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('/');
+          const fileName = info[info.length - 1]; // Lấy tên file cuối cùng
+          
+          // Kiểm tra nếu là các định dạng ảnh
+          if (/\.(avif|png|jpe?g|svg|gif|webp)$/.test(fileName)) {
+            // Nếu bạn muốn giữ cấu trúc folder thủ công
+            // Ví dụ: assets/image/alliance/target.avif
             return `assets/[name][extname]`; 
           }
-          // Các file khác (css, font...) thì để mặc định
+          
           return `assets/[name]-[hash][extname]`;
         },
         chunkFileNames: 'assets/[name].js',
