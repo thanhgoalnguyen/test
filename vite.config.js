@@ -7,7 +7,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Gom các file lẻ thành tên cố định hoặc có hash
-        assetFileNames: 'assets/[name].[ext]', 
+		assetFileNames: 'assets/[path][name].[ext]',
         chunkFileNames: 'assets/[name].js',
         entryFileNames: 'assets/[name].js',
       },
