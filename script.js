@@ -1,5 +1,3 @@
-import './style/style.scss';
-
 import male20 from "./assets/icon/response/male-20.svg";
 import male30 from "./assets/icon/response/male-30.svg";
 import male40 from "./assets/icon/response/male-40.svg";
@@ -16,9 +14,6 @@ import star5 from "./assets/icon/response/star-5.svg";
 document.addEventListener("DOMContentLoaded", function () {
 	// HEADER
 	const header = document.querySelector('.js-header');
-
-	// FORM
-	const form = document.querySelector('.js-form');
 
 	// FAQ
 	const faqTags = document.querySelectorAll('.js-faq-tag');
@@ -44,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const simulationHeaderStep1 = document.querySelector('.js-simulation-header-step-1');
 	const simulationHeaderStep2 = document.querySelector('.js-simulation-header-step-2');
 	const simulationHeaderStep3 = document.querySelector('.js-simulation-header-step-3');
+	const simulationSwiper = document.querySelector('.js-simulation-swiper');
 
 	// PRICE MODAL
 	const priceModalTagWrapper = document.querySelector('.js-price-modal-tag-wrapper');
@@ -123,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step2: "1gbps",
 			step3: "mobile",
 			type24: [{ title: "初月", value: "4,180" }, { title: "2~24ヵ月目", value: "5,500" }],
-			type25: [{ title: "25~49ヵ月目", value: "8,030" },{ title: "50ヵ月目~", value: "8,030" }],
+			type25: [{ title: "25ヵ月目~", value: "8,030" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -131,17 +127,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "4,180",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -158,17 +154,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "5,500",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -185,17 +181,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,030",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -212,17 +208,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,030",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -239,8 +235,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "family",
 			step2: "1gbps",
 			step3: "mobile",
-			type24: [{ title: "初月", value: "5,720" }, { title: "2~24ヵ月目", value: "7,040" }],
-			type25: [{ title: "25~49ヵ月目", value: "9,570" },{ title: "50ヵ月目~", value: "9,570" }],
+			type24: [{ title: "初月", value: "5,720" }, { title: "4~24ヵ月目", value: "7,040" }],
+			type25: [{ title: "25ヵ月目~", value: "9,570" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -248,17 +244,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "5,720",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -275,17 +271,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "7,040",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -302,17 +298,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "9,570",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -329,17 +325,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "9,570",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -357,7 +353,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step2: "10gbps",
 			step3: "mobile",
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,320" }, { title: "7~24ヵ月目", value: "8,250" }],
-			type25: [{ title: "25~49ヵ月目", value: "10,780" },{ title: "50ヵ月目~", value: "10,780" }],
+			type25: [{ title: "25ヵ月目~", value: "10,780" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -365,22 +361,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "0",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -397,22 +393,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "1,320",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -429,22 +425,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,250",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -461,22 +457,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,780",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -493,22 +489,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,780",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -526,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step2: "10gbps",
 			step3: "mobile",
 			type24: [{ title: "初月", value: "0" }, { title: "2~6ヵ月目", value: "1,320" }, { title: "7~24ヵ月目", value: "8,250" }],
-			type25: [{ title: "25~49ヵ月目", value: "10,780" },{ title: "50ヵ月目~", value: "10,780" }],
+			type25: [{ title: "25ヵ月目~", value: "10,780" }],
 			priceTable: [
 				{ 
 					title: "初月", 
@@ -534,22 +530,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "0",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -566,22 +562,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "1,320",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -598,22 +594,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,250",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -630,22 +626,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,780",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -662,22 +658,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,780",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -694,7 +690,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			step1: "apartment",
 			step2: "1gbps",
 			step3: "usb",
-			type24: [{ title: "初月", value: "4,180" }, { title: "2~24ヵ月目", value: "5,280" }],
+			type24: [{ title: "初月", value: "4,180" }, { title: "4~24ヵ月目", value: "5,280" }],
 			type25: [{ title: "25ヵ~49ヵ月目", value: "7,810" }, { title: "50ヵ月目~", value: "8,030" }],
 			priceTable: [
 				{ 
@@ -703,17 +699,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "4,180",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -730,17 +726,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "5,280",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -757,17 +753,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "7,810",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -784,17 +780,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,030",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "4,180",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -820,17 +816,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "5,720",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -847,17 +843,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "6,820",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -874,17 +870,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "9,350",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -901,17 +897,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "9,570",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "5,720",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -937,22 +933,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "0",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -969,22 +965,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "1,100",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -1001,22 +997,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,030",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -1033,22 +1029,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,560",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -1065,22 +1061,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,780",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -1106,22 +1102,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "0",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-3,850"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -1138,22 +1134,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "1,100",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "-6,930",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -1170,22 +1166,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "8,030",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "-2,530"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -1202,22 +1198,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,560",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "-660"
 						},
@@ -1234,22 +1230,22 @@ document.addEventListener("DOMContentLoaded", function () {
 					total: "10,780",
 					list: [
 						{
-							title: "基本料金※13",
+							title: "基本料金※11",
 							bank: "6,930",
 							mobile: "3,850"
 						},
 						{
-							title: "超おトク割（24回）※14",
+							title: "超おトク割（24回）※12",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "SoftBank光・10ギガ めちゃトク割<br/>SoftBank光・10ギガ もっとめちゃトク割※15",
+							title: "10ギガ もっとめちゃトク割（6回）※13",
 							bank: "0",
 							mobile: "0"
 						},
 						{
-							title: "端末購入応援割（48回）※16",
+							title: "端末購入応援割（48回）",
 							bank: "0",
 							mobile: "0"
 						},
@@ -1263,10 +1259,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			]
 		}
 	];
-
-	const queryString = window.location.search;
-	const urlParams = new URLSearchParams(queryString);
-	const idValue = urlParams.get('id');
 
 	let responseItems = "";
 	let simulationType = 24;
@@ -1335,10 +1327,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			modal.classList.remove('show');
 			document.body.classList.remove('overflow-hidden');
 		}
-	}
-
-	if (idValue === "show") {
-		form.style.display = "flex";
 	}
 
 	faqTags.forEach((item) => {
